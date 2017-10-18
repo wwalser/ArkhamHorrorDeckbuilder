@@ -1,4 +1,6 @@
-export default bota = [
+// @flow
+
+export default [
   {
     "code": "02184",
     "cost": 1,

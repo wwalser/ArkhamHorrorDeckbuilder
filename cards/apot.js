@@ -1,4 +1,6 @@
-export default apot = [
+// @flow
+
+export default [
 	{
 		"code": "03190",
 		"cost": 4,

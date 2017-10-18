@@ -1,4 +1,6 @@
-export default wda = [
+// @flow
+
+export default [
 	{
 		"code": "02260",
 		"deck_limit": 2,

@@ -1,4 +1,6 @@
-export default tuo = [
+// @flow
+
+export default [
 	{
 		"code": "03149",
 		"cost": 2,

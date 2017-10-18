@@ -1,4 +1,6 @@
-export default litas = [
+// @flow
+
+export default [
 	{
 		"code": "02299",
 		"deck_limit": 2,

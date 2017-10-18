@@ -1,4 +1,6 @@
-export default eotp = [
+// @flow
+
+export default [
   {
     "code": "03115",
     "cost": 1,

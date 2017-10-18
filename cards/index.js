@@ -1,3 +1,5 @@
+// @flow
+
 export {default as apot} from './apot';
 export {default as bota} from './bota';
 export {default as core} from './core';

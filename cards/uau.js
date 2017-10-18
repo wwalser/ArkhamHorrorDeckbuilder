@@ -1,4 +1,6 @@
-export default uau = [
+// @flow
+
+export default [
   {
     "code": "02225",
     "cost": 1,

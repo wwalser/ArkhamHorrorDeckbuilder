@@ -1,4 +1,6 @@
-export default tmm = [
+// @flow
+
+export default [
   {
     "code": "02105",
     "cost": 2,

@@ -1,4 +1,6 @@
-export default tece = [
+// @flow
+
+export default [
   {
     "code": "02147",
     "cost": 2,

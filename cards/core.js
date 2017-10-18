@@ -1,4 +1,6 @@
-export default core = [
+// @flow
+
+export default [
   {
     "code": "01000",
     "deck_limit": 1,

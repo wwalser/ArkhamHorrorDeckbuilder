@@ -1,6 +1,4 @@
-/**
- * @jsx
- */
+// @flow
 
 import React, { Component } from 'react';
 import {
@@ -39,18 +37,23 @@ const items = [
   [ 4, 2, 'tree' ],
 ];
 
-export default class CardSearch extends Component {
-  constructor(props) {
+export default class CardSearch extends Component<{}, {
+  results: any,
+}> {
+  searchBar: ?SearchBar;
+  constructor(props: {}) {
     super(props);
-    this.state = {};
+    this.state = {
+      results: null,
+    };
   }
   _handleResults = (results) => {
     this.setState({ results });
   }
   render() {
     return (
-      <View
-        style={styles.keyboardView}
+      <KeyboardAvoidingView
+        style={styles.mainView}
       >
         <CardList />
         <SearchBar
@@ -58,18 +61,18 @@ export default class CardSearch extends Component {
           data={items}
           handleResults={this._handleResults}
         />
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  keyboardView: {
+  mainView: {
     marginTop: 24,
-  }
+  },
 });
 
 // skip these lines if using Create React Native App
 AppRegistry.registerComponent(
   'ArkhamHorrorDeckBuilder',
-  () => IScrolledDownAndWhatHappenedNextShockedMe);
+  () => CardSearch);
