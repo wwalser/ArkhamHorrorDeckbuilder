@@ -1,6 +1,7 @@
 // @flow
+import type {Card} from './index';
 
-export default [
+const cards:Array<Card> = [
 	{
 		"code": "02299",
 		"deck_limit": 2,
@@ -223,4 +224,6 @@ export default [
 		"type_code": "asset",
 		"xp": 5
 	}
-]
+];
+
+export default cards;

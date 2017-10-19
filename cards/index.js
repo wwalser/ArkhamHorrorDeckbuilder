@@ -1,15 +1,65 @@
 // @flow
 
-export {default as apot} from './apot';
-export {default as bota} from './bota';
-export {default as core} from './core';
-export {default as dwl} from './dwl';
-export {default as eotp} from './eotp';
-export {default as litas} from './litas';
-export {default as promo} from './promo';
-export {default as ptc} from './ptc';
-export {default as tece} from './tece';
-export {default as tmm} from './tmm';
-export {default as tuo} from './tuo';
-export {default as uau} from './uau';
-export {default as wda} from './wda';
+import apot from './apot';
+import bota from './bota';
+import core from './core';
+import dwl from './dwl';
+import eotp from './eotp';
+import litas from './litas';
+import promo from './promo';
+import ptc from './ptc';
+import tece from './tece';
+import tmm from './tmm';
+import tuo from './tuo';
+import uau from './uau';
+import wda from './wda';
+
+export type Card = {
+  back_text?: string,
+  back_flavor?: string,
+  code: string,
+  cost?: ?number,
+  deck_limit: number,
+  deck_options?: Array<any>,
+  deck_requirements?: string,
+  faction_code: string,
+  flavor?: string,
+  health?: number,
+  illustrator: string,
+  is_unique?: ?boolean,
+  name: string,
+  pack_code: string,
+  position: number,
+  quantity: number,
+  sanity?: number,
+  skill_agility?: number,
+  skill_combat?: number,
+  skill_intellect?: number,
+  skill_wild?: number,
+  skill_willpower?: number,
+  slot?: string,
+  subname?: string,
+  subtype_code?: string,
+  text?: string,
+  traits?: string,
+  type_code: string,
+  xp?: number,
+};
+
+const decks:{[string]: Array<Card>} = {
+  apot,
+  bota,
+  core,
+  dwl,
+  eotp,
+  litas,
+  promo,
+  ptc,
+  tece,
+  tmm,
+  tuo,
+  uau,
+  wda,
+};
+
+export default decks;

@@ -9,11 +9,12 @@ import {
   StyleSheet,
 } from 'react-native';
 import CardItem from './card-item';
-import * as cards from '../cards';
+import cards from '../cards';
+import type {Card} from '../cards';
 
 const allCards = Object.keys(cards).reduce(
   (allCards, deckKey) => allCards.concat(cards[deckKey]),
-  [],
+  ([]:$ReadOnlyArray<Card>),
 );
 
 export default class CardList extends Component<{}> {
