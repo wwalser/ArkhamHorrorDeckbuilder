@@ -14,6 +14,8 @@ import tuo from './tuo';
 import uau from './uau';
 import wda from './wda';
 
+export type FactionName = 'neutral' | 'rogue' | 'guardian' | 'mystic' | 'survivor' | 'seeker';
+export type TypeCode = 'investigator' | 'enemy' | 'treachery' | 'asset' | 'event' | 'skill';
 export type Card = {
   back_text?: string,
   back_flavor?: string,
@@ -22,7 +24,7 @@ export type Card = {
   deck_limit: number,
   deck_options?: Array<any>,
   deck_requirements?: string,
-  faction_code: string,
+  faction_code: FactionName,
   flavor?: string,
   health?: number,
   illustrator: string,
@@ -42,7 +44,7 @@ export type Card = {
   subtype_code?: string,
   text?: string,
   traits?: string,
-  type_code: string,
+  type_code: TypeCode,
   xp?: number,
 };
 
