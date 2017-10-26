@@ -9,7 +9,7 @@ const allCards = Object.keys(cards).reduce(
   [],
 );
 
-function createObjectKeyedOn(keyToIndex) {
+function createObjectKeyedOn(keyToIndex):{[string]: Array<Card>} {
   return allCards.reduce((acc: {[string]: Array<Card>}, card: Card) => {
     const currentKey = card[keyToIndex];
     if (currentKey) {
@@ -43,26 +43,25 @@ function topComment() {
     ' **/\n';
 }
 
-function arrayCode(arrayValues) {
-  let code = arrayValues.reduce(
-    (code, currentValue) => {
-      return code + `  '${currentValue}',\n`;
-    },
-    topComment() + 'const values = [\n',
-  );
-  return code + '];\n';
+function codeString(objectValue) {
+  const strings = Object.keys(objectValue);
+
+  let objectCode = topComment() + 'const lookup = ' +
+    JSON.stringify(objectValue, null, 2);
+  let arrayCode = ';\nconst values = ' +
+    JSON.stringify(strings, null, 2);
+
+  return objectCode + arrayCode + ';\n';
 }
 
 function generate() {
   const writeFileForHead = (generators) => {
     const generatorName = generators.pop();
-    const axisStringsCode = arrayCode(
-      Object.keys(queryAxisGenerators[generatorName]()),
-    );
+    const axisCode = codeString(queryAxisGenerators[generatorName]());
 
     fs.writeFile(
       `./query/${generatorName}.js`,
-      axisStringsCode,
+      axisCode,
       err => {
         if (err) {
           console.log(err);
