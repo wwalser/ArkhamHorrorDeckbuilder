@@ -9,6 +9,8 @@ import {
   StyleSheet,
 } from 'react-native';
 
+import type {Card} from '../cards';
+
 const factions = {
   guardian: require('../img/guardian.png'),
   rogue: require('../img/rogue.png'),
@@ -18,18 +20,24 @@ const factions = {
 };
 
 export default class CardItem extends React.PureComponent<{
-  name: string,
-  faction_code: string
+  card: Card,
 }> {
   render() {
-    const {name, faction_code} = this.props;
+    //alignItems
+    const {card: {name, faction_code, is_unique, subname, xp}} = this.props;
     return (<View style={style.cardItem}>
-      <Text>{name}</Text>
-      <View style={{flexDirection: 'row'}}>
-        {faction_code !== 'neutral'
-          ? <Image source={factions[faction_code]} />
-          : null}
-        <Text>{faction_code}</Text>
+      <View style={style.cardName}>
+        <Text style={{fontSize: 20, fontWeight: 'bold'}}>{is_unique ? '*' : ''}{name}</Text>
+        {subname ? <Text style={{paddingLeft: 3}}>{subname}</Text> : null}
+      </View>
+      <View style={style.cardDetails}>
+        <View style={style.faction}>
+          {faction_code !== 'neutral'
+            ? <Image source={factions[faction_code]} />
+            : null}
+          <Text>{faction_code}</Text>
+        </View>
+        {xp ? <Text style={{paddingLeft: 6}}>XP: {xp}</Text> : null}
       </View>
     </View>);
   }
@@ -37,10 +45,22 @@ export default class CardItem extends React.PureComponent<{
 
 const style = StyleSheet.create({
   cardItem: {
-    flexDirection: 'row',
+    //flexDirection: 'row',
     justifyContent: 'space-between',
-    height: 80,
+    height: 100,
     paddingRight: 10,
     paddingLeft: 10,
+    paddingBottom: 3,
+  },
+  cardDetails: {
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  faction: {
+    flexDirection: 'row',
+  },
+  cardName: {
+    flexDirection: 'row',
+    alignItems: 'center'
   },
 });

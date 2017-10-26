@@ -22,11 +22,10 @@ export default class CardList extends Component<{}> {
     return (
       <View>
         <ScrollView>
-          {allCards.map((item) => (
+          {allCards.map((card) => (
             <CardItem
-              key={item.code}
-              name={item.name}
-              faction_code={item.faction_code}
+              key={card.code}
+              card={card}
             />
           ))}
         </ScrollView>
