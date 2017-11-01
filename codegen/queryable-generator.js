@@ -54,7 +54,7 @@ function codeString(objectValue) {
   return objectCode + arrayCode + ';\n';
 }
 
-function generate() {
+function generate(done: () => void = ()=>{}) {
   const writeFileForHead = (generators) => {
     const generatorName = generators.pop();
     const axisCode = codeString(queryAxisGenerators[generatorName]());
@@ -66,7 +66,13 @@ function generate() {
         if (err) {
           console.log(err);
         }
-        generators.length && writeFileForHead(generators)
+        if (generators.length) {
+          console.log('Done with first codegen');
+          writeFileForHead(generators);
+        } else {
+          console.log('Done with codegen');
+          done();
+        }
       },
     );
   };
