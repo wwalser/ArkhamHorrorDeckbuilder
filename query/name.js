@@ -3511,6 +3511,187 @@ const lookup = {
       "type_code": "treachery"
     }
   ],
+  "Heroic Rescue": [
+    {
+      "code": "03106",
+      "cost": 1,
+      "deck_limit": 2,
+      "faction_code": "guardian",
+      "illustrator": "Cynthia Sheppard",
+      "name": "Heroic Rescue",
+      "pack_code": "eotp",
+      "position": 106,
+      "quantity": 2,
+      "skill_willpower": 1,
+      "skill_combat": 1,
+      "text": "Fast. Play when a non-<b><i>Elite</i><b> enemy would attack another investigator at your location.\nEngage that enemy and resolve its attack against you instead. Then, deal it 1 damage.",
+      "traits": "Spirit. Tactic.",
+      "type_code": "event",
+      "xp": 0
+    }
+  ],
+  "Combat Training": [
+    {
+      "code": "03107",
+      "cost": 1,
+      "deck_limit": 2,
+      "faction_code": "guardian",
+      "illustrator": "RJ Palmer",
+      "name": "Combat Training",
+      "pack_code": "eotp",
+      "position": 107,
+      "quantity": 2,
+      "sanity": 1,
+      "skill_combat": 1,
+      "skill_agility": 1,
+      "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Combat Training before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [combat] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this test.",
+      "traits": "Talent. Composure.",
+      "type_code": "asset",
+      "xp": 1
+    }
+  ],
+  "Anatomical Diagrams": [
+    {
+      "code": "03108",
+      "cost": 1,
+      "deck_limit": 2,
+      "faction_code": "seeker",
+      "illustrator": "Stephen Somers",
+      "name": "Anatomical Diagrams",
+      "pack_code": "eotp",
+      "position": 108,
+      "quantity": 2,
+      "skill_willpower": 1,
+      "skill_combat": 1,
+      "text": "Fast. Play during any investigator's turn. Play only if you have 5 or more remaining sanity.\nChoose a non-<b><i>Elite</i></b> enemy at your location. Until the end of the active investigator's turn, that enemy gets -2 fight and -2 evade.",
+      "traits": "Insight.",
+      "flavor": "They are just animals like any other. Or so we thought.",
+      "type_code": "event",
+      "xp": 0
+    }
+  ],
+  "Scientific Theory": [
+    {
+      "code": "03109",
+      "cost": 1,
+      "deck_limit": 2,
+      "faction_code": "seeker",
+      "illustrator": "Mark Molnar",
+      "name": "Scientific Theory",
+      "pack_code": "eotp",
+      "position": 109,
+      "quantity": 2,
+      "sanity": 1,
+      "skill_intellect": 1,
+      "skill_combat": 1,
+      "text": "Fast. Limit 1 <b><i>Composure</i></b> in play.\nNon-direct horror must be assigned to Scientific Theory before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [intellect] for this skill test.\n[free] Spend 1 resource: You get +1 [combat] for this test.",
+      "traits": "Talent. Composure.",
+      "type_code": "asset",
+      "xp": 0
+    }
+  ],
+  "Knuckleduster": [
+    {
+      "code": "03110",
+      "cost": 2,
+      "deck_limit": 2,
+      "faction_code": "rogue",
+      "illustrator": "John Pacer",
+      "name": "Knuckleduster",
+      "pack_code": "eotp",
+      "position": 110,
+      "quantity": 2,
+      "skill_combat": 1,
+      "text": "[action]: <b>Fight.</b> This attack deals +1 damage. The attacked enemy gains retaliate for this attack.",
+      "traits": "Item. Weapon. Melee. Illicit.",
+      "flavor": "Up close and personal:\njust the way Naomi liked it.",
+      "type_code": "asset",
+      "slot": "Hand",
+      "xp": 0
+    }
+  ],
+  "Moxie": [
+    {
+      "code": "03111",
+      "cost": 1,
+      "deck_limit": 2,
+      "faction_code": "rogue",
+      "illustrator": "Jeff Lee Johnson",
+      "name": "Moxie",
+      "pack_code": "eotp",
+      "position": 111,
+      "quantity": 2,
+      "sanity": 1,
+      "skill_willpower": 1,
+      "skill_agility": 1,
+      "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Moxie before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this test.",
+      "traits": "Talent. Composure.",
+      "type_code": "asset",
+      "xp": 1
+    }
+  ],
+  "David Renfield": [
+    {
+      "code": "03112",
+      "cost": 0,
+      "deck_limit": 2,
+      "faction_code": "mystic",
+      "illustrator": "Alexandre Dainche",
+      "is_unique": true,
+      "name": "David Renfield",
+      "subname": "Esteemed Eschatologist",
+      "pack_code": "eotp",
+      "position": 112,
+      "quantity": 2,
+      "health": 2,
+      "sanity": 1,
+      "skill_intellect": 1,
+      "text": "While David Renfield has at least 1 doom on him, you get +1 [willpower].\n[fast] Exhaust David Remfield: You may place 1 doom on David Renfield. Gain 1 resource for each doom on David Renfield.",
+      "traits": "Ally. Patron.",
+      "type_code": "asset",
+      "slot": "Ally",
+      "xp": 0
+    }
+  ],
+  "Grounded": [
+    {
+      "code": "03113",
+      "cost": 1,
+      "deck_limit": 2,
+      "faction_code": "mystic",
+      "illustrator": "Ilich Henriquez",
+      "name": "Grounded",
+      "pack_code": "eotp",
+      "position": 113,
+      "quantity": 2,
+      "sanity": 1,
+      "skill_willpower": 1,
+      "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Grounded before it can be assigned to your investigator card.\n[free] During a skill test on a <b><i>Spell</i></b> card, spend 1 resource: You get +1 skill value for this test.",
+      "traits": "Talent. Composure.",
+      "type_code": "asset",
+      "xp": 1
+    }
+  ],
+  "Cherished Keepsake": [
+    {
+      "code": "03114",
+      "cost": 0,
+      "deck_limit": 2,
+      "faction_code": "survivor",
+      "illustrator": "Robert Laskey",
+      "name": "Cherished Keepsake",
+      "pack_code": "eotp",
+      "position": 114,
+      "quantity": 2,
+      "sanity": 2,
+      "skill_willpower": 1,
+      "traits": "Item. Charm.",
+      "flavor": "Mr. Pawterson always told Wendy things would turn out okay. But then again, Mr. Pawterson was a teddy bear, and he didn't know any better.",
+      "type_code": "asset",
+      "slot": "Accessory",
+      "xp": 0
+    }
+  ],
   "Plucky": [
     {
       "code": "03115",
@@ -3525,10 +3706,64 @@ const lookup = {
       "sanity": 1,
       "skill_intellect": 1,
       "skill_willpower": 1,
-      "text": "Fast. Limit 1 <b>Composure</b> in play.\nNon-direct horror must be assigned to Plucky before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [intellect] for this test.",
+      "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Plucky before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [intellect] for this test.",
       "traits": "Talent. Composure.",
       "type_code": "asset",
       "xp": 1
+    }
+  ],
+  "Say Your Prayers": [
+    {
+      "code": "03116",
+      "deck_limit": 2,
+      "faction_code": "neutral",
+      "illustrator": "Melissa Findley",
+      "name": "Say Your Prayers",
+      "pack_code": "eotp",
+      "position": 116,
+      "quantity": 2,
+      "skill_willpower": 4,
+      "text": "Max 1 committed per skill test.\nCommit to a skill test only if you have 3 or fewer remaining sanity.",
+      "traits": "Desperate.",
+      "type_code": "skill",
+      "xp": 0
+    }
+  ],
+  "Desperate Search": [
+    {
+      "code": "03117",
+      "deck_limit": 2,
+      "faction_code": "neutral",
+      "illustrator": "Cristina Vela",
+      "name": "Desperate Search",
+      "pack_code": "eotp",
+      "position": 117,
+      "quantity": 2,
+      "skill_intellect": 4,
+      "text": "Max 1 committed per skill test.\nCommit to a skill test only if you have 3 or fewer remaining sanity.",
+      "traits": "Desperate.",
+      "type_code": "skill",
+      "xp": 0
+    }
+  ],
+  "Reckless Assault": [
+    {
+      "code": "03118",
+      "deck_limit": 2,
+      "faction_code": "neutral",
+      "illustrator": "Nicholas Stohlman",
+      "name": "Reckless Assault",
+      "pack_code": "eotp",
+      "position": 118,
+      "quantity": 2,
+      "skill_agility": 4,
+      "skill_combat": 4,
+      "skill_intellect": 4,
+      "skill_willpower": 4,
+      "text": "Max 1 committed per skill test.\nCommit to a skill test only if you have 3 or fewer remaining sanity.",
+      "traits": "Desperate.",
+      "type_code": "skill",
+      "xp": 0
     }
   ],
   "Run For Your Life": [
@@ -4149,7 +4384,7 @@ const lookup = {
       "quantity": 1,
       "restrictions": "investigator:03001",
       "skill_combat": 4,
-      "text": "Mark Harrigan deck only.\nIf this skill is successful during an attack, move 1 damage from Mark Harrigan to the attacked enemy.",
+      "text": "Mark Harrigan deck only.\nIf this skill test is successful during an attack, move 1 damage from Mark Harrigan to the attacked enemy.",
       "traits": "Practiced. Expert.",
       "type_code": "skill"
     }
@@ -4206,7 +4441,6 @@ const lookup = {
       "quantity": 1,
       "restrictions": "investigator:03002",
       "skill_wild": 2,
-      "slot": "Hand",
       "subname": "Between the Lines",
       "text": "Minh Thi Phan deck only.\nYou may commit 1 card to each skill test performed by an investigator at another location.\n[reaction] After you commit exactly 1 card to a skill test, exhaust Analytical Mind: Draw 1 card.",
       "traits": "Talent.",
@@ -5840,7 +6074,19 @@ const values = [
   "Indebted",
   "Internal Injury",
   "Chronophobia",
+  "Heroic Rescue",
+  "Combat Training",
+  "Anatomical Diagrams",
+  "Scientific Theory",
+  "Knuckleduster",
+  "Moxie",
+  "David Renfield",
+  "Grounded",
+  "Cherished Keepsake",
   "Plucky",
+  "Say Your Prayers",
+  "Desperate Search",
+  "Reckless Assault",
   "Run For Your Life",
   "Monster Slayer",
   "Lightning Gun",
