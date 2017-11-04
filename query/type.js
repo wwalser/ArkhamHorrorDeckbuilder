@@ -3,7 +3,9 @@
  * To regenerate: npm run codegen
  * See /codegen directory for implementation details.
  **/
-export const lookup = {
+
+import type {Card} from '../cards';
+export const lookup:{[string]: Array<Card>} = {
   "asset": [
     {
       "code": "03190",
@@ -4480,7 +4482,7 @@ export const lookup = {
     }
   ]
 };
-export const values = [
+export const values: Array<string> = [
   "asset",
   "event",
   "skill",

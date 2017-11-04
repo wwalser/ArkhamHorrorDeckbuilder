@@ -45,20 +45,24 @@ const queryAxisGenerators = {
   },
 };
 
-function topComment() {
+function topContent() {
   return '/**\n' +
     ' * This file is generated code. Do not modify manually.\n' +
     ' * To regenerate: npm run codegen\n' +
     ' * See /codegen directory for implementation details.\n' +
-    ' **/\n';
+    ' **/\n' +
+    '\n' +
+    'import type {Card} from \'../cards\';\n';
 }
 
 function codeString(objectValue) {
   const strings = Object.keys(objectValue);
 
-  let objectCode = topComment() + 'export const lookup = ' +
+  let objectCode = topContent() +
+    'export const lookup:{[string]: Array<Card>} = ' +
     JSON.stringify(objectValue, null, 2);
-  let arrayCode = ';\nexport const values = ' +
+
+  let arrayCode = ';\nexport const values: Array<string> = ' +
     JSON.stringify(strings, null, 2);
 
   return objectCode + arrayCode + ';\n';
