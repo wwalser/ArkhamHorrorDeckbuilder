@@ -9,7 +9,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import CardItem from './card-item';
-import cards from '../cards';
+import {lookup as cards} from '../query/name';
 import type {Card} from '../cards';
 
 const allCards = Object.keys(cards).reduce(
