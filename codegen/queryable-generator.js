@@ -56,9 +56,9 @@ function topComment() {
 function codeString(objectValue) {
   const strings = Object.keys(objectValue);
 
-  let objectCode = topComment() + 'const lookup = ' +
+  let objectCode = topComment() + 'export const lookup = ' +
     JSON.stringify(objectValue, null, 2);
-  let arrayCode = ';\nconst values = ' +
+  let arrayCode = ';\nexport const values = ' +
     JSON.stringify(strings, null, 2);
 
   return objectCode + arrayCode + ';\n';

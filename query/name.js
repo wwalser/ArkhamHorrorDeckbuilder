@@ -3,7 +3,7 @@
  * To regenerate: npm run codegen
  * See /codegen directory for implementation details.
  **/
-const lookup = {
+export const lookup = {
   ".45 Automatic": [
     {
       "code": "03190",
@@ -4940,7 +4940,7 @@ const lookup = {
     }
   ]
 };
-const values = [
+export const values = [
   ".45 Automatic",
   "Pickpocketing",
   "Prepared for the Worst",
