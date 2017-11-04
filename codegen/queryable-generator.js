@@ -1,16 +1,23 @@
 // @flow
 
 import fs from 'fs';
-import cards from '../cards';
+import cards, {PLAYER_CARD_TYPES} from '../cards';
 import type {Card} from '../cards';
 
+// Flatten a list of cards
 const allCards = Object.keys(cards).reduce(
   (allCards, deckKey) => allCards.concat(cards[deckKey]),
   [],
 );
+const allPlayerCards = allCards.filter(
+  card => PLAYER_CARD_TYPES.hasOwnProperty(card.type_code),
+);
+const investigatorCards = allCards.filter(
+  card => card.type_code === 'investigator',
+);
 
-function createObjectKeyedOn(keyToIndex):{[string]: Array<Card>} {
-  return allCards.reduce((acc: {[string]: Array<Card>}, card: Card) => {
+function createObjectKeyedOn(keyToIndex, cardList):{[string]: Array<Card>} {
+  return cardList.reduce((acc: {[string]: Array<Card>}, card: Card) => {
     const currentKey = card[keyToIndex];
     if (currentKey) {
       if (acc[currentKey]) {
@@ -25,13 +32,16 @@ function createObjectKeyedOn(keyToIndex):{[string]: Array<Card>} {
 
 const queryAxisGenerators = {
   name() {
-    return createObjectKeyedOn('name');
+    return createObjectKeyedOn('name', allPlayerCards);
   },
   faction() {
-    return createObjectKeyedOn('faction_code');
+    return createObjectKeyedOn('faction_code', allPlayerCards);
   },
   type() {
-    return createObjectKeyedOn('type_code');
+    return createObjectKeyedOn('type_code', allPlayerCards);
+  },
+  investigators() {
+    return createObjectKeyedOn('name', investigatorCards);
   },
 };
 
@@ -67,7 +77,7 @@ function generate(done: () => void = ()=>{}) {
           console.log(err);
         }
         if (generators.length) {
-          console.log('Done with first codegen');
+          console.log('Codegen progress.');
           writeFileForHead(generators);
         } else {
           console.log('Done with codegen');

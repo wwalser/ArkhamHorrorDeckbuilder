@@ -15,7 +15,16 @@ import uau from './uau';
 import wda from './wda';
 
 export type FactionName = 'neutral' | 'rogue' | 'guardian' | 'mystic' | 'survivor' | 'seeker';
-export type TypeCode = 'investigator' | 'enemy' | 'treachery' | 'asset' | 'event' | 'skill';
+export const GAME_CARD_TYPES = {
+  'investigator': 1,
+  'enemy': 1,
+};
+export const PLAYER_CARD_TYPES = {
+  'asset': 1,
+  'event': 1,
+  'skill': 1,
+  'treachery': 1,
+};
 export type Card = {
   back_text?: string,
   back_flavor?: string,
@@ -44,7 +53,7 @@ export type Card = {
   subtype_code?: string,
   text?: string,
   traits?: string,
-  type_code: TypeCode,
+  type_code: $Keys<typeof GAME_CARD_TYPES> | $Keys<typeof PLAYER_CARD_TYPES>,
   xp?: number,
 };
 
