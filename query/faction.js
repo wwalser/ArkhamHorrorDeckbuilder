@@ -2,10 +2,11 @@
  * This file is generated code. Do not modify manually.
  * To regenerate: npm run codegen
  * See /codegen directory for implementation details.
+ * @flow
  **/
 
 import type {Card} from '../cards';
-export const lookup:{[string]: Array<Card>} = {
+export const lookup: {[string]: Array<Card>} = {
   "guardian": [
     {
       "code": "03190",

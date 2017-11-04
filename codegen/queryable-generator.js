@@ -50,6 +50,7 @@ function topContent() {
     ' * This file is generated code. Do not modify manually.\n' +
     ' * To regenerate: npm run codegen\n' +
     ' * See /codegen directory for implementation details.\n' +
+    ' * @flow\n' +
     ' **/\n' +
     '\n' +
     'import type {Card} from \'../cards\';\n';
@@ -59,7 +60,7 @@ function codeString(objectValue) {
   const strings = Object.keys(objectValue);
 
   let objectCode = topContent() +
-    'export const lookup:{[string]: Array<Card>} = ' +
+    'export const lookup: {[string]: Array<Card>} = ' +
     JSON.stringify(objectValue, null, 2);
 
   let arrayCode = ';\nexport const values: Array<string> = ' +
