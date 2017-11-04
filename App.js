@@ -12,54 +12,37 @@ import {
 } from 'react-native';
 import SearchBar from 'react-native-searchbar';
 import CardList from './screens/card-list';
+import store, {addCard, removeCard} from './store';
 
-const items = [
-  1337,
-  'janeway',
-  {
-    lots: 'of',
-    different: {
-      types: 0,
-      data: false,
-      that: {
-        can: {
-          be: {
-            quite: {
-              complex: {
-                hidden: [ 'gold!' ],
-              },
-            },
-          },
-        },
-      },
-    },
-  },
-  [ 4, 2, 'tree' ],
-];
+import type {DeckList} from './store';
 
-export default class CardSearch extends Component<{}, {
-  results: any,
-}> {
-  searchBar: ?SearchBar;
+type State = {
+  deck: DeckList,
+};
+
+export default class CardSearch extends Component<{}, State> {
   constructor(props: {}) {
     super(props);
+    store.addListener(() => {
+      this.setState({deck: store.deck});
+    });
+
     this.state = {
-      results: null,
+      deck: store.deck,
     };
   }
-  _handleResults = (results) => {
-    this.setState({ results });
+  componentWillUpdate(_: {}, nextState: State) {
+    console.log(nextState.deck);
   }
   render() {
     return (
       <KeyboardAvoidingView
         style={styles.mainView}
       >
-        <CardList />
-        <SearchBar
-          ref={(ref) => this.searchBar = ref}
-          data={items}
-          handleResults={this._handleResults}
+        <CardList
+          addCard={addCard}
+          removeCard={removeCard}
+          currentDeck={this.state.deck}
         />
       </KeyboardAvoidingView>
     );

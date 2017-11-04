@@ -27,7 +27,7 @@
     "expo": "^20.0.0",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.47.0",
-    "react-native-searchbar": "^1.12.1",
+    "react-native-searchbar": "^1.13.0",
     "react-native-vector-icons": "^4.4.2"
   }
 }

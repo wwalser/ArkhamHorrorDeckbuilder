@@ -2,6 +2,7 @@
 
 import React from 'react';
 import {
+  Button,
   Text,
   ScrollView,
   Image,
@@ -10,6 +11,7 @@ import {
 } from 'react-native';
 
 import type {Card} from '../cards';
+import type {DeckMutator} from '../store';
 
 const factions = {
   guardian: require('../img/guardian.png'),
@@ -21,10 +23,20 @@ const factions = {
 
 export default class CardItem extends React.PureComponent<{
   card: Card,
+  onAdd: DeckMutator,
+  onRemove: DeckMutator,
+  isInDeck: boolean,
 }> {
   render() {
     //alignItems
-    const {card: {name, faction_code, is_unique, subname, xp}} = this.props;
+    const {
+      onAdd,
+      onRemove,
+      isInDeck,
+      card,
+    } = this.props;
+    const {name, faction_code, is_unique, subname, xp} = card;
+
     return (<View style={style.cardItem}>
       <View style={style.cardName}>
         <Text style={{fontSize: 20, fontWeight: 'bold'}}>{is_unique ? '*' : ''}{name}</Text>
@@ -38,6 +50,13 @@ export default class CardItem extends React.PureComponent<{
           <Text>{faction_code}</Text>
         </View>
         {xp ? <Text style={{paddingLeft: 6}}>XP: {xp}</Text> : null}
+      </View>
+      <View style={style.buttons}>
+        <Button
+          title={isInDeck ? 'Remove' : 'Add'}
+          onPress={() => isInDeck ? onRemove(card) : onAdd(card)}
+          accessibilityLabel='Add card to deck.'
+        />
       </View>
     </View>);
   }
@@ -54,7 +73,6 @@ const style = StyleSheet.create({
   },
   cardDetails: {
     flexDirection: 'row',
-    justifyContent: 'space-between'
   },
   faction: {
     flexDirection: 'row',
@@ -63,4 +81,9 @@ const style = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center'
   },
+  buttons: {
+    position: 'absolute',
+    top: 20,
+    right: 25,
+  }
 });
