@@ -15,6 +15,7 @@ const RootNavigator = StackNavigator({
     screen: HomeScreen,
     navigationOptions: {
       headerTitle: 'Home',
+      header: null,
     },
   },
   DeckBuilder: {

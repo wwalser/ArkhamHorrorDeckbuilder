@@ -6,15 +6,25 @@ import {
   Text,
   View,
 } from 'react-native';
+import { StackRouter } from 'react-navigation';
 
-const HomeScreen = ({navigation}) => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Home Screen</Text>
-    <Button
-      onPress={() => navigation.navigate('DeckBuilder')}
-      title='Go to deck building'
-    />
-  </View>
-);
+type Props = {
+  navigation: {
+    navigate: (screenName: string) => void,
+  }
+}
 
-export default HomeScreen;
+export default class HomeScreen extends Component<Props> {
+
+  render(){
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Home Screen</Text>
+        <Button
+          onPress={() => this.props.navigation.navigate('DeckBuilder')}
+          title='Go to deck building'
+        />
+      </View>
+    );
+  }
+}
