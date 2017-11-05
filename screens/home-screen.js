@@ -28,7 +28,7 @@ export default class HomeScreen extends Component<Props> {
     this.props.screenProps.startTransition();
     setTimeout(
       () => this.props.navigation.navigate('DeckBuilder'),
-      50,
+      10,
     );
   }
   render(){
