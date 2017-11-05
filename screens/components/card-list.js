@@ -9,10 +9,10 @@ import {
   StyleSheet,
 } from 'react-native';
 import CardItem from './card-item';
-import {lookup as cards} from '../query/name';
+import {lookup as cards} from '../../query/name';
 
-import type {Card} from '../cards';
-import type {DeckList, DeckMutator} from '../store';
+import type {Card} from '../../cards';
+import type {DeckList, DeckMutator} from '../../store';
 
 const allCards = Object.keys(cards).reduce(
   (allCards, deckKey) => allCards.concat(cards[deckKey]),

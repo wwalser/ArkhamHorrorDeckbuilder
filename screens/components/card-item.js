@@ -10,15 +10,15 @@ import {
   StyleSheet,
 } from 'react-native';
 
-import type {Card} from '../cards';
-import type {DeckMutator} from '../store';
+import type {Card} from '../../cards';
+import type {DeckMutator} from '../../store';
 
 const factions = {
-  guardian: require('../img/guardian.png'),
-  rogue: require('../img/rogue.png'),
-  mystic: require('../img/mystic.png'),
-  seeker: require('../img/seeker.png'),
-  survivor: require('../img/survivor.png'),
+  guardian: require('../../img/guardian.png'),
+  rogue: require('../../img/rogue.png'),
+  mystic: require('../../img/mystic.png'),
+  seeker: require('../../img/seeker.png'),
+  survivor: require('../../img/survivor.png'),
 };
 
 export default class CardItem extends React.PureComponent<{
@@ -64,7 +64,6 @@ export default class CardItem extends React.PureComponent<{
 
 const style = StyleSheet.create({
   cardItem: {
-    //flexDirection: 'row',
     justifyContent: 'space-between',
     height: 100,
     paddingRight: 10,

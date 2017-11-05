@@ -3,59 +3,44 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  ScrollView,
-  Image,
-  Text,
-  KeyboardAvoidingView,
-  StyleSheet,
   View,
+  StatusBar,
 } from 'react-native';
-import SearchBar from 'react-native-searchbar';
-import CardList from './screens/card-list';
-import store, {addCard, removeCard} from './store';
+import { StackNavigator } from 'react-navigation';
+import DeckBuilderScreen from './screens/deck-builder-screen';
+import HomeScreen from './screens/home-screen.js'
 
-import type {DeckList} from './store';
-
-type State = {
-  deck: DeckList,
-};
-
-export default class CardSearch extends Component<{}, State> {
-  constructor(props: {}) {
-    super(props);
-    store.addListener(() => {
-      this.setState({deck: store.deck});
-    });
-
-    this.state = {
-      deck: store.deck,
-    };
-  }
-  componentWillUpdate(_: {}, nextState: State) {
-    console.log(nextState.deck);
-  }
-  render() {
-    return (
-      <KeyboardAvoidingView
-        style={styles.mainView}
-      >
-        <CardList
-          addCard={addCard}
-          removeCard={removeCard}
-          currentDeck={this.state.deck}
-        />
-      </KeyboardAvoidingView>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  mainView: {
-    marginTop: 24,
+const RootNavigator = StackNavigator({
+  Home: {
+    screen: HomeScreen,
+    navigationOptions: {
+      headerTitle: 'Home',
+    },
   },
+  DeckBuilder: {
+    screen: DeckBuilderScreen,
+    navigationOptions: {
+      headerTitle: 'Deck',
+    },
+  },
+}, {
+  onTransitionStart: () => {/*Handle loading state using this*/},
 });
+
+
+const AppContainer = () => (
+  <View style={{flex: 1, paddingTop: 20}}>
+    <StatusBar
+      backgroundColor={'transparent'}
+      translucent
+    />
+    <RootNavigator />
+  </View>
+);
+
+export default AppContainer;
 
 // skip these lines if using Create React Native App
 AppRegistry.registerComponent(
   'ArkhamHorrorDeckBuilder',
-  () => CardSearch);
+  () => AppContainer);
