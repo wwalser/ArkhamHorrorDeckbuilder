@@ -21,21 +21,32 @@ const factions = {
   survivor: require('../../img/survivor.png'),
 };
 
-export default class CardItem extends React.PureComponent<{
+type Props = {
   card: Card,
   onAdd: DeckMutator,
   onRemove: DeckMutator,
   isInDeck: boolean,
-}> {
+};
+
+export default class CardItem extends React.PureComponent<Props> {
+  onPress: DeckMutator;
+  constructor(props: Props) {
+    super(props);
+    this.onPress = this._onPress.bind(this);
+  }
+  _onPress() {
+    if (this.props.isInDeck) {
+      this.props.onRemove(this.props.card);
+    } else {
+      this.props.onAdd(this.props.card);
+    }
+  }
   render() {
     //alignItems
     const {
-      onAdd,
-      onRemove,
       isInDeck,
-      card,
+      card: {name, faction_code, is_unique, subname, xp},
     } = this.props;
-    const {name, faction_code, is_unique, subname, xp} = card;
 
     return (<View style={style.cardItem}>
       <View style={style.cardName}>
@@ -54,7 +65,7 @@ export default class CardItem extends React.PureComponent<{
       <View style={style.buttons}>
         <Button
           title={isInDeck ? 'Remove' : 'Add'}
-          onPress={() => isInDeck ? onRemove(card) : onAdd(card)}
+          onPress={this.onPress}
           accessibilityLabel='Add card to deck.'
         />
       </View>
