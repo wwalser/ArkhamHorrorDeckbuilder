@@ -25,14 +25,37 @@ type Props = {
   currentDeck: DeckList,
 };
 
-export default class CardList extends Component<Props> {
+export default class CardList extends Component<Props, {
+  cardsToShow: Array<Card>,
+}> {
+  constructor(props: Props) {
+    super(props);
+    this.state = {
+      cardsToShow: allCards.slice(0, 10),
+    };
+  }
+  componentDidMount() {
+    this.renderMore();
+  }
+  componentDidUpdate() {
+    this.renderMore();
+  }
+  renderMore() {
+    const numShowing = this.state.cardsToShow.length;
+    if (numShowing < allCards.length) {
+      const numToShow = numShowing + Math.min(numShowing + 10, allCards.length);
+      this.setState({
+        cardsToShow: allCards.slice(0, numToShow),
+      });
+    }
+  }
   render() {
     const {addCard, removeCard, currentDeck} = this.props;
 
     return (
       <View>
         <ScrollView>
-          {allCards.map((card) => (
+          {this.state.cardsToShow.map((card) => (
             <CardItem
               key={card.code}
               card={card}
