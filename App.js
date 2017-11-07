@@ -1,5 +1,8 @@
 // @flow
 
+import DeckBuilderScreen from './screens/deck-builder-screen';
+import HomeScreen from './screens/home-screen.js'
+import LoadingThrobber from './screens/components/loading-throbber';
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -7,9 +10,8 @@ import {
   StatusBar,
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import DeckBuilderScreen from './screens/deck-builder-screen';
-import LoadingThrobber from './screens/components/loading-throbber.js';
-import HomeScreen from './screens/home-screen.js'
+import {Provider} from 'react-redux';
+import setupStore from './helpers/setup-store';
 
 const navigationConfig = {
   Home: {
@@ -59,21 +61,23 @@ class AppContainer extends Component<{}, State> {
   render() {
     const RootNavigator = this.RootNavigator;
     return (
-      <View style={{flex: 1, paddingTop: 20}}>
-        <StatusBar
-          backgroundColor={'transparent'}
-          translucent
-        />
-        <RootNavigator
-          screenProps={{
-            startTransition: this.startTransition,
-          }}
-        />
-        <LoadingThrobber
-          visible={this.state.transitioning}
-          closeThrobber={this.closeThrobber}
-        />
-      </View>
+      <Provider store={setupStore()}>
+        <View style={{flex: 1, paddingTop: 20}}>
+          <StatusBar
+            backgroundColor={'transparent'}
+            translucent
+          />
+          <RootNavigator
+            screenProps={{
+              startTransition: this.startTransition,
+            }}
+          />
+          <LoadingThrobber
+            visible={this.state.transitioning}
+            closeThrobber={this.closeThrobber}
+          />
+        </View>
+      </Provider>
     );
   }
 }
