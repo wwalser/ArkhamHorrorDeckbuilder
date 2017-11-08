@@ -43,10 +43,12 @@ export default class CardList extends Component<Props, {
   renderMore() {
     const numShowing = this.state.cardsToShow.length;
     if (numShowing < allCards.length) {
-      const numToShow = numShowing + Math.min(numShowing + 10, allCards.length);
-      this.setState({
-        cardsToShow: allCards.slice(0, numToShow),
-      });
+      const numToShow = numShowing + Math.min(numShowing + 5, allCards.length);
+      setTimeout(() => {
+        this.setState({
+          cardsToShow: allCards.slice(0, numToShow),
+        });
+      }, 100);
     }
   }
   render() {
