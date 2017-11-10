@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import {Provider} from 'react-redux';
-import setupStore from './helpers/setup-store';
+import store from './helpers/setup-store';
 
 const navigationConfig = {
   Home: {
@@ -61,7 +61,7 @@ class AppContainer extends Component<{}, State> {
   render() {
     const RootNavigator = this.RootNavigator;
     return (
-      <Provider store={setupStore()}>
+      <Provider store={store}>
         <View style={{flex: 1, paddingTop: 20}}>
           <StatusBar
             backgroundColor={'transparent'}

@@ -13,7 +13,7 @@ type NewDeckAction = {
   payload: {
     investigator: Card,
     name: string,
-  }
+  },
 };
 type MutateDeckAction = {
   payload: Card,
@@ -27,7 +27,6 @@ const reductions: {
       .set('cards', Immutable.Map())
       .set('investigator', action.payload.investigator)
       .set('name', action.payload.name);
-    });
   },
   'ADD_CARD': (state: Deck, action: MutateDeckAction) => {
     return state.set(
