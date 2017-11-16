@@ -1,4 +1,4 @@
-// @flow
+/* @flow */
 
 import CardList from './components/card-list';
 import * as deckDispatchers from '../store/deck';
@@ -21,6 +21,7 @@ import type {
   AddCardDispatcher,
   RemoveCardDispatcher,
 } from '../store/deck';
+import type {Store} from '../store/';
 
 class DeckBuilderScreen extends Component<{
   investigator: Card,
@@ -42,13 +43,8 @@ class DeckBuilderScreen extends Component<{
   }
 };
 
-const select = (state) => {
-  const deck = {
-    investigator: state.deck.get('investigator'),
-    name: state.deck.get('name'),
-    cards: state.deck.get('cards').toJS(),
-  }
-  return deck;
+const select = ({deck}: Store) => {
+  return {...deck};
 };
 
 export default connect(select, deckDispatchers)(DeckBuilderScreen);

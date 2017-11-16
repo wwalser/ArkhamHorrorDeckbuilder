@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 
 import type {Card} from '../../cards';
-import type {DeckMutator} from '../../store';
+import type {AddCardDispatcher, RemoveCardDispatcher} from '../../store/deck';
 
 const factions = {
   guardian: require('../../img/guardian.png'),
@@ -23,13 +23,13 @@ const factions = {
 
 type Props = {
   card: Card,
-  onAdd: DeckMutator,
-  onRemove: DeckMutator,
+  onAdd: AddCardDispatcher,
+  onRemove: RemoveCardDispatcher,
   isInDeck: boolean,
 };
 
 export default class CardItem extends React.PureComponent<Props> {
-  onPress: DeckMutator;
+  onPress: AddCardDispatcher | RemoveCardDispatcher;
   constructor(props: Props) {
     super(props);
     this.onPress = this._onPress.bind(this);

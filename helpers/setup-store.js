@@ -1,12 +1,13 @@
-import Immutable from 'immutable';
+// @flow
+
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import * as reducers from '../store';
 
 const reducer = combineReducers(reducers);
 const initialState = {
-  deck: Immutable.Map({
-    cards: Immutable.Map(),
+  deck: {
+    cards: {},
     investigator: {
       "back_flavor": "Roland had always taken comfort in procedure and rules. As an agent in the Bureau, he was relieved to have guidelines to follow in any given situation. But lately, his Federal Agent's Handbook had been entirely unhelpful given the cases he'd been assigned. Try as he might, Roland could find no mention of what to do when confronted with strange creatures, gates through time and space, or magic spells. If he hadn't seen it with his own eyes, he would never have believed it... and there's no way his superiors would understand. Roland knew he would have to handle this one himself.",
       "back_text": "<b>Deck size</b>: 30.\n<b>Deckbuilding options</b>: Guardian cards ([guardian]) level 0-5, Seeker cards ([seeker]) level 0-2, Neutral cards level 0-5.\n<b>Deckbuilding requirements</b> (do not count toward deck size): Roland's .38 Special, Cover Up, 1 random basic weakness.",
@@ -38,6 +39,7 @@ const initialState = {
       "type_code": "investigator",
     },
     name: 'My first deck',
-  }),
+  },
 };
+
 export default applyMiddleware(thunkMiddleware)(createStore)(reducer, initialState);

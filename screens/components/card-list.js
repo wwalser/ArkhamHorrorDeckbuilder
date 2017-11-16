@@ -12,7 +12,11 @@ import CardItem from './card-item';
 import {lookup as cards} from '../../query/name';
 
 import type {Card} from '../../cards';
-import type {DeckList, DeckMutator} from '../../store';
+import type {
+  DeckList,
+  AddCardDispatcher,
+  RemoveCardDispatcher,
+} from '../../store/deck';
 
 const allCards = Object.keys(cards).reduce(
   (allCards, deckKey) => allCards.concat(cards[deckKey]),
@@ -20,8 +24,8 @@ const allCards = Object.keys(cards).reduce(
 );
 
 type Props = {
-  addCard: DeckMutator,
-  removeCard: DeckMutator,
+  addCard: AddCardDispatcher,
+  removeCard: RemoveCardDispatcher,
   currentDeck: DeckList,
 };
 
