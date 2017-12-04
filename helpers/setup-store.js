@@ -1,11 +1,13 @@
-// @flow
+/* @flow */
 
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunkMiddleware from 'redux-thunk';
-import * as reducers from '../store';
+import reducers from '../store';
+
+import type {Store} from '../store';
 
 const reducer = combineReducers(reducers);
-const initialState = {
+const initialState: Store = {
   deck: {
     cards: {},
     investigator: {
@@ -42,4 +44,9 @@ const initialState = {
   },
 };
 
-export default applyMiddleware(thunkMiddleware)(createStore)(reducer, initialState);
+// $FlowFixMe
+export default createStore(
+  reducer,
+  initialState,
+  applyMiddleware(thunkMiddleware),
+);
