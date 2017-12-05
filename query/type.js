@@ -24,7 +24,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (4 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +2 combat for this attack. This attack deals +1 damage. Ignore the retaliate keyword for this attack.",
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/03190.jpg"
     },
     {
       "code": "03195",
@@ -40,7 +41,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast.\n[reaction] After you evade an enemy, exhaust Pickpocketing: Draw 1 card or gain 1 resource. If you succeeded by 2 or more, do both instead.",
       "traits": "Talent. Illicit.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/03195.jpg"
     },
     {
       "code": "02185",
@@ -56,7 +58,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Permanent.\n[free] Spend 2 resources: You get +1 [intellect] until the end of the phase.\n[free] Spend 2 resources: You get +1 [combat] until the end of the phase.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02185.png"
     },
     {
       "code": "02187",
@@ -72,7 +75,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Permanent.\nWhile you have 5 or more cards in your hand, Higher Education gains:\n\"[free] Spend 1 resource: You get +2 [willpower] for this skill test.\n[free] Spend 1 resource: You get +2 [intellect] for this skill test.\"",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02187.jpg"
     },
     {
       "code": "02188",
@@ -89,7 +93,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Limit 1 per investigator.\n[reaction] When your turn begins, if there are no other investigators at your location: Gain 1 resource.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02188.jpg"
     },
     {
       "code": "02189",
@@ -105,7 +110,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Permanent.\n[free] </b>Spend 2 resources: You get +3 [intellect] for this skill test.\n[free] Spend 2 resources: You get +3 [agility] for this skill test.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02189.jpg"
     },
     {
       "code": "02191",
@@ -121,7 +127,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Permanent.\n[free] Add 1 doom to Blood Pact: You get +3 [willpower] for this skill test. (Limit once per test.)\n[free] Add 1 doom to Blood Pact: You get +3 [combat] for this skill test. (Limit once per test.)",
       "traits": "Spell. Pact.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02191.png"
     },
     {
       "code": "02193",
@@ -137,7 +144,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Permanent.\n[free] Spend 1 resource: You get +1 [combat] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this skill test.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02193.jpg"
     },
     {
       "code": "01006",
@@ -157,7 +165,8 @@ export const lookup: {[string]: Array<Card>} = {
       "slot": "Hand",
       "text": "Roland Banks deck only.\nUses (4 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +1 [combat] for this attack (if there are 1 or more clues on your location, you get +3 [combat], instead). This attack deals +1 damage.",
       "traits": "Item. Weapon. Firearm.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/01006.png"
     },
     {
       "code": "01008",
@@ -176,7 +185,8 @@ export const lookup: {[string]: Array<Card>} = {
       "skill_willpower": 1,
       "text": "Daisy Walker deck only.\nYou have 2 additional hand slots, which can only be used to hold <i>Tome</i> assets.",
       "traits": "Item.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/01008.jpg"
     },
     {
       "code": "01009",
@@ -193,7 +203,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subname": "John Dee Translation",
       "text": "<b>Revelation</b> - Put The Necronomicon into play in your threat area, with 3 horror on it. It cannot leave play while it has 1 or more horror on it.\nTreat each [elder_sign] you reveal on a chaos token as a [auto_fail].\n[action]: Move 1 horror from The Necronomicon to Daisy Walker. Then, if The Necronomicon has no horror on it, discard it.",
       "traits": "Item. Tome.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/01009.png"
     },
     {
       "code": "01012",
@@ -215,7 +226,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subname": "Artifact from Another Life",
       "text": "Agnes Baker deck only.\n[reaction] After you play a spell card: Draw 1 card.",
       "traits": "Item. Relic.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/01012.jpg"
     },
     {
       "code": "01014",
@@ -233,7 +245,8 @@ export const lookup: {[string]: Array<Card>} = {
       "slot": "Accessory",
       "text": "Wendy Adams deck only.\nYou may play the topmost event in your discard pile as if it were in your hand.\n<b>Forced</b> - After you play an event: Place it on the bottom of your deck instead of in your discard pile.",
       "traits": "Item. Relic.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/01014.png"
     },
     {
       "code": "01016",
@@ -250,7 +263,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (4 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +1 [combat] for this attack. This attack deals +1 damage.",
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01016.png"
     },
     {
       "code": "01017",
@@ -267,7 +281,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [combat] for this skill test.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01017.png"
     },
     {
       "code": "01018",
@@ -286,7 +301,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +1 [combat].\n[free] Discard Beat Cop: Deal 1 damage to an enemy at your location.",
       "traits": "Ally. Police.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01018.png"
     },
     {
       "code": "01019",
@@ -302,7 +318,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 supplies). If First Aid has no supplies, discard it.\n[action] Spend 1 supply: Heal 1 damage or horror from an investigator at your location.",
       "traits": "Talent. Science.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01019.jpg"
     },
     {
       "code": "01020",
@@ -320,7 +337,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action]: <b>Fight.</b> You get +1 [combat] for this attack. If the attacked enemy is the only enemy engaged with you, this attack deals +1 damage.",
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01020.png"
     },
     {
       "code": "01021",
@@ -340,7 +358,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] When an enemy attack deals damage to Guard Dog: Deal 1 damage to the attacking enemy.",
       "traits": "Ally. Creature.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01021.jpg"
     },
     {
       "code": "01027",
@@ -358,7 +377,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +1 [willpower].\n[free] While an investigator at your location is taking his or her turn, discard Police Badge: That investigator may take 2 additional actions this turn.",
       "traits": "Item.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/01027.png"
     },
     {
       "code": "01028",
@@ -378,7 +398,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +1 [combat].\n[free] Exhaust Beat Cop and deal 1 damage to it: Deal 1 damage to an enemy at your location.",
       "traits": "Ally. Police.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/01028.jpg"
     },
     {
       "code": "01029",
@@ -395,7 +416,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (2 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +3 [combat] for this attack. Instead of its standard damage, this attack deals 1 damage for each point you succeed by (to a minimum of 1, to a maximum of 5). If you fail and would damage another investigator, this attack deals 1 damage for each point you fail by (to a minimum of 1, to a maximum of 5).",
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/01029.png"
     },
     {
       "code": "01030",
@@ -413,7 +435,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast.\nYou get +1 [intellect] while investigating.",
       "traits": "Item. Tool.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01030.png"
     },
     {
       "code": "01031",
@@ -430,7 +453,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action] Exhaust Old Book of Lore: Choose an investigator at your location. That investigator searches the top 3 cards of his or her deck for a card, draws it, and shuffles the remaining cards into his or her deck.",
       "traits": "Item. Tome.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01031.png"
     },
     {
       "code": "01032",
@@ -450,7 +474,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After Research Librarian enters play: Search your deck for a <i>Tome</i> asset and add it to your hand. Shuffle your deck.",
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01032.png"
     },
     {
       "code": "01033",
@@ -472,7 +497,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +1 [intellect].\n[reaction] After you successfully investigate: Gain 1 resource.",
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01033.png"
     },
     {
       "code": "01034",
@@ -489,7 +515,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[free] Spend 1 resource: You get +1 [intellect] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this skill test.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01034.png"
     },
     {
       "code": "01035",
@@ -506,7 +533,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action] Choose an investigator at your location and test [intellect] (2). If you succeed, heal 1 damage from that investigator. If you fail, deal 1 damage to that investigator.",
       "traits": "Item. Tome.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01035.jpg"
     },
     {
       "code": "01040",
@@ -524,7 +552,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast.\nYou get +1 [intellect] while investigating.\n[free] If there are no clues on your location: Return Magnifying Glass to your hand.",
       "traits": "Item. Tool.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/01040.png"
     },
     {
       "code": "01041",
@@ -546,7 +575,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] When a non-<i>Elite</i> enemy spawns at your location, discard Disc of Itzamna: Discard that enemy.",
       "traits": "Item. Relic.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/01041.jpg"
     },
     {
       "code": "01042",
@@ -564,7 +594,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action] Exhaust Encyclopedia: Choose an investigator at your location. That investigator gets +2 to a skill of your choice until the end of the phase.",
       "traits": "Item. Tome.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/01042.png"
     },
     {
       "code": "01044",
@@ -581,7 +612,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast.\n[action]: <b>Fight.</b> If you succeed by 2 or more, this attack deals +1 damage.",
       "traits": "Item. Weapon. Melee. Illicit.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01044.jpg"
     },
     {
       "code": "01045",
@@ -597,7 +629,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action] Exhaust Burglary: <b>Investigate.</b> If you succeed, instead of discovering clues, gain 3 resources.",
       "traits": "Talent. Illicit.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01045.png"
     },
     {
       "code": "01046",
@@ -613,7 +646,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After you evade an enemy, exhaust Pickpocketing: Draw 1 card.",
       "traits": "Talent. Illicit.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01046.png"
     },
     {
       "code": "01047",
@@ -630,7 +664,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +2 [combat] for this attack. If you succeed by 2 or more, this attack deals +1 damage.",
       "traits": "Item. Weapon. Firearm. Illicit.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01047.jpg"
     },
     {
       "code": "01048",
@@ -652,7 +687,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You may take an additional action during your turn.",
       "traits": "Ally. Criminal.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01048.png"
     },
     {
       "code": "01049",
@@ -669,7 +705,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[free] Spend 1 resource: You get +1 [combat] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this skill test.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01049.jpg"
     },
     {
       "code": "01054",
@@ -691,7 +728,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You may take an additional action during your turn.",
       "traits": "Ally. Criminal.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/01054.jpg"
     },
     {
       "code": "01055",
@@ -711,7 +749,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +1 [agility].\n[action] Exhaust Cat Burglar: Disengage from each enemy engaged with you and move to a connecting location. This action does not provoke attacks of opportunity.",
       "traits": "Ally. Criminal.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/01055.jpg"
     },
     {
       "code": "01058",
@@ -727,7 +766,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (4 secrets).\n[free] Exhaust Forbidden Knowledge and take 1 horror: Move 1 secret from Forbidden Knowledge to your resource pool, as a resource.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01058.jpg"
     },
     {
       "code": "01059",
@@ -746,7 +786,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +1 [willpower].",
       "traits": "Item. Charm.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01059.png"
     },
     {
       "code": "01060",
@@ -763,7 +804,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (4 charges).\n[action] Spend 1 charge: <b>Fight.</b> This attack uses [willpower] instead of [combat] and deals +1 damage. If a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol is revealed during this check, take 1 horror.",
       "traits": "Spell.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01060.png"
     },
     {
       "code": "01061",
@@ -780,7 +822,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 charges).\n[action] Exhaust Scrying and spend 1 charge: Look at the top 3 cards of any investigator's deck or the encounter deck. Return them to the top of that deck in any order.",
       "traits": "Spell.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01061.png"
     },
     {
       "code": "01062",
@@ -797,7 +840,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [intellect] for this skill test.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01062.jpg"
     },
     {
       "code": "01063",
@@ -816,7 +860,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Forced</b> - After Arcane Initiate enters play: Place 1 doom on it.\n[free] Exhaust Arcane Initiate: Search the top 3 cards of your deck for a <i>Spell</i> card and draw it. Shuffle your deck.",
       "traits": "Ally. Sorcerer.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01063.png"
     },
     {
       "code": "01070",
@@ -834,7 +879,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You have 1 additional arcane slot.\n[action] Exhaust Book of Shadows: Add 1 charge to a <i>Spell</i> asset you control.",
       "traits": "Item. Tome.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/01070.jpg"
     },
     {
       "code": "01071",
@@ -851,7 +897,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (4 charges). If Grotesque Statue has no charges, discard it.\n[reaction] When you would reveal a chaos token, spend 1 charge: Reveal 2 chaos tokens instead of 1. Choose 1 of those tokens to resolve, and ignore the other.",
       "traits": "Item. Relic.",
       "type_code": "asset",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/01071.png"
     },
     {
       "code": "01072",
@@ -869,7 +916,8 @@ export const lookup: {[string]: Array<Card>} = {
       "slot": "Body",
       "traits": "Item. Armor.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01072.jpg"
     },
     {
       "code": "01073",
@@ -885,7 +933,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After you successfully investigate by 2 or more, exhaust Scavenging: Choose an <i>Item</i> card in your discard pile and add it to your hand.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01073.png"
     },
     {
       "code": "01074",
@@ -902,7 +951,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action]: <b>Fight.</b> You get +2 [combat] for this attack. This attack deals +1 damage. If a [skull] or [auto_fail] symbol is revealed during this attack, discard Baseball Bat after the attack resolves.",
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01074.png"
     },
     {
       "code": "01075",
@@ -920,7 +970,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After you fail a skill test, exhaust Rabbit's Foot: Draw 1 card.",
       "traits": "Item. Charm.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01075.png"
     },
     {
       "code": "01076",
@@ -939,7 +990,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[free] Discard Stray Cat: Automatically evade a non-<i>Elite</i> enemy at your location.",
       "traits": "Ally. Creature.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01076.png"
     },
     {
       "code": "01077",
@@ -956,7 +1008,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this skill test.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01077.png"
     },
     {
       "code": "01082",
@@ -978,7 +1031,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] When an enemy attacks you, exhaust Aquinnah and deal 1 horror to her: Deal that enemy's damage to another enemy at your location, instead. (You still take horror dealt by the attack.)",
       "traits": "Ally.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/01082.png"
     },
     {
       "code": "01086",
@@ -995,7 +1049,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action]: <b>Fight.</b> You get +1 [combat] for this attack.\n[action] Discard Knife: <b>Fight.</b> You get +2 [combat] for this attack. This attack deals +1 damage.",
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01086.png"
     },
     {
       "code": "01087",
@@ -1012,7 +1067,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 supplies).\n[action] Spend 1 supply: <b>Investigate.</b> Your location gets -2 shroud for this investigation.",
       "traits": "Item. Tool.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01087.png"
     },
     {
       "code": "01094",
@@ -1031,7 +1087,8 @@ export const lookup: {[string]: Array<Card>} = {
       "slot": "Body",
       "traits": "Item. Armor.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/01094.png"
     },
     {
       "code": "01095",
@@ -1050,7 +1107,8 @@ export const lookup: {[string]: Array<Card>} = {
       "slot": "Accessory",
       "traits": "Item. Relic.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/01095.jpg"
     },
     {
       "code": "02006",
@@ -1070,7 +1128,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subname": "Symbol of Righteousness",
       "text": "Zoey Samaras deck only.\n[reaction] After an enemy becomes engaged with you, exhaust Zoey's Cross and spend 1 resource: Deal 1 damage to that enemy.",
       "traits": "Item. Charm.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/02006.jpg"
     },
     {
       "code": "02010",
@@ -1091,7 +1150,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subname": "A Perfect Fit",
       "text": "Jenny Barnes deck only. Uses (X ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +2 [combat] for this attack. This attack deals +1 damage.",
       "traits": "Item. Weapon. Firearm.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/02010.png"
     },
     {
       "code": "02012",
@@ -1112,7 +1172,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subname": "The Dead Listen",
       "text": "Jim Culver deck only.\n[reaction] When a [skull] token is revealed during a skill test, exhaust Jim's Trumpet: Heal 1 horror from an investigator at your location or a connecting location.",
       "traits": "Item. Instrument. Relic.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/02012.jpg"
     },
     {
       "code": "02014",
@@ -1131,7 +1192,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subname": "Loyal Hound",
       "text": "\"Ashcan\" Pete deck only.\n[action] Exhaust Duke: <b>Fight.</b> You attack with a base [combat] skill of 4. This attack deals +1 damage.\n[action] Exhaust Duke: <b>Investigate.</b> You investigate with a base [intellect] skill of 4. You may move to a connecting location immediately before investigating with this effect.",
       "traits": "Ally. Creature.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/02014.png"
     },
     {
       "code": "02016",
@@ -1148,7 +1210,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action]: <b>Fight.</b> You get +1 [combat] for this attack. If you perform this attack against an enemy engaged with another investigator and you fail, you deal no damage.",
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02016.jpg"
     },
     {
       "code": "02020",
@@ -1167,7 +1230,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Your maximum hand size is increased by 2 while checking your hand size during the upkeep phase.\n[reaction] After Laboratory Assistant enters play: Draw 2 cards.",
       "traits": "Ally. Miskatonic. Science.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02020.png"
     },
     {
       "code": "02021",
@@ -1185,7 +1249,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action] Test [intellect] (4). If you succeed, discard Strange Solution and draw 2 cards. Record in your Campaign Log that \"you have identified the solution.\"",
       "traits": "Item. Science.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02021.png"
     },
     {
       "code": "02024",
@@ -1201,7 +1266,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (4 supplies).\n[action] Spend 1 supply: Choose an investigator at your location to heal 1 horror. Then, that investigator tests [willpower] (2). If the test succeeds, he or she heals 1 additional horror. If the test fails, he or she discards 1 card at random from his or her hand.",
       "traits": "Item. Illicit.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02024.jpg"
     },
     {
       "code": "02027",
@@ -1220,7 +1286,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +1 [combat].\n<b>Forced</b> – At the end of the upkeep phase: You must either pay 1 resource or discard Hired Muscle.",
       "traits": "Ally. Criminal.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/02027.jpg"
     },
     {
       "code": "02028",
@@ -1237,7 +1304,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 charges).\n[action] Spend 1 charge: <b>Investigate.</b> Investigate using [willpower] instead of [intellect]. If you succeed, discover 1 additional clue at this location. If a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol is revealed during this test, after this test resolves lose all remaining actions and immediately end your turn.",
       "traits": "Spell.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02028.png"
     },
     {
       "code": "02029",
@@ -1255,7 +1323,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After a [skull], [cultist], [tablet], or [elder_thing] symbol is revealed during a test you are performing: You get +1 skill value for this test.",
       "traits": "Item.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02029.jpg"
     },
     {
       "code": "02030",
@@ -1273,7 +1342,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 charges).\n[action] Spend 1 charge: Heal 1 horror from an investigator at your location.",
       "traits": "Spell.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02030.jpg"
     },
     {
       "code": "02032",
@@ -1290,7 +1360,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action]: <b>Fight.</b> If you have no resources in your resource pool, this attack deals +1 damage.\n[free] During an attack using Fire Axe, spend 1 resource: You get +2 [combat] for this skill test. (Limit three times per attack.)",
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02032.jpg"
     },
     {
       "code": "02033",
@@ -1312,7 +1383,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +1 [agility].\n[reaction] After your turn ends: Heal 1 horror from Peter Sylvestre.",
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02033.png"
     },
     {
       "code": "02035",
@@ -1334,7 +1406,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +1 [agility] and +1 [willpower].\n[reaction] After your turn ends: Heal 1 horror from Peter Sylvestre.",
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02035.png"
     },
     {
       "code": "02036",
@@ -1351,7 +1424,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action]: <b>Fight.</b> You get +1 [combat] for this attack. If you succeed, you may spend 1 additional action to deal +1 damage for this attack.",
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02036.jpg"
     },
     {
       "code": "03107",
@@ -1369,7 +1443,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Combat Training before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [combat] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this test.",
       "traits": "Talent. Composure.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/03107.jpg"
     },
     {
       "code": "03109",
@@ -1387,7 +1462,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Limit 1 <b><i>Composure</i></b> in play.\nNon-direct horror must be assigned to Scientific Theory before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [intellect] for this skill test.\n[free] Spend 1 resource: You get +1 [combat] for this test.",
       "traits": "Talent. Composure.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03109.jpg"
     },
     {
       "code": "03110",
@@ -1405,7 +1481,8 @@ export const lookup: {[string]: Array<Card>} = {
       "flavor": "Up close and personal:\njust the way Naomi liked it.",
       "type_code": "asset",
       "slot": "Hand",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03110.jpg"
     },
     {
       "code": "03111",
@@ -1423,7 +1500,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Moxie before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this test.",
       "traits": "Talent. Composure.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/03111.jpg"
     },
     {
       "code": "03112",
@@ -1444,7 +1522,8 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Patron.",
       "type_code": "asset",
       "slot": "Ally",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03112.jpg"
     },
     {
       "code": "03113",
@@ -1461,7 +1540,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Grounded before it can be assigned to your investigator card.\n[free] During a skill test on a <b><i>Spell</i></b> card, spend 1 resource: You get +1 skill value for this test.",
       "traits": "Talent. Composure.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/03113.jpg"
     },
     {
       "code": "03114",
@@ -1479,7 +1559,8 @@ export const lookup: {[string]: Array<Card>} = {
       "flavor": "Mr. Pawterson always told Wendy things would turn out okay. But then again, Mr. Pawterson was a teddy bear, and he didn't know any better.",
       "type_code": "asset",
       "slot": "Accessory",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03114.jpg"
     },
     {
       "code": "03115",
@@ -1497,7 +1578,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Plucky before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [intellect] for this test.",
       "traits": "Talent. Composure.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/03115.png"
     },
     {
       "code": "02301",
@@ -1515,7 +1597,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +5 [combat] for this attack. This attack deals +2 damage.",
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
-      "xp": 5
+      "xp": 5,
+      "img_src": "img/cards/02301.jpg"
     },
     {
       "code": "02302",
@@ -1536,7 +1619,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] When you draw an encounter card, exhaust Dr. William T. Maleson and place 1 of your clues on your location: Cancel the drawing of that card and shuffle it back into the encounter deck. Then, draw a new card from the top of the encounter deck.",
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02302.jpg"
     },
     {
       "code": "02304",
@@ -1553,7 +1637,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (4 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You may spend any number of additional actions when you perform this attack. You get +2 [combat] for this attack for each action being spent (including this ability's [action] cost). This attack deals +2 damage.",
       "traits": "Item. Weapon. Firearm. Illicit.",
       "type_code": "asset",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/02304.jpg"
     },
     {
       "code": "02305",
@@ -1574,7 +1659,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Exceptional.\n[free] When a phase begins, remove The Gold Pocket Watch from the game: Skip this phase.\n[free] After a phase ends, remove The Gold Pocket Watch from the game: Repeat that phase.",
       "traits": "Item. Relic.",
       "type_code": "asset",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/02305.jpg"
     },
     {
       "code": "02306",
@@ -1592,7 +1678,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (4 charges).\n[action] Spend 1 charge: <b>Fight.</b> This attack uses [willpower] instead of [combat]. You get +3 [willpower] and deal +2 damage for this attack. If a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol is revealed during this attack, take 2 horror.",
       "traits": "Spell.",
       "type_code": "asset",
-      "xp": 5
+      "xp": 5,
+      "img_src": "img/cards/02306.jpg"
     },
     {
       "code": "02308",
@@ -1615,7 +1702,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] When an enemy attacks you, exhaust Aquinnah and deal 1 horror to her: Deal that enemy's damage to any enemy at your location, instead. (You still take horror dealt by the attack.)",
       "traits": "Ally.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02308.jpg"
     },
     {
       "code": "02309",
@@ -1631,7 +1719,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After a skill test is failed, if a skill card you own is committed to that test, exhaust Try and Try Again: Return that skill card to your hand.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02309.jpg"
     },
     {
       "code": "02310",
@@ -1652,7 +1741,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast.\n[reaction] After The Red-Gloved Man enters play: Choose two of your skills. While The Red-Gloved Man is in play, raise the base value of each of those skills to 6.\n<b>Forced</b> - At the end of the mythos phase: Discard The Red-Gloved Man.",
       "traits": "Ally. Conspirator.",
       "type_code": "asset",
-      "xp": 5
+      "xp": 5,
+      "img_src": "img/cards/02310.jpg"
     },
     {
       "code": "99003",
@@ -1670,7 +1760,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subname": "Lord of the Cemetery",
       "text": "<b>Revelation</b> - Put Baron Samedi into play. He cannot leave play while he has less than 3 doom on him.\n<b>Forced</b> – When any amount of damage is placed on an investigator in Baron Samedi's location: Place 1 additional damage on that investigator.\n[free] Exhaust Baron Samedi: Place 1 doom on Baron Samedi. If he has 3 or more doom on him, discard him.",
       "traits": "Avatar.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/99003.png"
     },
     {
       "back_text": "Sophie cannot leave play.\nYou get -1 to each of your skills.\n<b>Forced</b> - If Mark Harrigan has 4 or less damage on him: Flip Sophie.",
@@ -1689,7 +1780,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subname": "In Loving Memory",
       "text": "Mark Harrigan deck only.\nSophie cannot leave play.\n[lightning] Take 1 direct damage: You get +2 to your skill value for this skill test.\n<b>Forced</b> - If Mark Harrigan has 5 or more damage on him: Flip Sophie.",
       "traits": "Item. Spirit",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/03009.png"
     },
     {
       "code": "03010",
@@ -1706,7 +1798,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subname": "Between the Lines",
       "text": "Minh Thi Phan deck only.\nYou may commit 1 card to each skill test performed by an investigator at another location.\n[reaction] After you commit exactly 1 card to a skill test, exhaust Analytical Mind: Draw 1 card.",
       "traits": "Talent.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/03010.png"
     },
     {
       "code": "03011",
@@ -1723,7 +1816,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subname": "Act 1",
       "text": "<b>Revelation</b> - Put The King in Yellow into play in your threat area. It cannot leave play except through the [reaction] ability below.\nYou cannot commit exactly 1 or 2 cards to a skill test.\n[reaction] After a skill test is successful in which Minh Thi Phan has committed at least 6 matching skill icons for that test: Discard The King in Yellow.",
       "traits": "Tome.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/03011.png"
     },
     {
       "code": "03014",
@@ -1742,7 +1836,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subname": "Envoy of the Alusi",
       "text": "Akachi Onyele deck only.\n[lightning] Exhaust Spirit-Speaker: Choose an asset you control with \"uses (charges).\" Either return that asset to your hand, or move all charges from that asset to your resource pool <b>(as resources)</b> and discard that asset.",
       "traits": "Ritual.",
-      "type_code": "asset"
+      "type_code": "asset",
+      "img_src": "img/cards/03014.png"
     },
     {
       "code": "03020",
@@ -1760,7 +1855,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (6 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You deal +1 damage for this attack.",
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03020.jpg"
     },
     {
       "code": "03021",
@@ -1778,7 +1874,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "True Grit may be assigned damage dealt to other investigators at your location.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03021.png"
     },
     {
       "code": "03024",
@@ -1795,7 +1892,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After you move to a location, if that location has at least 1 clue on it, exhaust Fieldwork: You get +2 skill value for the next skill test you perform this phase.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03024.jpg"
     },
     {
       "code": "03025",
@@ -1813,7 +1911,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action] Discard a card with at least 1 [intellect] skill icon from your hand: Place 1 resource on Archaic Glyphs from the token pool, as a secret.\n<b>Forced</b> - After the third secret is placed on Archaic Glyphs: Discard Archaic Glyphs and gain 5 resources. Record in your Campaign Log that \"you have translated the glyphs.\"",
       "traits": "Item. Occult. Tome.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03025.png"
     },
     {
       "code": "03027",
@@ -1829,7 +1928,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 secrets).\n[action] Spend 1 secret: <b>Investigate.</b> Investigate any revealed location in play as if you were at that location.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/03027.png"
     },
     {
       "code": "03028",
@@ -1845,7 +1945,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action] Exhaust Stealth: <b>Evade.</b> The chosen enemy gets -2 evade for this evasion attempt. If you successfully evade the enemy, disengage with it but do not exhaust it. Until the end of your turn, that enemy cannot engage you.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03028.jpg"
     },
     {
       "code": "03031",
@@ -1862,7 +1963,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 supplies). If Lockpicks has no supplies, discard it.\n[action] Exhaust Lockpicks: <b>Investigate.</b> Add your [agility] value to your skill value for this investigation. If you do not succeed by at least 2, remove 1 supply from Lockpicks.",
       "traits": "Item. Tool. Illicit.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/03031.jpg"
     },
     {
       "code": "03032",
@@ -1879,7 +1981,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 charges).\n[action] Exhaust Alchemical Transmutation, spend 1 charge: Test [willpower] (1). For each point you succeed by, gain 1 resource (to a maximum of 3). If a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol is revealed during this test, take 1 damage.",
       "traits": "Spell.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03032.png"
     },
     {
       "code": "03035",
@@ -1896,7 +1999,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[lightning] During a skill test on a <b>Spell</b> card, exhaust Spirit Athame: You get +2 skill value for this test.\n[action] Exhaust Spirit Athame: <b>Fight.</b> You get +2 [combat] for this attack.",
       "traits": "Item. Relic. Weapon. Melee.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/03035.jpg"
     },
     {
       "code": "03036",
@@ -1913,7 +2017,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action]: <b>Investigate.</b> Your location gets -1 shroud for this investigation.\n[action] Discard Lantern: Deal 1 damage to an enemy at your location. This action does not provoke attacks of opportunity.",
       "traits": "Item. Tool.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03036.jpg"
     },
     {
       "code": "03037",
@@ -1931,7 +2036,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[action]: <b>Fight.</b> You get +2 [combat] for this attack.\n[action] Discard Gravedigger's Shovel: Discover 1 clue at your location.",
       "traits": "Item. Tool. Weapon. Melee.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03037.jpg"
     },
     {
       "code": "02147",
@@ -1950,7 +2056,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You have 1 additional hand slot, which can only be used to hold a <b>Weapon</b> asset.",
       "traits": "Item.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02147.jpg"
     },
     {
       "code": "02149",
@@ -1970,7 +2077,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After Art Student enters play: Discover 1 clue at your location.",
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02149.jpg"
     },
     {
       "code": "02152",
@@ -1989,7 +2097,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast.\n[action] <b>Fight.</b> You get +2 [combat] for this attack. If you succeed by 2 or more, this attack deals +1 damage.",
       "traits": "Item. Weapon. Melee. Illicit.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02152.jpg"
     },
     {
       "code": "02154",
@@ -2007,7 +2116,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Uses</b>: 4 charges.\n[Action] Spend one charge: <b>Fight.</b> This attack uses [willpower] instead of [combat]. You get +2 [willpower] and deal +1 damage for this attack. If a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol is revealed during this attack, take 1 horror. ",
       "traits": "Spell.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02154.jpg"
     },
     {
       "code": "02155",
@@ -2025,7 +2135,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +2 [intellect] while investigating if you have no clues.",
       "traits": "Item.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02155.jpg"
     },
     {
       "code": "02157",
@@ -2042,7 +2153,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Permanent.\nYou have 1 additional accessory slot.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02157.jpg"
     },
     {
       "code": "02158",
@@ -2059,7 +2171,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Permanent.\nYou have 1 additional ally slot.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02158.png"
     },
     {
       "code": "02106",
@@ -2079,7 +2192,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +1 [willpower].\nBrother Xavier may be assigned damage and/or horror dealt to other investigators at your location.\nWhen Brother Xavier is defeated: Deal 2 damage to an enemy at your location.",
       "traits": "Ally. ",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/02106.jpg"
     },
     {
       "code": "02108",
@@ -2096,7 +2210,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[free]During your turn, if you are not engaged with any enemies, exhaust Pathfinder: Move to a connecting location.",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/02108.jpg"
     },
     {
       "code": "02110",
@@ -2113,7 +2228,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Permanent.\nIn between each game of a campaign, you may swap up to two level 0 cards out of your deck in exchange for an equal number of level 0 cards. (You must still follow all deckbuilding rules for your investigator).",
       "traits": "Talent.",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/02110.png"
     },
     {
       "code": "02112",
@@ -2131,7 +2247,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (5 charges).\n[action]<b> </b>Spend 1 charge: <b>Fight. </b>This attack uses [willpower] instead of [combat]. You get +1 [willpower] for this attack. If a [skull] symbol is revealed during this attack, this attack deals +2 damage.",
       "traits": "Spell. Song.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02112.jpg"
     },
     {
       "code": "02114",
@@ -2151,7 +2268,8 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tool. Melee.",
       "Slot": "Hand",
       "type_code": "asset",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/02114.png"
     },
     {
       "code": "02116",
@@ -2168,7 +2286,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 supplies).\n[free]Spend 1 supply, exhaust Smoking Pipe, and take 1 damage: Heal 1 horror.",
       "traits": "Item.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02116.jpg"
     },
     {
       "code": "02117",
@@ -2185,7 +2304,27 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 supplies).\n[free]Spend 1 supply, exhaust Painkillers, and take 1 horror: Heal 1 damage.",
       "traits": "Item.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02117.jpg"
+    },
+    {
+      "code": "03147",
+      "cost": 1,
+      "deck_limit": 2,
+      "faction_code": "guardian",
+      "flavor": "It’s seen more violence than most people see in a lifetime.",
+      "illustrator": "John Pacer",
+      "name": "Trench Knife",
+      "pack_code": "tuo",
+      "position": 147,
+      "quantity": 2,
+      "skill_combat": 1,
+      "slot": "Hand",
+      "text": "Engage actions you perform do not provoke attacks of opportunity.\n[action]: <b>Fight.</b> You get +X [combat] for this attack. X is the number of enemies engaged with you.",
+      "traits": "Item. Weapon. Melee.",
+      "type_code": "asset",
+      "xp": 0,
+      "img_src": "img/cards/03147.jpg"
     },
     {
       "code": "03149",
@@ -2206,7 +2345,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You may spend resources to pay for <b>Item</b> assets played by other investigators at your location.\n[lightning] Exhaust Charles Ross, Esq.: Reduce the cost of the next <b>Item</b> asset played by an investigator at your location by 1.",
       "traits": "Ally. Patron.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03149.png"
     },
     {
       "code": "03151",
@@ -2227,7 +2367,26 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "While you have 10 or more resources, you get +1 [willpower] and +1 [intellect].\n[action] If there are no enemies at your location, exhaust Dario El-Amin: Gain 2 resources.",
       "traits": "Ally. Patron.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03151.png"
+    },
+    {
+      "code": "03154",
+      "cost": 3,
+      "deck_limit": 2,
+      "faction_code": "mystic",
+      "illustrator": "Dimitri Bielak",
+      "name": "Book of Shadows",
+      "pack_code": "tuo",
+      "position": 154,
+      "quantity": 2,
+      "skill_intellect": 1,
+      "slot": "Hand",
+      "text": "[action] Exhaust Book of Shadows and spend 1 resource: Add 1 charge to a <i>Spell</i> asset you control.",
+      "traits": "Item. Tome.",
+      "type_code": "asset",
+      "xp": 1,
+      "img_src": "img/cards/03154.jpg"
     },
     {
       "code": "02226",
@@ -2245,7 +2404,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 ammo).\n[action]<b> </b>Spend 1 ammo: <b>Fight</b>. You get +3 [combat] and deal +2 damage for this attack. Cannot be used to attack enemies engaged with you.",
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/02226.jpg"
     },
     {
       "code": "02230",
@@ -2264,7 +2424,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Exceptional.\n[reaction]After you reveal a chaos token, spend 2 resources: Ignore that chaos token and reveal another one to resolve. If that token has a [auto_fail] symbol, remove Lucky Dice from the game.",
       "traits": "Item. Relic.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02230.jpg"
     },
     {
       "code": "02232",
@@ -2285,7 +2446,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You get +1 [intellect].\n[free] Exhaust Alyssa Graham: Look at the top card of either the encounter deck or any player deck. You may then add 1 doom to Alyssa Graham to place the looked-at card on the bottom of its deck.",
       "traits": "Ally. Sorcerer.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02232.jpg"
     },
     {
       "code": "02233",
@@ -2302,7 +2464,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (3 charges).\n[action]Spend 1 charge: <b>Investigate.</b> Investigate using [willpower] instead of [intellect]. You get +2 [willpower] for this test. If successful, you discover 2 additional clues at this location. If a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol is revealed during this test, after this test resolves lose all remaining actions and immediately end your turn.",
       "traits": "Spell.",
       "type_code": "asset",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/02233.png"
     },
     {
       "code": "02234",
@@ -2318,7 +2481,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Limit 1 per investigator.\nDuring the upkeep phase, you may choose to not gain resources.\nWhile you have no resources in your resource pool, you get +1 [willpower], +1 [intellect], +1 [combat], and +1 [agility].",
       "traits": "Condition.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02234.jpg"
     },
     {
       "code": "02262",
@@ -2335,7 +2499,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You can only include this asset in your deck by upgrading it from Strange Solution <i>(Unidentified)</i>, and only if you have \"identified the solution\" in your Campaign Log.\nUses (4 supplies).\n[action] Spend 1 supply: Heal 2 damage from an investigator at your location.",
       "traits": "Item. Science.",
       "type_code": "asset",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/02262.jpg"
     },
     {
       "code": "02263",
@@ -2352,7 +2517,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You can only include this asset in your deck by upgrading it from Strange Solution <i>(Unidentified)</i>, and only if you have \"identified the solution\" in your Campaign Log.\nUses (3 supplies).\n[action] Spend 1 supply: <b>Fight.</b> Attack with a base [combat] skill of 6. This attack deals +2 damage.",
       "traits": "Item. Science.",
       "type_code": "asset",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/02263.jpg"
     },
     {
       "code": "02264",
@@ -2369,7 +2535,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You can only include this asset in your deck by upgrading it from Strange Solution <i>(Unidentified)</i>, and only if you have \"identified the solution\" in your Campaign Log.\nUses (4 supplies).\n[action] Spend 1 supply: <b>Evade.</b> Evade with a base [agility] skill of 6.",
       "traits": "Item. Science.",
       "type_code": "asset",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/02264.jpg"
     },
     {
       "code": "02265",
@@ -2392,7 +2559,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[free] Spend 1 resource: Choose an <b>Item</b> asset from your hand and play it (paying its cost).",
       "traits": "Ally. Criminal.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02265.jpg"
     },
     {
       "code": "02269",
@@ -2411,7 +2579,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol is revealed during a skill test at your location, exhaust Jewel of Aureolus: Draw 1 card or gain 2 resources.",
       "traits": "Item. Relic.",
       "type_code": "asset",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02269.jpg"
     },
     {
       "code": "02272",
@@ -2431,7 +2600,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Reduce the difficulty of skill tests you perform during 'parley' actions by 2.",
       "traits": "Item. Clothing.",
       "type_code": "asset",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02272.jpg"
     }
   ],
   "event": [
@@ -2450,7 +2620,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Search the top 9 cards of your deck for a <i>Weapon</i> asset and add it to your hand. Shuffle your deck.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02184.jpg"
     },
     {
       "code": "02186",
@@ -2467,7 +2638,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Play only if there is a clue on your location.\nDraw 3 cards.",
       "traits": "Insight.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02186.jpg"
     },
     {
       "code": "02194",
@@ -2483,7 +2655,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Gain 3 resources and draw 1 card.",
       "traits": "Supply.",
       "type_code": "event",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02194.png"
     },
     {
       "code": "01010",
@@ -2502,7 +2675,8 @@ export const lookup: {[string]: Array<Card>} = {
       "skill_wild": 2,
       "text": "\"Skids\" O'Toole deck only.\nFast. Play after your turn begins.\nUntil the end of the round, non-<i>Elite</i> enemies cannot attack you.",
       "traits": "Tactic.",
-      "type_code": "event"
+      "type_code": "event",
+      "img_src": "img/cards/01010.jpg"
     },
     {
       "code": "01013",
@@ -2519,7 +2693,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "Place 1 doom on the current agenda. This effect may cause the current agenda to advance.\n<b>Forced</b> - If Dark Memory is in your hand at the end of your turn, reveal it and take 2 horror.",
       "traits": "Spell.",
-      "type_code": "event"
+      "type_code": "event",
+      "img_src": "img/cards/01013.jpg"
     },
     {
       "code": "01022",
@@ -2536,7 +2711,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play after you defeat an enemy.\nDiscover 1 clue at your location.",
       "traits": "Insight.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01022.jpg"
     },
     {
       "code": "01023",
@@ -2553,7 +2729,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when an enemy attacks an investigator at your location.\nCancel that attack.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01023.jpg"
     },
     {
       "code": "01024",
@@ -2569,7 +2746,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Choose either your location or a connecting location. Deal 3 damage to each enemy and to each investigator at the chosen location.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01024.jpg"
     },
     {
       "code": "01026",
@@ -2586,7 +2764,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Place 3 ammo tokens on a <i>Firearm</i> asset controlled by an investigator at your location.",
       "traits": "Supply.",
       "type_code": "event",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/01026.png"
     },
     {
       "code": "01036",
@@ -2603,7 +2782,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play only during your turn.\nUntil the end of the round, you may use your [intellect] in place of your [combat] and [agility].",
       "traits": "Insight.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01036.png"
     },
     {
       "code": "01037",
@@ -2619,7 +2799,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play only during your turn.\nDiscover 1 clue at your location.",
       "traits": "Insight.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01037.jpg"
     },
     {
       "code": "01038",
@@ -2637,7 +2818,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Attach to your location.\nNon-<i>Elite</i> enemies cannot move into attached location.\n<b>Forced</b> - When an investigator leaves attached location: Discard Barricade.",
       "traits": "Insight. Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01038.png"
     },
     {
       "code": "01043",
@@ -2652,7 +2834,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play only during your turn.\nChoose an investigator at your location. That investigator draws 3 cards.",
       "traits": "Insight.",
       "type_code": "event",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/01043.jpg"
     },
     {
       "code": "01050",
@@ -2669,7 +2852,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play only during your turn.\nDisengage from each enemy engaged with you and move to a revealed location with no enemies.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01050.png"
     },
     {
       "code": "01051",
@@ -2686,7 +2870,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Fight.</b> This attack uses [agility] instead of [combat]. This attack deals +2 damage.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01051.png"
     },
     {
       "code": "01052",
@@ -2703,7 +2888,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Deal 2 damage to an exhausted enemy at your location.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01052.jpg"
     },
     {
       "code": "01056",
@@ -2718,7 +2904,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play after you reveal a chaos token with a negative modifier.\nSwitch that token's \"–\" to a \"+\".",
       "traits": "Fortune. Insight.",
       "type_code": "event",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/01056.jpg"
     },
     {
       "code": "01057",
@@ -2735,7 +2922,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Gain 10 resources.",
       "traits": "Fortune.",
       "type_code": "event",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/01057.png"
     },
     {
       "code": "01064",
@@ -2753,7 +2941,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Draw the top card of the encounter deck. Then, discover 2 clues at your location.",
       "traits": "Insight.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01064.jpg"
     },
     {
       "code": "01065",
@@ -2769,7 +2958,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when you draw a non-weakness treachery card.\nCancel that card's revelation effect. Then, take 1 horror.",
       "traits": "Spell. Spirit.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01065.jpg"
     },
     {
       "code": "01066",
@@ -2786,7 +2976,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Evade.</b> This evasion attempt uses [willpower] instead of [agility]. If you succeed, deal 1 damage to the enemy just evaded. If a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol is revealed during this evasion attempt, lose 1 action this turn.",
       "traits": "Spell.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01066.png"
     },
     {
       "code": "01068",
@@ -2803,7 +2994,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play after a phase begins.\nChoose a non-<i>Elite</i> enemy at your location. Treat the chosen enemy's printed text box as if it were blank (except for <i>Traits</i>) until the end of the phase.",
       "traits": "Spell.",
       "type_code": "event",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/01068.jpg"
     },
     {
       "code": "01069",
@@ -2820,7 +3012,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Evade.</b> This evasion attempt uses [willpower] instead of [agility]. If you succeed, deal 2 damage to the enemy just evaded. If a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol is revealed during this evasion attempt, lose 1 action this turn and take 1 horror.",
       "traits": "Spell.",
       "type_code": "event",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/01069.png"
     },
     {
       "code": "01078",
@@ -2838,7 +3031,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Evade.</b> Automatically evade all enemies at your location.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01078.jpg"
     },
     {
       "code": "01079",
@@ -2854,7 +3048,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play after you fail a skill test by 2 or less while investigating.\nDiscover 2 clues in your location.",
       "traits": "Fortune.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01079.jpg"
     },
     {
       "code": "01080",
@@ -2869,7 +3064,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when you would fail a skill test.\nGet +2 to your skill value for that test.",
       "traits": "Fortune.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01080.png"
     },
     {
       "code": "01083",
@@ -2886,7 +3082,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play after a non-weakness, non-<b>Elite</b> enemy at your location is evaded.\nShuffle that enemy into the encounter deck.",
       "traits": "Fortune.",
       "type_code": "event",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/01083.jpg"
     },
     {
       "code": "01084",
@@ -2901,7 +3098,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when you would fail a skill test.\nGet +2 to your skill value for that test. Draw 1 card.",
       "traits": "Fortune.",
       "type_code": "event",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/01084.png"
     },
     {
       "code": "01085",
@@ -2918,7 +3116,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play only during your turn.\nUntil the end of your turn, do not reveal chaos tokens for any skill tests you perform.",
       "traits": "Spirit.",
       "type_code": "event",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/01085.jpg"
     },
     {
       "code": "01088",
@@ -2934,7 +3133,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Gain 3 resources.",
       "traits": "Supply.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01088.jpg"
     },
     {
       "code": "02008",
@@ -2952,7 +3152,8 @@ export const lookup: {[string]: Array<Card>} = {
       "skill_wild": 1,
       "text": "Rex Murphy deck only.\nDraw X cards, where X is the number of clues on Rex Murphy (to a maximum of 5).",
       "traits": "Insight.",
-      "type_code": "event"
+      "type_code": "event",
+      "img_src": "img/cards/02008.jpg"
     },
     {
       "code": "02017",
@@ -2970,7 +3171,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play only during your turn.\nEngage any number of enemies at your location.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02017.jpg"
     },
     {
       "code": "02018",
@@ -2987,7 +3189,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Investigators at your location may give or trade any number of <b>Item</b> assets, <b>Ally</b> assets, or resources among one another.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02018.jpg"
     },
     {
       "code": "02019",
@@ -3006,7 +3209,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play only during your turn.\nEngage any number of enemies at your location. Draw 1 card for each enemy engaged in this way.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02019.jpg"
     },
     {
       "code": "02022",
@@ -3024,7 +3228,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play only during your turn.\nChoose an investigator at your location. Move that investigator to a connecting location.",
       "traits": "Insight. Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02022.png"
     },
     {
       "code": "02023",
@@ -3042,7 +3247,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Investigate.</b> If you succeed, instead of discovering a clue at your location, discover a clue at a connecting location.",
       "traits": "Insight.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02023.jpg"
     },
     {
       "code": "02025",
@@ -3059,7 +3265,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when an enemy would spawn at your location.\nImmediately move to a connecting location. (The enemy still spawns at your previous location.)",
       "traits": "Trick.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02025.png"
     },
     {
       "code": "02031",
@@ -3076,7 +3283,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Evade.</b> This evasion attempt uses [willpower] instead of [agility]. If you succeed and the enemy is non‑<i>Elite</i>, evade it and attach Bind Monster to it.\n[reaction] When attached enemy would ready: Test [willpower] (3). If you succeed, attached enemy does not ready. If you fail, discard Bind Monster.",
       "traits": "Spell.",
       "type_code": "event",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02031.jpg"
     },
     {
       "code": "02034",
@@ -3093,7 +3301,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Evade.</b> If you succeed, if the enemy is non-<i>Elite</i>, evade the enemy and move it to a connecting location.",
       "traits": "Trick.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02034.jpg"
     },
     {
       "code": "03106",
@@ -3110,7 +3319,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when a non-<b><i>Elite</i><b> enemy would attack another investigator at your location.\nEngage that enemy and resolve its attack against you instead. Then, deal it 1 damage.",
       "traits": "Spirit. Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03106.jpg"
     },
     {
       "code": "03108",
@@ -3128,7 +3338,8 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "flavor": "They are just animals like any other. Or so we thought.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03108.jpg"
     },
     {
       "code": "02300",
@@ -3145,7 +3356,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Fight.</b> If this attack succeeds against a non-<i>Elite</i> enemy, defeat that enemy.",
       "traits": "Spirit.",
       "type_code": "event",
-      "xp": 5
+      "xp": 5,
+      "img_src": "img/cards/02300.jpg"
     },
     {
       "code": "02303",
@@ -3162,7 +3374,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Investigate.</b> The difficulty of this skill test is equal to the highest shroud value among revealed locations in play. If you succeed, discover 1 clue from each revealed location in play.",
       "traits": "Insight.",
       "type_code": "event",
-      "xp": 5
+      "xp": 5,
+      "img_src": "img/cards/02303.jpg"
     },
     {
       "code": "02307",
@@ -3179,7 +3392,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when you draw a non-weakness encounter card. \nCancel all of that card's effects and discard it. Then, take 1 horror.",
       "traits": "Spell. Spirit.",
       "type_code": "event",
-      "xp": 5
+      "xp": 5,
+      "img_src": "img/cards/02307.jpg"
     },
     {
       "code": "99002",
@@ -3195,7 +3409,8 @@ export const lookup: {[string]: Array<Card>} = {
       "skill_wild": 2,
       "text": "Marie Lambeau deck only.\nFast. Play when the agenda would advance by reaching its doom threshold.\nUntil the end of the phase, the agenda cannot advance by reaching its doom threshold. Remove Mystifying Song from the game.",
       "traits": "Spell. Song.",
-      "type_code": "event"
+      "type_code": "event",
+      "img_src": "img/cards/99002.png"
     },
     {
       "code": "03012",
@@ -3213,7 +3428,8 @@ export const lookup: {[string]: Array<Card>} = {
       "skill_willpower": 1,
       "text": "Sefina Rousseau deck only.\nCannot be placed beneath Sefina Rousseau.\nPlay The Painted World as an exact copy of a non-exceptional event that is beneath Sefina Rousseau. Remove The Painted World from the game instead of discarding it.",
       "traits": "Spell.",
-      "type_code": "event"
+      "type_code": "event",
+      "img_src": "img/cards/03012.png"
     },
     {
       "code": "03016",
@@ -3232,7 +3448,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "William Yorick deck only.\nFast. Play after a non-<b>Elite</b> enemy at your location is defeated.\nAdd that enemy <i>(and this card)</i> to the victory display.",
       "traits": "Task.",
       "type_code": "event",
-      "victory": 1
+      "victory": 1,
+      "img_src": "img/cards/03016.jpg"
     },
     {
       "code": "03018",
@@ -3248,7 +3465,8 @@ export const lookup: {[string]: Array<Card>} = {
       "skill_wild": 2,
       "text": "Lola Hayes deck only.\nFast. Play only during your turn.\nSwitch your role. Until the end of your turn, reduce the resource cost of the next card you play of your role by 3. Draw 1 card.",
       "traits": "Insight.",
-      "type_code": "event"
+      "type_code": "event",
+      "img_src": "img/cards/03018.png"
     },
     {
       "code": "03022",
@@ -3265,7 +3483,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play after another investigator draws a non-peril encounter card, but before resolving that card's effects.\nYou are considered to have drawn that encounter card, instead. You get +2 to each of your skills while resolving that card's revelation effect.",
       "traits": "Spirit.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03022.png"
     },
     {
       "code": "03023",
@@ -3282,7 +3501,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "One at a time, play up to 3 assets from your hand, reducing the resource cost of each by 1.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/03023.jpg"
     },
     {
       "code": "03026",
@@ -3298,7 +3518,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Choose an investigator at your location. That investigator searches the top 6 cards of his or her deck for a card, draws it, and shuffles his or her deck.",
       "traits": "Insight.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03026.png"
     },
     {
       "code": "03029",
@@ -3315,7 +3536,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play only during your turn.\nPut an <b>Item</b> asset into play from your hand. At the end of your turn, if that asset is still in play, return it to your hand.",
       "traits": "Trick.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03029.png"
     },
     {
       "code": "03030",
@@ -3332,7 +3554,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when you would succeed at a skill test.\nYou get +2 skill value for this test.",
       "traits": "Gambit.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03030.png"
     },
     {
       "code": "03033",
@@ -3349,7 +3572,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Play a <b>Spell</b> or <b>Ritual</b> card from your hand, reducing its resource cost by 3.",
       "traits": "Spirit.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03033.png"
     },
     {
       "code": "03034",
@@ -3367,7 +3591,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Move.</b> Move to any revealed location and reveal a random token from the chaos bag. If you reveal a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol, you must discard an <b>Item</b> or <b>Ally</b> asset you control (if you cannot, take 1 damage).",
       "traits": "Spell.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03034.png"
     },
     {
       "code": "03038",
@@ -3384,7 +3609,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Attach Hiding Spot to any location.\nEach non-<b>Elite</b> enemy at attached location gains aloof.\n<b>Forced</b> - At the end of the enemy phase, if a ready enemy is at attached location: Discard Hiding Spot.",
       "traits": "Tactic. Trick.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03038.jpg"
     },
     {
       "code": "02148",
@@ -3401,7 +3627,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Choose another investigator at your location. Both you and that investigator draw 2 cards and gain 2 resources.",
       "traits": "Spirit.",
       "type_code": "event",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02148.png"
     },
     {
       "code": "02151",
@@ -3418,7 +3645,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Play only if there is a scenario card with a 'resign' ability in play.\n<b>Resign.</b> You get the hell out of here.",
       "traits": "Trick. Spirit.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02151.png"
     },
     {
       "code": "02153",
@@ -3435,7 +3663,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when an enemy attacks an investigator at your location.\nCancel that attack. Then, reveal a random token from the chaos bag. If it has a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol, deal the attacking enemy's damage to itself. ",
       "traits": "Spell.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02153.jpg"
     },
     {
       "code": "02156",
@@ -3451,7 +3680,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Attach to your location.\n During the enemy phase, each enemy that moves does so along the shortest path toward the attached location, instead of to where it would normally move.\n <b>Forced</b> - While attached, at the end of the round: Discard Lure. ",
       "traits": "Trick.",
       "type_code": "event",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/02156.jpg"
     },
     {
       "code": "02105",
@@ -3468,7 +3698,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Choose an investigator at your location. Heal 2 damage from that investigator or from an <i>Ally</i> asset he or she controls.",
       "traits": "Insight. Science.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02105.jpg"
     },
     {
       "code": "02107",
@@ -3486,7 +3717,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Fight</b>. This attack uses [intellect]. You deal +1 damage for this attack for each clue you have (max +3 damage).",
       "traits": "Insight. Tactic.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02107.jpg"
     },
     {
       "code": "02109",
@@ -3504,7 +3736,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Choose an asset controlled by an investigator at your location. Double the number of ammo or supply tokens on that asset.",
       "traits": "Supply. Illicit.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02109.jpg"
     },
     {
       "code": "02111",
@@ -3521,7 +3754,8 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "victory": 1,
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02111.png"
     },
     {
       "code": "02113",
@@ -3538,7 +3772,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play after you fail a skill test by 2 or less while attacking an enemy engaged with you.\nDeal this attack's damage to a different enemy at your location.",
       "traits": "Fortune.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02113.jpg"
     },
     {
       "code": "02115",
@@ -3556,7 +3791,26 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Either (choose one):\n- <b>Fight</b>. You get +3 [combat] and deal +2 damage for this attack. Exile Flare.\n- Search the top 9 cards of any investigator's deck for an <i>Ally</i> asset and put it into play under your control. Then, exile Flare. Shuffle the searched deck.",
       "traits": "Tactic.",
       "type_code": "event",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/02115.png"
+    },
+    {
+      "code": "03148",
+      "cost": 2,
+      "deck_limit": 2,
+      "faction_code": "guardian",
+      "illustrator": "Monztre",
+      "name": "Ambush",
+      "pack_code": "tuo",
+      "position": 148,
+      "quantity": 2,
+      "skill_combat": 1,
+      "skill_intellect": 1,
+      "text": "Attach to your location.\nIf there are no investigators at attached location, discard Ambush.\n<b>Forced</b> - After an enemy spawns at attached location: Deal 2 damage to that enemy and discard Ambush.",
+      "traits": "Tactic.",
+      "type_code": "event",
+      "xp": 1,
+      "img_src": "img/cards/03148.jpg"
     },
     {
       "code": "03150",
@@ -3573,7 +3827,60 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when you draw a non-weakness treachery card.\nPlace 1 of your clues on your location. Then, cancel that card's revelation effect.",
       "traits": "Insight.",
       "type_code": "event",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/03150.png"
+    },
+    {
+      "code": "03152",
+      "cost": 2,
+      "deck_limit": 2,
+      "faction_code": "rogue",
+      "illustrator": "Stanislav Dikolenko",
+      "name": "Sneak Attack",
+      "pack_code": "tuo",
+      "position": 152,
+      "quantity": 2,
+      "skill_combat": 2,
+      "skill_intellect": 1,
+      "text": "Deal 2 damage to an enemy not engaged with you at your location.",
+      "traits": "Tactic.",
+      "type_code": "event",
+      "xp": 2,
+      "img_src": "img/cards/03152.jpg"
+    },
+    {
+      "code": "03153",
+      "cost": 3,
+      "deck_limit": 2,
+      "faction_code": "mystic",
+      "illustrator": "Monztre",
+      "name": "Storm of Spirits",
+      "pack_code": "tuo",
+      "position": 153,
+      "quantity": 2,
+      "skill_combat": 1,
+      "skill_willpower": 1,
+      "text": "<b>Fight.</b> This attack uses [willpower] instead of [combat]. If you succeed, instead of its standard damage, this attack deals 2 damage to each enemy at your location <i>(any additional damage is dealt to the attacked enemy)</i>. If a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] token is revealed during this attack, deal 1 damage to each investigator at your location.",
+      "traits": "Spell.",
+      "type_code": "event",
+      "xp": 0,
+      "img_src": "img/cards/03153.jpg"
+    },
+    {
+      "code": "03155",
+      "cost": 1,
+      "deck_limit": 2,
+      "faction_code": "survivor",
+      "illustrator": "Priscilla Kim",
+      "name": "Fight or Flight",
+      "pack_code": "tuo",
+      "position": 155,
+      "quantity": 2,
+      "text": "Fast. Play only during your turn.\nUntil the end of the round, you get +X [combat] and +X [agility], where X is the amount of horror on you.",
+      "traits": "Spirit.",
+      "type_code": "event",
+      "xp": 0,
+      "img_src": "img/cards/03155.jpg"
     },
     {
       "code": "03156",
@@ -3590,7 +3897,45 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when an investigator at your location draws a non-weakness treachery card.\nCancel that card's revelation effect. Exile A Test of Will.",
       "traits": "Spirit.",
       "type_code": "event",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/03156.png"
+    },
+    {
+      "code": "03157",
+      "cost": 1,
+      "deck_limit": 2,
+      "faction_code": "survivor",
+      "flavor": "\"That was my favorite hat!\"",
+      "illustrator": "John Pacer",
+      "name": "Devil's Luck",
+      "pack_code": "tuo",
+      "position": 157,
+      "quantity": 2,
+      "skill_agility": 1,
+      "text": "Fast. Play when you are dealt damage and/or horror.\nCancel up to 10 damage and/or horror just dealt to you. Exile Devil's Luck.",
+      "traits": "Fortune.",
+      "type_code": "event",
+      "xp": 1,
+      "img_src": "img/cards/03157.jpg"
+    },
+    {
+      "code": "03158",
+      "cost": 1,
+      "deck_limit": 2,
+      "faction_code": "neutral",
+      "flavor": "\"Operator, I’m gonna need you to hang up.\"",
+      "illustrator": "Adam Lane",
+      "name": "Calling in Favors",
+      "pack_code": "tuo",
+      "position": 158,
+      "quantity": 2,
+      "skill_agility": 1,
+      "skill_intellect": 1,
+      "text": "Choose an <i>Ally</i> asset you control and return it to your hand. Then, search the top 9 cards of your deck for an <i>Ally</i> asset and play it, reducing its cost by X. X is the cost of the <i>Ally</i> asset returned to your hand. Shuffle your deck.",
+      "traits": "Favor.",
+      "type_code": "event",
+      "xp": 0,
+      "img_src": "img/cards/03158.jpg"
     },
     {
       "code": "02225",
@@ -3607,7 +3952,8 @@ export const lookup: {[string]: Array<Card>} = {
       "skill_willpower": 1,
       "text": "Fast. Play after you defeat a <i>Monster</i> enemy.\nEach investigator at your location heals horror equal to that enemy's horror value.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02225.jpg"
     },
     {
       "code": "02228",
@@ -3624,7 +3970,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play during any [free] player window.\nChoose an enemy at your location. Test [intellect] (X), where X is that enemy's fight value. For each point you succeed by, reduce that enemy's fight value by 1 for the next attack performed against it this phase.",
       "traits": "Insight.",
       "type_code": "event",
-      "xp": 1
+      "xp": 1,
+      "img_src": "img/cards/02228.jpg"
     },
     {
       "code": "02261",
@@ -3641,7 +3988,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play when you are dealt damage and/or horror.\nCancel up to 5 damage and/or horror just dealt to you. Then, gain that many resources.",
       "traits": "Spirit.",
       "type_code": "event",
-      "xp": 4
+      "xp": 4,
+      "img_src": "img/cards/02261.jpg"
     },
     {
       "code": "02266",
@@ -3657,7 +4005,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Exceptional. Fast. Play only during your turn.\nYou may take an additional 3 actions this turn.",
       "traits": "Trick.",
       "type_code": "event",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02266.jpg"
     },
     {
       "code": "02267",
@@ -3674,7 +4023,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Remove all doom from 1 card you control.",
       "traits": "Spell. Insight.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02267.jpg"
     },
     {
       "code": "02270",
@@ -3691,7 +4041,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Choose an <b>Ally</b> asset in any player's discard pile. Put that asset into play under your control. At the end of the round, if that asset is still in play, discard it.",
       "traits": "Fortune.",
       "type_code": "event",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02270.jpg"
     },
     {
       "code": "02273",
@@ -3707,7 +4058,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Play only if there are no enemies at your location.\nHeal 3 horror and draw 1 card.",
       "traits": "Spirit.",
       "type_code": "event",
-      "xp": 3
+      "xp": 3,
+      "img_src": "img/cards/02273.jpg"
     }
   ],
   "skill": [
@@ -3725,7 +4077,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Before revealing chaos tokens for this test, choose one of the following symbols: ([skull], [cultist], [tablet], or [elder_thing]). Ignore the effects of the chosen symbol during this test (including its modifier).",
       "traits": "Innate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02190.jpg"
     },
     {
       "code": "02192",
@@ -3740,7 +4093,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Commit only to a skill test you are performing, and only if the difficulty of that test is at least 2 higher than your base skill value.",
       "traits": "Innate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02192.jpg"
     },
     {
       "code": "01025",
@@ -3756,7 +4110,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "If this skill test is successful during an attack, that attack deals +1 damage.",
       "traits": "Practiced.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01025.jpg"
     },
     {
       "code": "01039",
@@ -3772,7 +4127,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "If this skill test is successful while investigating a location, discover 1 additional clue at that location.",
       "traits": "Practiced.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01039.jpg"
     },
     {
       "code": "01053",
@@ -3787,7 +4143,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Commit only to a skill test you are performing.\nIf you succeed by 3 or more, return Opportunist to your hand after this test instead of discarding it.",
       "traits": "Innate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01053.jpg"
     },
     {
       "code": "01067",
@@ -3803,7 +4160,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "If this skill test is successful, heal 1 horror.",
       "traits": "Innate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01067.jpg"
     },
     {
       "code": "01081",
@@ -3818,7 +4176,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "If this skill test is successful during an evasion attempt, the evading investigator may immediately disengage from each other enemy engaged with him or her, and may move to a connecting location.",
       "traits": "Innate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01081.jpg"
     },
     {
       "code": "01089",
@@ -3834,7 +4193,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Max 1 committed per skill test.\nIf this test is successful, draw 1 card.",
       "traits": "Innate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01089.jpg"
     },
     {
       "code": "01090",
@@ -3850,7 +4210,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Max 1 committed per skill test.\nIf this test is successful, draw 1 card.",
       "traits": "Practiced.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01090.png"
     },
     {
       "code": "01091",
@@ -3866,7 +4227,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Max 1 committed per skill test.\nIf this test is successful, draw 1 card.",
       "traits": "Practiced.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01091.jpg"
     },
     {
       "code": "01092",
@@ -3882,7 +4244,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Max 1 committed per skill test.\nIf this test is successful, draw 1 card.",
       "traits": "Innate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01092.jpg"
     },
     {
       "code": "01093",
@@ -3898,7 +4261,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Max 1 committed per skill test.",
       "traits": "Innate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/01093.png"
     },
     {
       "code": "02026",
@@ -3913,7 +4277,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Max 1 committed per skill test.\nDouble the difficulty of this skill test. If this skill test is successful, resolve the effects of the successful test twice.",
       "traits": "Fortune.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02026.png"
     },
     {
       "code": "03116",
@@ -3928,7 +4293,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Max 1 committed per skill test.\nCommit to a skill test only if you have 3 or fewer remaining sanity.",
       "traits": "Desperate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03116.jpg"
     },
     {
       "code": "03117",
@@ -3943,7 +4309,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Max 1 committed per skill test.\nCommit to a skill test only if you have 3 or fewer remaining sanity.",
       "traits": "Desperate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03117.jpg"
     },
     {
       "code": "03118",
@@ -3961,7 +4328,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Max 1 committed per skill test.\nCommit to a skill test only if you have 3 or fewer remaining sanity.",
       "traits": "Desperate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03118.jpg"
     },
     {
       "code": "03119",
@@ -3976,7 +4344,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Max 1 committed per skill test.\nCommit to a skill test only if you have 3 or fewer remaining sanity.",
       "traits": "Desperate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03119.png"
     },
     {
       "code": "02299",
@@ -3992,7 +4361,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "If this skill test is successful during an attack, that attack deals +1 damage (+2 damage instead if it succeeds by 2 or more).",
       "traits": "Practiced. Expert.",
       "type_code": "skill",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02299.jpg"
     },
     {
       "code": "03007",
@@ -4008,7 +4378,8 @@ export const lookup: {[string]: Array<Card>} = {
       "skill_combat": 4,
       "text": "Mark Harrigan deck only.\nIf this skill test is successful during an attack, move 1 damage from Mark Harrigan to the attacked enemy.",
       "traits": "Practiced. Expert.",
-      "type_code": "skill"
+      "type_code": "skill",
+      "img_src": "img/cards/03007.png"
     },
     {
       "code": "03039",
@@ -4025,7 +4396,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "If this skill test is successful, choose a [survivor] card not named Resourceful in your discard pile. Add the chosen card to your hand.",
       "traits": "Innate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/03039.jpg"
     },
     {
       "code": "02150",
@@ -4042,7 +4414,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "If this skill test is successful while investigating a location, discover 1 additional clue at that location (2 additional clues instead if it succeeds by 2 or more).",
       "traits": "Practiced. Expert.",
       "type_code": "skill",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02150.jpg"
     },
     {
       "code": "02227",
@@ -4058,7 +4431,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Commit to a skill test only if there is a clue at your location.",
       "traits": "Innate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02227.jpg"
     },
     {
       "code": "02229",
@@ -4073,7 +4447,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "If this skill test is successful by 2 or more, after it resolves, you may immediately take an action as if it were your turn (this action does not count toward the number of actions you can take each turn).",
       "traits": "Innate.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02229.png"
     },
     {
       "code": "02231",
@@ -4088,7 +4463,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Commit only to a skill test you are performing.\nIf you succeed by 2 or more, return Opportunist to your hand after this test instead of discarding it.",
       "traits": "Innate. Developed.",
       "type_code": "skill",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02231.jpg"
     },
     {
       "code": "02235",
@@ -4103,7 +4479,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "If this test is successful during an evasion attempt, the evading investigator may immediately evade each other enemy engaged with him or her, and may move to a connecting location.",
       "traits": "Innate. Developed.",
       "type_code": "skill",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02235.jpg"
     },
     {
       "code": "02260",
@@ -4118,7 +4495,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "While Leadership is committed to a skill test being performed by another investigator, Leadership gains [willpower] [wild].",
       "traits": "Practiced.",
       "type_code": "skill",
-      "xp": 0
+      "xp": 0,
+      "img_src": "img/cards/02260.jpg"
     },
     {
       "code": "02268",
@@ -4134,7 +4512,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "If this skill test is successful, heal 1 horror (2 horror instead if it succeeds by 2 or more).",
       "traits": "Innate. Developed.",
       "type_code": "skill",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02268.jpg"
     },
     {
       "code": "02271",
@@ -4150,7 +4529,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Commit only to a skill test you are performing.\nAfter revealing chaos tokens for this test, you may choose to exile Stroke of Luck. If you do, this test is automatically successful (unless a [auto_fail] token was revealed).",
       "traits": "Innate. Fortune.",
       "type_code": "skill",
-      "xp": 2
+      "xp": 2,
+      "img_src": "img/cards/02271.jpg"
     }
   ],
   "treachery": [
@@ -4167,7 +4547,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> - Put Cover Up into play in your threat area, with 3 clues on it.\n[reaction] When you would discover 1 or more clues at your location: Discard that many clues from Cover Up instead.\n<b>Forced</b> - When the game ends, if there are any clues on Cover Up: You suffer 1 mental trauma.",
       "traits": "Task.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/01007.png"
     },
     {
       "code": "01011",
@@ -4182,7 +4563,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> - Put Hospital Debts into play in your threat area.\n[free]: Move 1 resource from your resource pool to Hospital Debts. (Limit twice per round.)\n<b>Forced</b> - When the game ends, if Hospital Debts has fewer than 6 resources on it: You earn 2 fewer experience for this scenario.",
       "traits": "Task.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/01011.png"
     },
     {
       "code": "01015",
@@ -4197,7 +4579,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> - Take 2 direct horror and remove all cards in your discard pile from the game.",
       "traits": "Madness.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/01015.png"
     },
     {
       "code": "01096",
@@ -4212,7 +4595,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "basicweakness",
       "text": "<b>Revelation</b> - Choose and discard all but 1 card from your hand.",
       "traits": "Madness.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/01096.png"
     },
     {
       "code": "01097",
@@ -4227,7 +4611,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "basicweakness",
       "text": "<b>Revelation</b> - Discard all your resources.",
       "traits": "Madness.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/01097.png"
     },
     {
       "code": "01098",
@@ -4241,7 +4626,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "basicweakness",
       "text": "<b>Revelation</b> - Add Haunted to your threat area.\nYou get -1 to each of your skills.\n[action][action]: Discard Haunted.",
       "traits": "Curse.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/01098.jpg"
     },
     {
       "code": "01099",
@@ -4255,7 +4641,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "basicweakness",
       "text": "<b>Revelation</b> - Add Psychosis to your threat area.\n<b>Forced</b> - After you take 1 or more horror: Take 1 direct damage.\n[action][action]: Discard Psychosis.",
       "traits": "Madness.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/01099.jpg"
     },
     {
       "code": "01100",
@@ -4269,7 +4656,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "basicweakness",
       "text": "<b>Revelation</b> - Add Hypochondria to your threat area.\n<b>Forced</b> - After you take 1 or more damage: Take 1 direct horror.\n[action][action]: Discard Hypochondria.",
       "traits": "Madness.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/01100.jpg"
     },
     {
       "code": "02007",
@@ -4284,7 +4672,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> – Discard cards from the top of the encounter deck until an enemy is discarded. Attach Smite the Wicked to that enemy and spawn it at the location farthest from you.\n<b>Forced</b> – When the game ends, if attached enemy is in play: You suffer 1 mental trauma.",
       "traits": "Task.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/02007.jpg"
     },
     {
       "code": "02009",
@@ -4299,7 +4688,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> - Put Rex's Curse into play in your threat area.\n<b>Forced</b> - When you would succeed at a skill test: Return the revealed chaos token to the bag and reveal a new chaos token. If this effect causes you to fail the test, shuffle Rex's Curse into your deck. (Limit once per test.)",
       "traits": "Curse.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/02009.png"
     },
     {
       "code": "02011",
@@ -4314,7 +4704,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> - Attach Searching for Izzie to the location farthest from you.\n[action][action]: <b>Investigate</b>. If you succeed, instead of discovering clues, discard Searching for Izzie.\n<b>Forced</b> - When the game ends, if Searching for Izzie is in play: You suffer 1 mental trauma.",
       "traits": "Task.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/02011.png"
     },
     {
       "code": "02013",
@@ -4330,7 +4721,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> - Reveal 5 chaos tokens from the chaos bag. For each [skull] and [auto_fail] token revealed, take 1 damage and 1 horror.",
       "traits": "Endtimes.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/02013.png"
     },
     {
       "code": "02015",
@@ -4345,7 +4737,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> - Exhaust all assets you control and put Wracked by Nightmares into play in your threat area.\nAssets you control cannot ready.\n[action][action]: Discard Wracked by Nightmares.",
       "traits": "Madness.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/02015.jpg"
     },
     {
       "code": "02037",
@@ -4360,7 +4753,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "basicweakness",
       "text": "Permanent.\nYou start each game with 2 fewer resources.",
       "traits": "Flaw.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/02037.jpg"
     },
     {
       "code": "02038",
@@ -4374,7 +4768,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "basicweakness",
       "text": "<b>Revelation</b> - Place Internal Injury into play in your threat area.\n<b>Forced</b> - At the end of your turn: Take 1 direct damage.\n[action][action]: Discard Internal Injury.",
       "traits": "Injury.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/02038.jpg"
     },
     {
       "code": "02039",
@@ -4388,7 +4783,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "basicweakness",
       "text": "<b>Revelation</b> - Place Chronophobia into play in your threat area.\n<b>Forced</b> - At the end of your turn: Take 1 direct horror.\n[action][action]: Discard Chronophobia.",
       "traits": "Madness.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/02039.jpg"
     },
     {
       "code": "03008",
@@ -4404,7 +4800,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> - For every 2 damage on you, take 1 horror.",
       "traits": "Flaw.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/03008.png"
     },
     {
       "code": "03013",
@@ -4419,7 +4816,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> - Randomly choose an event beneath Sefina Rousseau and remove it from the game. If you cannot, take 1 damage and 1 horror. If your deck has 5 or more cards in it, shuffle Stars of Hyades back into your deck instead of discarding it.",
       "traits": "Curse.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/03013.png"
     },
     {
       "code": "03015",
@@ -4434,7 +4832,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> - Put Angered Spirits into play in your threat area.\n[lightning] Exhaust a <b>Spell</b> asset: Move 1 charge from that asset to Angered Spirits.\n<b>Forced</b> - When the game ends, if Angered Spirits has fewer than 4 charges on it: You suffer 1 physical trauma.",
       "traits": "Task.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/03015.jpg"
     },
     {
       "code": "03019",
@@ -4450,7 +4849,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "weakness",
       "text": "<b>Revelation</b> - Discard all cards you control of your current role. Then, discard the top card of your deck. Switch your role to the class of the discarded card (if the discarded card is a weakness, switch your role to neutral).",
       "traits": "Madness.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/03019.png"
     },
     {
       "code": "03040",
@@ -4465,7 +4865,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "basicweakness",
       "text": "<b>Revelation</b> - Draw the top card of the encounter deck. That card gains surge.",
       "traits": "Flaw.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/03040.jpg"
     },
     {
       "code": "03041",
@@ -4479,7 +4880,8 @@ export const lookup: {[string]: Array<Card>} = {
       "subtype_code": "basicweakness",
       "text": "<b>Revelation</b> - Put Drawing the Sign into play in your threat area.\nYour maximum hand size is reduced by 5 while checking your hand size during the upkeep phase.\n[action][action]: Discard Drawing the Sign.",
       "traits": "Pact. Madness.",
-      "type_code": "treachery"
+      "type_code": "treachery",
+      "img_src": "img/cards/03041.jpg"
     }
   ]
 };

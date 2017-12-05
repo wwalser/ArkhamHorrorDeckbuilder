@@ -3,6 +3,7 @@
 import fs from 'fs';
 import cards, {PLAYER_CARD_TYPES} from '../cards';
 import type {Card} from '../cards';
+import type {FileList} from './grabber.js';
 
 // Flatten a list of cards
 const allCards = Object.keys(cards).reduce(
@@ -15,6 +16,16 @@ const allPlayerCards = allCards.filter(
 const investigatorCards = allCards.filter(
   card => card.type_code === 'investigator',
 );
+
+function injectCardImages(imageFileList) {
+  allPlayerCards.forEach((card, index) => {
+    card['img_src'] = imageFileList[card.code];
+  });
+
+  investigatorCards.forEach((card, index) => {
+    card['img_src'] = imageFileList[card.code];
+  });
+}
 
 function createObjectKeyedOn(keyToIndex, cardList):{[string]: Array<Card>} {
   return cardList.reduce((acc: {[string]: Array<Card>}, card: Card) => {
@@ -69,7 +80,8 @@ function codeString(objectValue) {
   return objectCode + arrayCode + ';\n';
 }
 
-function generate(done: () => void = ()=>{}) {
+function generate(fileList: FileList, done: () => void = ()=>{}) {
+  injectCardImages(fileList);
   const writeFileForHead = (generators) => {
     const generatorName = generators.pop();
     const axisCode = codeString(queryAxisGenerators[generatorName]());

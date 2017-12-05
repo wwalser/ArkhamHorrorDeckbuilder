@@ -2,8 +2,8 @@ require('babel-register');
 const grabber = require('./grabber').default;
 const queryableGenerator = require('./queryable-generator').default;
 
-queryableGenerator(function(){
-  grabber(function(){
-    console.log('done :)')
+grabber(function(fileList){
+  queryableGenerator(fileList, function() {
+    console.log('done :)');
   })
 });

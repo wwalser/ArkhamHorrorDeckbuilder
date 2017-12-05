@@ -55,6 +55,7 @@ export type Card = {
   traits?: string,
   type_code: $Keys<typeof GAME_CARD_TYPES> | $Keys<typeof PLAYER_CARD_TYPES>,
   xp?: number,
+  img_src?: string,
 };
 
 const decks:{[string]: Array<Card>} = {

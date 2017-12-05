@@ -5,6 +5,12 @@ import cards from '../cards';
 import request from 'request';
 import type {Card} from '../cards';
 
+type RequestResult = {
+  headers: {
+    'content-length': ?number,
+  },
+};
+
 const cardDirPrefix = 'img/cards/';
 const cardUrlPrefix = 'https://arkhamdb.com/bundles/cards/';
 
@@ -17,7 +23,7 @@ const download = function(code, callback, extension = '.png'){
   const url = cardUrlPrefix + code + extension;
   const filename = cardDirPrefix + code + extension;
 
-  request.head(url, function(err, res){
+  request.head(url, function(err: ?Error, res: RequestResult){
     if (extension === '.png' && !res.headers['content-length']) {
       download(code, callback, '.jpg');
       return;
@@ -26,7 +32,12 @@ const download = function(code, callback, extension = '.png'){
     }
 
     fs.mkdir(cardDirPrefix, undefined, () => {
-      request(url).pipe(fs.createWriteStream(filename)).on('close', callback);
+      request(url).pipe(
+        fs.createWriteStream(filename),
+      ).on(
+        'close',
+        (err: ?Error) => callback(err, filename),
+      );
     });
   });
 };
@@ -37,24 +48,26 @@ function exists(code, callback, extension = '.png') {
     if (err && err.code === 'ENOENT' && extension === '.png') {
       exists(code, callback, '.jpg');
     } else if (err) {
-      callback(err);
+      callback(err, false, filename);
     } else {
-      callback(null, true);
+      callback(null, true, filename);
     }
   });
 }
 
-function generate(done: () => void = ()=>{}) {
-  let cardsExist = 0;
-  let cardsGrabbed = 0;
+type FileName = string;
+export type FileList = {[code: string]: FileName};
+function generate(done: (files: FileList) => void = ()=>{}) {
+  let cardsExist:FileList = {};
+  let cardsGrabbed:FileList = {};
   const grabCardForHead = (cardList) => {
     const recurse = () => {
       if (cardList.length) {
         grabCardForHead(cardList)
       } else {
-        console.log('Cards grabbbed: ', cardsGrabbed);
-        console.log('Cards Existed: ', cardsExist);
-        done()
+        console.log('Cards grabbbed: ', Object.keys(cardsGrabbed).length);
+        console.log('Cards Existed: ', Object.keys(cardsExist).length);
+        done(Object.assign(cardsExist, cardsGrabbed));
       }
     }
     const {code} = cardList.pop();
@@ -63,16 +76,16 @@ function generate(done: () => void = ()=>{}) {
       console.log(`${cardList.length} cards remaining.`);
     }
 
-    exists(code, (err, doesExist) => {
+    exists(code, (err: ?Error, doesExist: boolean, fileName: string) => {
       if (doesExist) {
-        cardsExist++;
+        cardsExist[code] = fileName;
         recurse();
       } else {
-        download(code, (err: Error) => {
+        download(code, (err: ?Error, fileName: string) => {
           if (err) {
             console.error(`Error on card: ${code}`, err);
           }
-          cardsGrabbed++;
+          cardsGrabbed[code] = fileName;
           setTimeout(recurse, 250);
         });
       }
