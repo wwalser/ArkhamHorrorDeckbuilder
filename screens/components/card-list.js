@@ -2,13 +2,14 @@
 
 import React, { Component } from 'react';
 import {
+  FlatList,
   Text,
   ScrollView,
   Image,
   View,
   StyleSheet,
 } from 'react-native';
-import CardItem from './card-item';
+import CardItem, {CARD_HEIGHT} from './card-item';
 import {lookup as cards} from '../../query/name';
 
 import type {Card} from '../../cards';
@@ -29,48 +30,28 @@ type Props = {
   currentDeck: DeckList,
 };
 
-export default class CardList extends Component<Props, {
-  cardsToShow: Array<Card>,
-}> {
-  constructor(props: Props) {
-    super(props);
-    this.state = {
-      cardsToShow: allCards.slice(0, 10),
-    };
-  }
-  componentDidMount() {
-    this.renderMore();
-  }
-  componentDidUpdate() {
-    this.renderMore();
-  }
-  renderMore() {
-    const numShowing = this.state.cardsToShow.length;
-    if (numShowing < allCards.length) {
-      const numToShow = numShowing + Math.min(numShowing + 5, allCards.length);
-      setTimeout(() => {
-        this.setState({
-          cardsToShow: allCards.slice(0, numToShow),
-        });
-      }, 100);
-    }
-  }
+export default class CardList extends Component<Props> {
   render() {
     const {addCard, removeCard, currentDeck} = this.props;
 
     return (
       <View>
-        <ScrollView>
-          {this.state.cardsToShow.map((card) => (
+        <FlatList
+          data={allCards}
+          keyExtractor={card => card.code}
+          extraData={this.props.currentDeck}
+          getItemLayout={(data, index) => (
+            {length: CARD_HEIGHT, offset: CARD_HEIGHT * index, index}
+          )}
+          renderItem={({item}) => (
             <CardItem
-              key={card.code}
-              card={card}
+              card={item}
               onAdd={addCard}
               onRemove={removeCard}
-              isInDeck={!!currentDeck[card.code]}
+              isInDeck={!!currentDeck[item.code]}
             />
-          ))}
-        </ScrollView>
+          )}
+        />
       </View>
     );
   }

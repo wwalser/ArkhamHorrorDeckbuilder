@@ -13,6 +13,8 @@ import {
 import type {Card} from '../../cards';
 import type {AddCardDispatcher, RemoveCardDispatcher} from '../../store/deck';
 
+export const CARD_HEIGHT = 100;
+
 const factions = {
   guardian: require('../../img/guardian.png'),
   rogue: require('../../img/rogue.png'),
@@ -35,7 +37,7 @@ export default class CardItem extends React.PureComponent<Props> {
     } else {
       this.props.onAdd(this.props.card);
     }
-  }
+  };
   render() {
     //alignItems
     const {
@@ -71,7 +73,7 @@ export default class CardItem extends React.PureComponent<Props> {
 const style = StyleSheet.create({
   cardItem: {
     justifyContent: 'space-between',
-    height: 100,
+    height: CARD_HEIGHT,
     paddingRight: 10,
     paddingLeft: 10,
     paddingBottom: 3,
