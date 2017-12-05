@@ -34,30 +34,26 @@ type State = {
 };
 
 class AppContainer extends Component<{}, State> {
-  startTransition: () => void;
-  closeThrobber: () => void;
   RootNavigator: *;
   constructor(props: {}) {
     super(props);
     this.state = {
       transitioning: false,
     };
-    this.startTransition = this._startTransition.bind(this);
-    this.closeThrobber = this._closeThrobber.bind(this);
     this.RootNavigator = StackNavigator(navigationConfig, {
       onTransitionStart: () => this.setState({transitioning: false}),
     })
   }
-  _startTransition() {
+  startTransition = () => {
     this.setState({
       transitioning: true,
     });
-  }
-  _closeThrobber() {
+  };
+  closeThrobber = () => {
     this.setState({
       transitioning: false,
     });
-  }
+  };
   render() {
     const RootNavigator = this.RootNavigator;
     return (

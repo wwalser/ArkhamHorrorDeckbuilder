@@ -29,12 +29,7 @@ type Props = {
 };
 
 export default class CardItem extends React.PureComponent<Props> {
-  onPress: AddCardDispatcher | RemoveCardDispatcher;
-  constructor(props: Props) {
-    super(props);
-    this.onPress = this._onPress.bind(this);
-  }
-  _onPress() {
+  onPress = () => {
     if (this.props.isInDeck) {
       this.props.onRemove(this.props.card);
     } else {

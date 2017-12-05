@@ -19,18 +19,13 @@ type Props = {
 };
 
 export default class HomeScreen extends Component<Props> {
-  buildDeck: () => void;
-  constructor(props: Props) {
-    super(props);
-    this.buildDeck = this._buildDeck.bind(this);
-  }
-  _buildDeck() {
+  buildDeck = () => {
     this.props.screenProps.startTransition();
     setTimeout(
       () => this.props.navigation.navigate('DeckBuilder'),
       10,
     );
-  }
+  };
   render(){
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
