@@ -29,6 +29,8 @@ const download = function(code, callback, extension = '.png'){
       return;
     } else if (!res.headers['content-length']) {
       console.error('No file found for: ', url);
+      callback(new Error('Not found on ArkhamDB.'));
+      return;
     }
 
     fs.mkdir(cardDirPrefix, undefined, () => {
@@ -58,15 +60,17 @@ function exists(code, callback, extension = '.png') {
 type FileName = string;
 export type FileList = {[code: string]: FileName};
 function generate(done: (files: FileList) => void = ()=>{}) {
-  let cardsExist:FileList = {};
-  let cardsGrabbed:FileList = {};
+  const cardsExist:FileList = {};
+  const cardsGrabbed:FileList = {};
+  const cardsNotFound:Array<string> = [];
   const grabCardForHead = (cardList) => {
     const recurse = () => {
       if (cardList.length) {
         grabCardForHead(cardList)
       } else {
         console.log('Cards grabbbed: ', Object.keys(cardsGrabbed).length);
-        console.log('Cards Existed: ', Object.keys(cardsExist).length);
+        console.log('Cards existed: ', Object.keys(cardsExist).length);
+        console.log('Cards not found: ', cardsNotFound);
         done(Object.assign(cardsExist, cardsGrabbed));
       }
     }
@@ -81,11 +85,13 @@ function generate(done: (files: FileList) => void = ()=>{}) {
         cardsExist[code] = fileName;
         recurse();
       } else {
-        download(code, (err: ?Error, fileName: string) => {
+        download(code, (err: ?Error, fileName?: string) => {
           if (err) {
-            console.error(`Error on card: ${code}`, err);
+            console.error(`Error on card: ${code}`, err.message);
+            cardsNotFound.push(code);
+          } else {
+            cardsGrabbed[code] = fileName;
           }
-          cardsGrabbed[code] = fileName;
           setTimeout(recurse, 250);
         });
       }

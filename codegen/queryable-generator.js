@@ -19,11 +19,15 @@ const investigatorCards = allCards.filter(
 
 function injectCardImages(imageFileList) {
   allPlayerCards.forEach((card, index) => {
-    card['img_src'] = imageFileList[card.code];
+    if (imageFileList[card.code]) {
+      card['img_src'] = imageFileList[card.code];
+    }
   });
 
   investigatorCards.forEach((card, index) => {
-    card['img_src'] = imageFileList[card.code];
+    if (imageFileList[card.code]) {
+      card['img_src'] = imageFileList[card.code];
+    }
   });
 }
 
@@ -67,14 +71,21 @@ function topContent() {
     'import type {Card} from \'../cards\';\n';
 }
 
+function requireImages(objectCode: string) {
+  return objectCode.replace(
+    /"(img\/cards\/[\d]+\.((jpg)|(png)))"/g,
+    'require("../$1"),',
+  );
+}
+
 function codeString(objectValue) {
   const strings = Object.keys(objectValue);
 
-  let objectCode = topContent() +
+  const objectCode = topContent() +
     'export const lookup: {[string]: Array<Card>} = ' +
-    JSON.stringify(objectValue, null, 2);
+    requireImages(JSON.stringify(objectValue, null, 2));
 
-  let arrayCode = ';\nexport const values: Array<string> = ' +
+  const arrayCode = ';\nexport const values: Array<string> = ' +
     JSON.stringify(strings, null, 2);
 
   return objectCode + arrayCode + ';\n';

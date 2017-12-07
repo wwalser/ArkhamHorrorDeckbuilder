@@ -24,8 +24,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (4 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +2 combat for this attack. This attack deals +1 damage. Ignore the retaliate keyword for this attack.",
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
-      "xp": 2,
-      "img_src": "img/cards/03190.jpg"
+      "xp": 2
     },
     {
       "code": "01016",
@@ -43,7 +42,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01016.png"
+      "img_src": require("../img/cards/01016.png"),
     }
   ],
   "Pickpocketing": [
@@ -61,8 +60,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast.\n[reaction] After you evade an enemy, exhaust Pickpocketing: Draw 1 card or gain 1 resource. If you succeeded by 2 or more, do both instead.",
       "traits": "Talent. Illicit.",
       "type_code": "asset",
-      "xp": 2,
-      "img_src": "img/cards/03195.jpg"
+      "xp": 2
     },
     {
       "code": "01046",
@@ -79,7 +77,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent. Illicit.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01046.png"
+      "img_src": require("../img/cards/01046.png"),
     }
   ],
   "Prepared for the Worst": [
@@ -99,7 +97,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02184.jpg"
+      "img_src": require("../img/cards/02184.jpg"),
     }
   ],
   "Keen Eye": [
@@ -118,7 +116,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/02185.png"
+      "img_src": require("../img/cards/02185.png"),
     }
   ],
   "Preposterous Sketches": [
@@ -138,7 +136,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02186.jpg"
+      "img_src": require("../img/cards/02186.jpg"),
     }
   ],
   "Higher Education": [
@@ -157,7 +155,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/02187.jpg"
+      "img_src": require("../img/cards/02187.jpg"),
     }
   ],
   "Lone Wolf": [
@@ -177,7 +175,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02188.jpg"
+      "img_src": require("../img/cards/02188.jpg"),
     }
   ],
   "Streetwise": [
@@ -196,7 +194,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/02189.jpg"
+      "img_src": require("../img/cards/02189.jpg"),
     }
   ],
   "Defiance": [
@@ -215,7 +213,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/02190.jpg"
+      "img_src": require("../img/cards/02190.jpg"),
     }
   ],
   "Blood Pact": [
@@ -234,7 +232,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell. Pact.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/02191.png"
+      "img_src": require("../img/cards/02191.png"),
     }
   ],
   "Rise to the Occasion": [
@@ -252,7 +250,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/02192.jpg"
+      "img_src": require("../img/cards/02192.jpg"),
     }
   ],
   "Scrapper": [
@@ -271,7 +269,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/02193.jpg"
+      "img_src": require("../img/cards/02193.jpg"),
     }
   ],
   "Emergency Cache": [
@@ -290,7 +288,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Supply.",
       "type_code": "event",
       "xp": 2,
-      "img_src": "img/cards/02194.png"
+      "img_src": require("../img/cards/02194.png"),
     },
     {
       "code": "01088",
@@ -307,7 +305,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Supply.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01088.jpg"
+      "img_src": require("../img/cards/01088.jpg"),
     }
   ],
   "Roland's .38 Special": [
@@ -330,7 +328,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Roland Banks deck only.\nUses (4 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +1 [combat] for this attack (if there are 1 or more clues on your location, you get +3 [combat], instead). This attack deals +1 damage.",
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
-      "img_src": "img/cards/01006.png"
+      "img_src": require("../img/cards/01006.png"),
     }
   ],
   "Cover Up": [
@@ -348,7 +346,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Put Cover Up into play in your threat area, with 3 clues on it.\n[reaction] When you would discover 1 or more clues at your location: Discard that many clues from Cover Up instead.\n<b>Forced</b> - When the game ends, if there are any clues on Cover Up: You suffer 1 mental trauma.",
       "traits": "Task.",
       "type_code": "treachery",
-      "img_src": "img/cards/01007.png"
+      "img_src": require("../img/cards/01007.png"),
     }
   ],
   "Daisy's Tote Bag": [
@@ -370,7 +368,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Daisy Walker deck only.\nYou have 2 additional hand slots, which can only be used to hold <i>Tome</i> assets.",
       "traits": "Item.",
       "type_code": "asset",
-      "img_src": "img/cards/01008.jpg"
+      "img_src": require("../img/cards/01008.jpg"),
     }
   ],
   "The Necronomicon": [
@@ -390,7 +388,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Put The Necronomicon into play in your threat area, with 3 horror on it. It cannot leave play while it has 1 or more horror on it.\nTreat each [elder_sign] you reveal on a chaos token as a [auto_fail].\n[action]: Move 1 horror from The Necronomicon to Daisy Walker. Then, if The Necronomicon has no horror on it, discard it.",
       "traits": "Item. Tome.",
       "type_code": "asset",
-      "img_src": "img/cards/01009.png"
+      "img_src": require("../img/cards/01009.png"),
     }
   ],
   "On the Lam": [
@@ -412,7 +410,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "\"Skids\" O'Toole deck only.\nFast. Play after your turn begins.\nUntil the end of the round, non-<i>Elite</i> enemies cannot attack you.",
       "traits": "Tactic.",
       "type_code": "event",
-      "img_src": "img/cards/01010.jpg"
+      "img_src": require("../img/cards/01010.jpg"),
     }
   ],
   "Hospital Debts": [
@@ -430,7 +428,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Put Hospital Debts into play in your threat area.\n[free]: Move 1 resource from your resource pool to Hospital Debts. (Limit twice per round.)\n<b>Forced</b> - When the game ends, if Hospital Debts has fewer than 6 resources on it: You earn 2 fewer experience for this scenario.",
       "traits": "Task.",
       "type_code": "treachery",
-      "img_src": "img/cards/01011.png"
+      "img_src": require("../img/cards/01011.png"),
     }
   ],
   "Heirloom of Hyperborea": [
@@ -455,7 +453,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Agnes Baker deck only.\n[reaction] After you play a spell card: Draw 1 card.",
       "traits": "Item. Relic.",
       "type_code": "asset",
-      "img_src": "img/cards/01012.jpg"
+      "img_src": require("../img/cards/01012.jpg"),
     }
   ],
   "Dark Memory": [
@@ -475,7 +473,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Place 1 doom on the current agenda. This effect may cause the current agenda to advance.\n<b>Forced</b> - If Dark Memory is in your hand at the end of your turn, reveal it and take 2 horror.",
       "traits": "Spell.",
       "type_code": "event",
-      "img_src": "img/cards/01013.jpg"
+      "img_src": require("../img/cards/01013.jpg"),
     }
   ],
   "Wendy's Amulet": [
@@ -496,7 +494,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Wendy Adams deck only.\nYou may play the topmost event in your discard pile as if it were in your hand.\n<b>Forced</b> - After you play an event: Place it on the bottom of your deck instead of in your discard pile.",
       "traits": "Item. Relic.",
       "type_code": "asset",
-      "img_src": "img/cards/01014.png"
+      "img_src": require("../img/cards/01014.png"),
     }
   ],
   "Abandoned and Alone": [
@@ -514,7 +512,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Take 2 direct horror and remove all cards in your discard pile from the game.",
       "traits": "Madness.",
       "type_code": "treachery",
-      "img_src": "img/cards/01015.png"
+      "img_src": require("../img/cards/01015.png"),
     }
   ],
   "Physical Training": [
@@ -534,7 +532,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01017.png"
+      "img_src": require("../img/cards/01017.png"),
     }
   ],
   "Beat Cop": [
@@ -556,7 +554,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Police.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01018.png"
+      "img_src": require("../img/cards/01018.png"),
     },
     {
       "code": "01028",
@@ -577,7 +575,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Police.",
       "type_code": "asset",
       "xp": 2,
-      "img_src": "img/cards/01028.jpg"
+      "img_src": require("../img/cards/01028.jpg"),
     }
   ],
   "First Aid": [
@@ -596,7 +594,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent. Science.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01019.jpg"
+      "img_src": require("../img/cards/01019.jpg"),
     }
   ],
   "Machete": [
@@ -617,7 +615,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01020.png"
+      "img_src": require("../img/cards/01020.png"),
     }
   ],
   "Guard Dog": [
@@ -640,7 +638,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Creature.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01021.jpg"
+      "img_src": require("../img/cards/01021.jpg"),
     }
   ],
   "Evidence!": [
@@ -660,7 +658,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01022.jpg"
+      "img_src": require("../img/cards/01022.jpg"),
     }
   ],
   "Dodge": [
@@ -680,7 +678,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01023.jpg"
+      "img_src": require("../img/cards/01023.jpg"),
     }
   ],
   "Dynamite Blast": [
@@ -699,7 +697,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01024.jpg"
+      "img_src": require("../img/cards/01024.jpg"),
     }
   ],
   "Vicious Blow": [
@@ -718,7 +716,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Practiced.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/01025.jpg"
+      "img_src": require("../img/cards/01025.jpg"),
     },
     {
       "code": "02299",
@@ -735,7 +733,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Practiced. Expert.",
       "type_code": "skill",
       "xp": 2,
-      "img_src": "img/cards/02299.jpg"
+      "img_src": require("../img/cards/02299.jpg"),
     }
   ],
   "Extra Ammunition": [
@@ -755,7 +753,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Supply.",
       "type_code": "event",
       "xp": 1,
-      "img_src": "img/cards/01026.png"
+      "img_src": require("../img/cards/01026.png"),
     }
   ],
   "Police Badge": [
@@ -776,7 +774,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item.",
       "type_code": "asset",
       "xp": 2,
-      "img_src": "img/cards/01027.png"
+      "img_src": require("../img/cards/01027.png"),
     }
   ],
   "Shotgun": [
@@ -796,7 +794,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
       "xp": 4,
-      "img_src": "img/cards/01029.png"
+      "img_src": require("../img/cards/01029.png"),
     }
   ],
   "Magnifying Glass": [
@@ -817,7 +815,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tool.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01030.png"
+      "img_src": require("../img/cards/01030.png"),
     },
     {
       "code": "01040",
@@ -836,7 +834,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tool.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/01040.png"
+      "img_src": require("../img/cards/01040.png"),
     }
   ],
   "Old Book of Lore": [
@@ -856,7 +854,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tome.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01031.png"
+      "img_src": require("../img/cards/01031.png"),
     }
   ],
   "Research Librarian": [
@@ -879,7 +877,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01032.png"
+      "img_src": require("../img/cards/01032.png"),
     }
   ],
   "Dr. Milan Christopher": [
@@ -904,7 +902,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01033.png"
+      "img_src": require("../img/cards/01033.png"),
     }
   ],
   "Hyperawareness": [
@@ -924,7 +922,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01034.png"
+      "img_src": require("../img/cards/01034.png"),
     }
   ],
   "Medical Texts": [
@@ -944,7 +942,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tome.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01035.jpg"
+      "img_src": require("../img/cards/01035.jpg"),
     }
   ],
   "Mind over Matter": [
@@ -964,7 +962,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01036.png"
+      "img_src": require("../img/cards/01036.png"),
     }
   ],
   "Working a Hunch": [
@@ -983,7 +981,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01037.jpg"
+      "img_src": require("../img/cards/01037.jpg"),
     }
   ],
   "Barricade": [
@@ -1004,7 +1002,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight. Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01038.png"
+      "img_src": require("../img/cards/01038.png"),
     }
   ],
   "Deduction": [
@@ -1023,7 +1021,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Practiced.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/01039.jpg"
+      "img_src": require("../img/cards/01039.jpg"),
     },
     {
       "code": "02150",
@@ -1041,7 +1039,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Practiced. Expert.",
       "type_code": "skill",
       "xp": 2,
-      "img_src": "img/cards/02150.jpg"
+      "img_src": require("../img/cards/02150.jpg"),
     }
   ],
   "Disc of Itzamna": [
@@ -1066,7 +1064,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Relic.",
       "type_code": "asset",
       "xp": 2,
-      "img_src": "img/cards/01041.jpg"
+      "img_src": require("../img/cards/01041.jpg"),
     }
   ],
   "Encyclopedia": [
@@ -1087,7 +1085,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tome.",
       "type_code": "asset",
       "xp": 2,
-      "img_src": "img/cards/01042.png"
+      "img_src": require("../img/cards/01042.png"),
     }
   ],
   "Cryptic Research": [
@@ -1105,7 +1103,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "xp": 4,
-      "img_src": "img/cards/01043.jpg"
+      "img_src": require("../img/cards/01043.jpg"),
     }
   ],
   "Switchblade": [
@@ -1125,7 +1123,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Melee. Illicit.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01044.jpg"
+      "img_src": require("../img/cards/01044.jpg"),
     },
     {
       "code": "02152",
@@ -1145,7 +1143,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Melee. Illicit.",
       "type_code": "asset",
       "xp": 2,
-      "img_src": "img/cards/02152.jpg"
+      "img_src": require("../img/cards/02152.jpg"),
     }
   ],
   "Burglary": [
@@ -1164,7 +1162,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent. Illicit.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01045.png"
+      "img_src": require("../img/cards/01045.png"),
     }
   ],
   ".41 Derringer": [
@@ -1184,7 +1182,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Firearm. Illicit.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01047.jpg"
+      "img_src": require("../img/cards/01047.jpg"),
     }
   ],
   "Leo De Luca": [
@@ -1209,7 +1207,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Criminal.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01048.png"
+      "img_src": require("../img/cards/01048.png"),
     },
     {
       "code": "01054",
@@ -1232,7 +1230,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Criminal.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/01054.jpg"
+      "img_src": require("../img/cards/01054.jpg"),
     }
   ],
   "Hard Knocks": [
@@ -1252,7 +1250,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01049.jpg"
+      "img_src": require("../img/cards/01049.jpg"),
     }
   ],
   "Elusive": [
@@ -1272,7 +1270,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01050.png"
+      "img_src": require("../img/cards/01050.png"),
     }
   ],
   "Backstab": [
@@ -1292,7 +1290,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01051.png"
+      "img_src": require("../img/cards/01051.png"),
     }
   ],
   "Sneak Attack": [
@@ -1312,7 +1310,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01052.jpg"
+      "img_src": require("../img/cards/01052.jpg"),
     },
     {
       "code": "03152",
@@ -1330,7 +1328,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 2,
-      "img_src": "img/cards/03152.jpg"
+      "img_src": require("../img/cards/03152.jpg"),
     }
   ],
   "Opportunist": [
@@ -1348,7 +1346,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/01053.jpg"
+      "img_src": require("../img/cards/01053.jpg"),
     },
     {
       "code": "02231",
@@ -1364,7 +1362,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate. Developed.",
       "type_code": "skill",
       "xp": 2,
-      "img_src": "img/cards/02231.jpg"
+      "img_src": require("../img/cards/02231.jpg"),
     }
   ],
   "Cat Burglar": [
@@ -1387,7 +1385,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Criminal.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/01055.jpg"
+      "img_src": require("../img/cards/01055.jpg"),
     }
   ],
   "Sure Gamble": [
@@ -1405,7 +1403,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Fortune. Insight.",
       "type_code": "event",
       "xp": 3,
-      "img_src": "img/cards/01056.jpg"
+      "img_src": require("../img/cards/01056.jpg"),
     }
   ],
   "Hot Streak": [
@@ -1425,7 +1423,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Fortune.",
       "type_code": "event",
       "xp": 4,
-      "img_src": "img/cards/01057.png"
+      "img_src": require("../img/cards/01057.png"),
     }
   ],
   "Forbidden Knowledge": [
@@ -1444,7 +1442,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01058.jpg"
+      "img_src": require("../img/cards/01058.jpg"),
     }
   ],
   "Holy Rosary": [
@@ -1466,7 +1464,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Charm.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01059.png"
+      "img_src": require("../img/cards/01059.png"),
     }
   ],
   "Shrivelling": [
@@ -1486,7 +1484,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01060.png"
+      "img_src": require("../img/cards/01060.png"),
     },
     {
       "code": "02306",
@@ -1505,7 +1503,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "asset",
       "xp": 5,
-      "img_src": "img/cards/02306.jpg"
+      "img_src": require("../img/cards/02306.jpg"),
     },
     {
       "code": "02154",
@@ -1524,7 +1522,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/02154.jpg"
+      "img_src": require("../img/cards/02154.jpg"),
     }
   ],
   "Scrying": [
@@ -1544,7 +1542,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01061.png"
+      "img_src": require("../img/cards/01061.png"),
     }
   ],
   "Arcane Studies": [
@@ -1564,7 +1562,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01062.jpg"
+      "img_src": require("../img/cards/01062.jpg"),
     }
   ],
   "Arcane Initiate": [
@@ -1586,7 +1584,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Sorcerer.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01063.png"
+      "img_src": require("../img/cards/01063.png"),
     }
   ],
   "Drawn to the Flame": [
@@ -1607,7 +1605,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01064.jpg"
+      "img_src": require("../img/cards/01064.jpg"),
     }
   ],
   "Ward of Protection": [
@@ -1626,7 +1624,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell. Spirit.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01065.jpg"
+      "img_src": require("../img/cards/01065.jpg"),
     },
     {
       "code": "02307",
@@ -1644,7 +1642,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell. Spirit.",
       "type_code": "event",
       "xp": 5,
-      "img_src": "img/cards/02307.jpg"
+      "img_src": require("../img/cards/02307.jpg"),
     }
   ],
   "Blinding Light": [
@@ -1664,7 +1662,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01066.png"
+      "img_src": require("../img/cards/01066.png"),
     },
     {
       "code": "01069",
@@ -1682,7 +1680,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "event",
       "xp": 2,
-      "img_src": "img/cards/01069.png"
+      "img_src": require("../img/cards/01069.png"),
     }
   ],
   "Fearless": [
@@ -1701,7 +1699,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/01067.jpg"
+      "img_src": require("../img/cards/01067.jpg"),
     },
     {
       "code": "02268",
@@ -1718,7 +1716,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate. Developed.",
       "type_code": "skill",
       "xp": 2,
-      "img_src": "img/cards/02268.jpg"
+      "img_src": require("../img/cards/02268.jpg"),
     }
   ],
   "Mind Wipe": [
@@ -1738,7 +1736,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "event",
       "xp": 1,
-      "img_src": "img/cards/01068.jpg"
+      "img_src": require("../img/cards/01068.jpg"),
     }
   ],
   "Book of Shadows": [
@@ -1759,7 +1757,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tome.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/01070.jpg"
+      "img_src": require("../img/cards/01070.jpg"),
     },
     {
       "code": "03154",
@@ -1777,7 +1775,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tome.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/03154.jpg"
+      "img_src": require("../img/cards/03154.jpg"),
     }
   ],
   "Grotesque Statue": [
@@ -1797,7 +1795,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Relic.",
       "type_code": "asset",
       "xp": 4,
-      "img_src": "img/cards/01071.png"
+      "img_src": require("../img/cards/01071.png"),
     }
   ],
   "Leather Coat": [
@@ -1818,7 +1816,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Armor.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01072.jpg"
+      "img_src": require("../img/cards/01072.jpg"),
     }
   ],
   "Scavenging": [
@@ -1837,7 +1835,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01073.png"
+      "img_src": require("../img/cards/01073.png"),
     }
   ],
   "Baseball Bat": [
@@ -1857,7 +1855,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01074.png"
+      "img_src": require("../img/cards/01074.png"),
     }
   ],
   "Rabbit's Foot": [
@@ -1878,7 +1876,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Charm.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01075.png"
+      "img_src": require("../img/cards/01075.png"),
     }
   ],
   "Stray Cat": [
@@ -1900,7 +1898,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Creature.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01076.png"
+      "img_src": require("../img/cards/01076.png"),
     }
   ],
   "Dig Deep": [
@@ -1920,7 +1918,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01077.png"
+      "img_src": require("../img/cards/01077.png"),
     }
   ],
   "Cunning Distraction": [
@@ -1941,7 +1939,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01078.jpg"
+      "img_src": require("../img/cards/01078.jpg"),
     }
   ],
   "\"Look what I found!\"": [
@@ -1960,7 +1958,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Fortune.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01079.jpg"
+      "img_src": require("../img/cards/01079.jpg"),
     }
   ],
   "Lucky!": [
@@ -1978,7 +1976,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Fortune.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/01080.png"
+      "img_src": require("../img/cards/01080.png"),
     },
     {
       "code": "01084",
@@ -1994,7 +1992,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Fortune.",
       "type_code": "event",
       "xp": 2,
-      "img_src": "img/cards/01084.png"
+      "img_src": require("../img/cards/01084.png"),
     }
   ],
   "Survival Instinct": [
@@ -2012,7 +2010,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/01081.jpg"
+      "img_src": require("../img/cards/01081.jpg"),
     },
     {
       "code": "02235",
@@ -2028,7 +2026,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate. Developed.",
       "type_code": "skill",
       "xp": 2,
-      "img_src": "img/cards/02235.jpg"
+      "img_src": require("../img/cards/02235.jpg"),
     }
   ],
   "Aquinnah": [
@@ -2053,7 +2051,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/01082.png"
+      "img_src": require("../img/cards/01082.png"),
     },
     {
       "code": "02308",
@@ -2077,7 +2075,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/02308.jpg"
+      "img_src": require("../img/cards/02308.jpg"),
     }
   ],
   "Close Call": [
@@ -2097,7 +2095,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Fortune.",
       "type_code": "event",
       "xp": 2,
-      "img_src": "img/cards/01083.jpg"
+      "img_src": require("../img/cards/01083.jpg"),
     }
   ],
   "Will to Survive": [
@@ -2117,7 +2115,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spirit.",
       "type_code": "event",
       "xp": 3,
-      "img_src": "img/cards/01085.jpg"
+      "img_src": require("../img/cards/01085.jpg"),
     }
   ],
   "Knife": [
@@ -2137,7 +2135,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01086.png"
+      "img_src": require("../img/cards/01086.png"),
     }
   ],
   "Flashlight": [
@@ -2157,7 +2155,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tool.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/01087.png"
+      "img_src": require("../img/cards/01087.png"),
     }
   ],
   "Guts": [
@@ -2176,7 +2174,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/01089.jpg"
+      "img_src": require("../img/cards/01089.jpg"),
     }
   ],
   "Perception": [
@@ -2195,7 +2193,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Practiced.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/01090.png"
+      "img_src": require("../img/cards/01090.png"),
     }
   ],
   "Overpower": [
@@ -2214,7 +2212,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Practiced.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/01091.jpg"
+      "img_src": require("../img/cards/01091.jpg"),
     }
   ],
   "Manual Dexterity": [
@@ -2233,7 +2231,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/01092.jpg"
+      "img_src": require("../img/cards/01092.jpg"),
     }
   ],
   "Unexpected Courage": [
@@ -2252,7 +2250,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/01093.png"
+      "img_src": require("../img/cards/01093.png"),
     }
   ],
   "Bulletproof Vest": [
@@ -2274,7 +2272,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Armor.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/01094.png"
+      "img_src": require("../img/cards/01094.png"),
     }
   ],
   "Elder Sign Amulet": [
@@ -2296,7 +2294,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Relic.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/01095.jpg"
+      "img_src": require("../img/cards/01095.jpg"),
     }
   ],
   "Amnesia": [
@@ -2314,7 +2312,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Choose and discard all but 1 card from your hand.",
       "traits": "Madness.",
       "type_code": "treachery",
-      "img_src": "img/cards/01096.png"
+      "img_src": require("../img/cards/01096.png"),
     }
   ],
   "Paranoia": [
@@ -2332,7 +2330,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Discard all your resources.",
       "traits": "Madness.",
       "type_code": "treachery",
-      "img_src": "img/cards/01097.png"
+      "img_src": require("../img/cards/01097.png"),
     }
   ],
   "Haunted": [
@@ -2349,7 +2347,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Add Haunted to your threat area.\nYou get -1 to each of your skills.\n[action][action]: Discard Haunted.",
       "traits": "Curse.",
       "type_code": "treachery",
-      "img_src": "img/cards/01098.jpg"
+      "img_src": require("../img/cards/01098.jpg"),
     }
   ],
   "Psychosis": [
@@ -2366,7 +2364,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Add Psychosis to your threat area.\n<b>Forced</b> - After you take 1 or more horror: Take 1 direct damage.\n[action][action]: Discard Psychosis.",
       "traits": "Madness.",
       "type_code": "treachery",
-      "img_src": "img/cards/01099.jpg"
+      "img_src": require("../img/cards/01099.jpg"),
     }
   ],
   "Hypochondria": [
@@ -2383,7 +2381,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Add Hypochondria to your threat area.\n<b>Forced</b> - After you take 1 or more damage: Take 1 direct horror.\n[action][action]: Discard Hypochondria.",
       "traits": "Madness.",
       "type_code": "treachery",
-      "img_src": "img/cards/01100.jpg"
+      "img_src": require("../img/cards/01100.jpg"),
     }
   ],
   "Zoey's Cross": [
@@ -2406,7 +2404,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Zoey Samaras deck only.\n[reaction] After an enemy becomes engaged with you, exhaust Zoey's Cross and spend 1 resource: Deal 1 damage to that enemy.",
       "traits": "Item. Charm.",
       "type_code": "asset",
-      "img_src": "img/cards/02006.jpg"
+      "img_src": require("../img/cards/02006.jpg"),
     }
   ],
   "Smite the Wicked": [
@@ -2424,7 +2422,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> – Discard cards from the top of the encounter deck until an enemy is discarded. Attach Smite the Wicked to that enemy and spawn it at the location farthest from you.\n<b>Forced</b> – When the game ends, if attached enemy is in play: You suffer 1 mental trauma.",
       "traits": "Task.",
       "type_code": "treachery",
-      "img_src": "img/cards/02007.jpg"
+      "img_src": require("../img/cards/02007.jpg"),
     }
   ],
   "Search for the Truth": [
@@ -2445,7 +2443,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Rex Murphy deck only.\nDraw X cards, where X is the number of clues on Rex Murphy (to a maximum of 5).",
       "traits": "Insight.",
       "type_code": "event",
-      "img_src": "img/cards/02008.jpg"
+      "img_src": require("../img/cards/02008.jpg"),
     }
   ],
   "Rex's Curse": [
@@ -2463,7 +2461,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Put Rex's Curse into play in your threat area.\n<b>Forced</b> - When you would succeed at a skill test: Return the revealed chaos token to the bag and reveal a new chaos token. If this effect causes you to fail the test, shuffle Rex's Curse into your deck. (Limit once per test.)",
       "traits": "Curse.",
       "type_code": "treachery",
-      "img_src": "img/cards/02009.png"
+      "img_src": require("../img/cards/02009.png"),
     }
   ],
   "Jenny's Twin .45s": [
@@ -2487,7 +2485,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Jenny Barnes deck only. Uses (X ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +2 [combat] for this attack. This attack deals +1 damage.",
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
-      "img_src": "img/cards/02010.png"
+      "img_src": require("../img/cards/02010.png"),
     }
   ],
   "Searching for Izzie": [
@@ -2505,7 +2503,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Attach Searching for Izzie to the location farthest from you.\n[action][action]: <b>Investigate</b>. If you succeed, instead of discovering clues, discard Searching for Izzie.\n<b>Forced</b> - When the game ends, if Searching for Izzie is in play: You suffer 1 mental trauma.",
       "traits": "Task.",
       "type_code": "treachery",
-      "img_src": "img/cards/02011.png"
+      "img_src": require("../img/cards/02011.png"),
     }
   ],
   "Jim's Trumpet": [
@@ -2529,7 +2527,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Jim Culver deck only.\n[reaction] When a [skull] token is revealed during a skill test, exhaust Jim's Trumpet: Heal 1 horror from an investigator at your location or a connecting location.",
       "traits": "Item. Instrument. Relic.",
       "type_code": "asset",
-      "img_src": "img/cards/02012.jpg"
+      "img_src": require("../img/cards/02012.jpg"),
     }
   ],
   "Final Rhapsody": [
@@ -2548,7 +2546,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Reveal 5 chaos tokens from the chaos bag. For each [skull] and [auto_fail] token revealed, take 1 damage and 1 horror.",
       "traits": "Endtimes.",
       "type_code": "treachery",
-      "img_src": "img/cards/02013.png"
+      "img_src": require("../img/cards/02013.png"),
     }
   ],
   "Duke": [
@@ -2570,7 +2568,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "\"Ashcan\" Pete deck only.\n[action] Exhaust Duke: <b>Fight.</b> You attack with a base [combat] skill of 4. This attack deals +1 damage.\n[action] Exhaust Duke: <b>Investigate.</b> You investigate with a base [intellect] skill of 4. You may move to a connecting location immediately before investigating with this effect.",
       "traits": "Ally. Creature.",
       "type_code": "asset",
-      "img_src": "img/cards/02014.png"
+      "img_src": require("../img/cards/02014.png"),
     }
   ],
   "Wracked by Nightmares": [
@@ -2588,7 +2586,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Exhaust all assets you control and put Wracked by Nightmares into play in your threat area.\nAssets you control cannot ready.\n[action][action]: Discard Wracked by Nightmares.",
       "traits": "Madness.",
       "type_code": "treachery",
-      "img_src": "img/cards/02015.jpg"
+      "img_src": require("../img/cards/02015.jpg"),
     }
   ],
   "Blackjack": [
@@ -2608,7 +2606,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02016.jpg"
+      "img_src": require("../img/cards/02016.jpg"),
     }
   ],
   "Taunt": [
@@ -2629,7 +2627,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02017.jpg"
+      "img_src": require("../img/cards/02017.jpg"),
     },
     {
       "code": "02019",
@@ -2649,7 +2647,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 2,
-      "img_src": "img/cards/02019.jpg"
+      "img_src": require("../img/cards/02019.jpg"),
     }
   ],
   "Teamwork": [
@@ -2669,7 +2667,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02018.jpg"
+      "img_src": require("../img/cards/02018.jpg"),
     }
   ],
   "Laboratory Assistant": [
@@ -2691,7 +2689,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Miskatonic. Science.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02020.png"
+      "img_src": require("../img/cards/02020.png"),
     }
   ],
   "Strange Solution": [
@@ -2712,7 +2710,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Science.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02021.png"
+      "img_src": require("../img/cards/02021.png"),
     },
     {
       "code": "02262",
@@ -2730,7 +2728,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Science.",
       "type_code": "asset",
       "xp": 4,
-      "img_src": "img/cards/02262.jpg"
+      "img_src": require("../img/cards/02262.jpg"),
     },
     {
       "code": "02263",
@@ -2748,7 +2746,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Science.",
       "type_code": "asset",
       "xp": 4,
-      "img_src": "img/cards/02263.jpg"
+      "img_src": require("../img/cards/02263.jpg"),
     },
     {
       "code": "02264",
@@ -2766,7 +2764,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Science.",
       "type_code": "asset",
       "xp": 4,
-      "img_src": "img/cards/02264.jpg"
+      "img_src": require("../img/cards/02264.jpg"),
     }
   ],
   "Shortcut": [
@@ -2787,7 +2785,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight. Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02022.png"
+      "img_src": require("../img/cards/02022.png"),
     }
   ],
   "Seeking Answers": [
@@ -2808,7 +2806,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02023.jpg"
+      "img_src": require("../img/cards/02023.jpg"),
     }
   ],
   "Liquid Courage": [
@@ -2827,7 +2825,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Illicit.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02024.jpg"
+      "img_src": require("../img/cards/02024.jpg"),
     }
   ],
   "Think on Your Feet": [
@@ -2847,7 +2845,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Trick.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02025.png"
+      "img_src": require("../img/cards/02025.png"),
     }
   ],
   "Double or Nothing": [
@@ -2865,7 +2863,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Fortune.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/02026.png"
+      "img_src": require("../img/cards/02026.png"),
     }
   ],
   "Hired Muscle": [
@@ -2887,7 +2885,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Criminal.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/02027.jpg"
+      "img_src": require("../img/cards/02027.jpg"),
     }
   ],
   "Rite of Seeking": [
@@ -2907,7 +2905,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02028.png"
+      "img_src": require("../img/cards/02028.png"),
     },
     {
       "code": "02233",
@@ -2925,7 +2923,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "asset",
       "xp": 4,
-      "img_src": "img/cards/02233.png"
+      "img_src": require("../img/cards/02233.png"),
     }
   ],
   "Ritual Candles": [
@@ -2946,7 +2944,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02029.jpg"
+      "img_src": require("../img/cards/02029.jpg"),
     }
   ],
   "Clarity of Mind": [
@@ -2967,7 +2965,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02030.jpg"
+      "img_src": require("../img/cards/02030.jpg"),
     }
   ],
   "Bind Monster": [
@@ -2987,7 +2985,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "event",
       "xp": 2,
-      "img_src": "img/cards/02031.jpg"
+      "img_src": require("../img/cards/02031.jpg"),
     }
   ],
   "Fire Axe": [
@@ -3007,7 +3005,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02032.jpg"
+      "img_src": require("../img/cards/02032.jpg"),
     }
   ],
   "Peter Sylvestre": [
@@ -3032,7 +3030,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02033.png"
+      "img_src": require("../img/cards/02033.png"),
     },
     {
       "code": "02035",
@@ -3055,7 +3053,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
       "xp": 2,
-      "img_src": "img/cards/02035.png"
+      "img_src": require("../img/cards/02035.png"),
     }
   ],
   "Bait and Switch": [
@@ -3075,7 +3073,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Trick.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02034.jpg"
+      "img_src": require("../img/cards/02034.jpg"),
     }
   ],
   "Kukri": [
@@ -3095,7 +3093,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02036.jpg"
+      "img_src": require("../img/cards/02036.jpg"),
     }
   ],
   "Indebted": [
@@ -3113,7 +3111,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Permanent.\nYou start each game with 2 fewer resources.",
       "traits": "Flaw.",
       "type_code": "treachery",
-      "img_src": "img/cards/02037.jpg"
+      "img_src": require("../img/cards/02037.jpg"),
     }
   ],
   "Internal Injury": [
@@ -3130,7 +3128,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Place Internal Injury into play in your threat area.\n<b>Forced</b> - At the end of your turn: Take 1 direct damage.\n[action][action]: Discard Internal Injury.",
       "traits": "Injury.",
       "type_code": "treachery",
-      "img_src": "img/cards/02038.jpg"
+      "img_src": require("../img/cards/02038.jpg"),
     }
   ],
   "Chronophobia": [
@@ -3147,7 +3145,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Place Chronophobia into play in your threat area.\n<b>Forced</b> - At the end of your turn: Take 1 direct horror.\n[action][action]: Discard Chronophobia.",
       "traits": "Madness.",
       "type_code": "treachery",
-      "img_src": "img/cards/02039.jpg"
+      "img_src": require("../img/cards/02039.jpg"),
     }
   ],
   "Heroic Rescue": [
@@ -3163,11 +3161,11 @@ export const lookup: {[string]: Array<Card>} = {
       "quantity": 2,
       "skill_willpower": 1,
       "skill_combat": 1,
-      "text": "Fast. Play when a non-<b><i>Elite</i><b> enemy would attack another investigator at your location.\nEngage that enemy and resolve its attack against you instead. Then, deal it 1 damage.",
+      "text": "Fast. Play when a non-<i>Elite</i> enemy would attack another investigator at your location.\nEngage that enemy and resolve its attack against you instead. Then, deal it 1 damage.",
       "traits": "Spirit. Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03106.jpg"
+      "img_src": require("../img/cards/03106.jpg"),
     }
   ],
   "Combat Training": [
@@ -3184,11 +3182,11 @@ export const lookup: {[string]: Array<Card>} = {
       "sanity": 1,
       "skill_combat": 1,
       "skill_agility": 1,
-      "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Combat Training before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [combat] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this test.",
+      "text": "Fast. Limit 1 <i>Composure</i> in play.\nNon-direct horror must be assigned to Combat Training before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [combat] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this skill test.",
       "traits": "Talent. Composure.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/03107.jpg"
+      "img_src": require("../img/cards/03107.jpg"),
     }
   ],
   "Anatomical Diagrams": [
@@ -3204,12 +3202,12 @@ export const lookup: {[string]: Array<Card>} = {
       "quantity": 2,
       "skill_willpower": 1,
       "skill_combat": 1,
-      "text": "Fast. Play during any investigator's turn. Play only if you have 5 or more remaining sanity.\nChoose a non-<b><i>Elite</i></b> enemy at your location. Until the end of the active investigator's turn, that enemy gets -2 fight and -2 evade.",
+      "text": "Fast. Play during any investigator's turn. Play only if you have 5 or more remaining sanity.\nChoose a non-<i>Elite</i> enemy at your location. Until the end of the active investigator's turn, that enemy gets -2 fight and -2 evade.",
       "traits": "Insight.",
       "flavor": "They are just animals like any other. Or so we thought.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03108.jpg"
+      "img_src": require("../img/cards/03108.jpg"),
     }
   ],
   "Scientific Theory": [
@@ -3226,11 +3224,11 @@ export const lookup: {[string]: Array<Card>} = {
       "sanity": 1,
       "skill_intellect": 1,
       "skill_combat": 1,
-      "text": "Fast. Limit 1 <b><i>Composure</i></b> in play.\nNon-direct horror must be assigned to Scientific Theory before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [intellect] for this skill test.\n[free] Spend 1 resource: You get +1 [combat] for this test.",
+      "text": "Fast. Limit 1 <i>Composure</i> in play.\nNon-direct horror must be assigned to Scientific Theory before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [intellect] for this skill test.\n[free] Spend 1 resource: You get +1 [combat] for this skill test.",
       "traits": "Talent. Composure.",
       "type_code": "asset",
-      "xp": 0,
-      "img_src": "img/cards/03109.jpg"
+      "xp": 1,
+      "img_src": require("../img/cards/03109.jpg"),
     }
   ],
   "Knuckleduster": [
@@ -3239,19 +3237,19 @@ export const lookup: {[string]: Array<Card>} = {
       "cost": 2,
       "deck_limit": 2,
       "faction_code": "rogue",
+      "flavor": "Up close and personal:\njust the way Naomi liked it.",
       "illustrator": "John Pacer",
       "name": "Knuckleduster",
       "pack_code": "eotp",
       "position": 110,
       "quantity": 2,
       "skill_combat": 1,
+      "slot": "Hand",
       "text": "[action]: <b>Fight.</b> This attack deals +1 damage. The attacked enemy gains retaliate for this attack.",
       "traits": "Item. Weapon. Melee. Illicit.",
-      "flavor": "Up close and personal:\njust the way Naomi liked it.",
       "type_code": "asset",
-      "slot": "Hand",
       "xp": 0,
-      "img_src": "img/cards/03110.jpg"
+      "img_src": require("../img/cards/03110.jpg"),
     }
   ],
   "Moxie": [
@@ -3268,17 +3266,17 @@ export const lookup: {[string]: Array<Card>} = {
       "sanity": 1,
       "skill_willpower": 1,
       "skill_agility": 1,
-      "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Moxie before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this test.",
+      "text": "Fast. Limit 1 <i>Composure</i> in play.\nNon-direct horror must be assigned to Moxie before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [agility] for this skill test.",
       "traits": "Talent. Composure.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/03111.jpg"
+      "img_src": require("../img/cards/03111.jpg"),
     }
   ],
   "David Renfield": [
     {
       "code": "03112",
-      "cost": 0,
+      "cost": 2,
       "deck_limit": 2,
       "faction_code": "mystic",
       "illustrator": "Alexandre Dainche",
@@ -3291,12 +3289,12 @@ export const lookup: {[string]: Array<Card>} = {
       "health": 2,
       "sanity": 1,
       "skill_intellect": 1,
-      "text": "While David Renfield has at least 1 doom on him, you get +1 [willpower].\n[fast] Exhaust David Remfield: You may place 1 doom on David Renfield. Gain 1 resource for each doom on David Renfield.",
+      "text": "While David Renfield has at least 1 doom on him, you get +1 [willpower].\n[fast] Exhaust David Renfield: You may place 1 doom on David Renfield. Gain 1 resource for each doom on David Renfield.",
       "traits": "Ally. Patron.",
       "type_code": "asset",
       "slot": "Ally",
       "xp": 0,
-      "img_src": "img/cards/03112.jpg"
+      "img_src": require("../img/cards/03112.jpg"),
     }
   ],
   "Grounded": [
@@ -3312,11 +3310,11 @@ export const lookup: {[string]: Array<Card>} = {
       "quantity": 2,
       "sanity": 1,
       "skill_willpower": 1,
-      "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Grounded before it can be assigned to your investigator card.\n[free] During a skill test on a <b><i>Spell</i></b> card, spend 1 resource: You get +1 skill value for this test.",
+      "text": "Fast. Limit 1 <i>Composure</i> in play.\nNon-direct horror must be assigned to Grounded before it can be assigned to your investigator card.\n[free] During a skill test on a <i>Spell</i> card, spend 1 resource: You get +1 skill value for this test.",
       "traits": "Talent. Composure.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/03113.jpg"
+      "img_src": require("../img/cards/03113.jpg"),
     }
   ],
   "Cherished Keepsake": [
@@ -3337,7 +3335,7 @@ export const lookup: {[string]: Array<Card>} = {
       "type_code": "asset",
       "slot": "Accessory",
       "xp": 0,
-      "img_src": "img/cards/03114.jpg"
+      "img_src": require("../img/cards/03114.jpg"),
     }
   ],
   "Plucky": [
@@ -3354,11 +3352,11 @@ export const lookup: {[string]: Array<Card>} = {
       "sanity": 1,
       "skill_intellect": 1,
       "skill_willpower": 1,
-      "text": "Fast. Limit 1 <b><i>Composure<i></b> in play.\nNon-direct horror must be assigned to Plucky before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [intellect] for this test.",
+      "text": "Fast. Limit 1 <i>Composure</i> in play.\nNon-direct horror must be assigned to Plucky before it can be assigned to your investigator card.\n[free] Spend 1 resource: You get +1 [willpower] for this skill test.\n[free] Spend 1 resource: You get +1 [intellect] for this skill test.",
       "traits": "Talent. Composure.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/03115.png"
+      "img_src": require("../img/cards/03115.png"),
     }
   ],
   "Say Your Prayers": [
@@ -3376,7 +3374,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Desperate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/03116.jpg"
+      "img_src": require("../img/cards/03116.jpg"),
     }
   ],
   "Desperate Search": [
@@ -3394,7 +3392,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Desperate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/03117.jpg"
+      "img_src": require("../img/cards/03117.jpg"),
     }
   ],
   "Reckless Assault": [
@@ -3407,15 +3405,12 @@ export const lookup: {[string]: Array<Card>} = {
       "pack_code": "eotp",
       "position": 118,
       "quantity": 2,
-      "skill_agility": 4,
       "skill_combat": 4,
-      "skill_intellect": 4,
-      "skill_willpower": 4,
       "text": "Max 1 committed per skill test.\nCommit to a skill test only if you have 3 or fewer remaining sanity.",
       "traits": "Desperate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/03118.jpg"
+      "img_src": require("../img/cards/03118.jpg"),
     }
   ],
   "Run For Your Life": [
@@ -3433,7 +3428,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Desperate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/03119.png"
+      "img_src": require("../img/cards/03119.png"),
     }
   ],
   "Monster Slayer": [
@@ -3453,7 +3448,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spirit.",
       "type_code": "event",
       "xp": 5,
-      "img_src": "img/cards/02300.jpg"
+      "img_src": require("../img/cards/02300.jpg"),
     }
   ],
   "Lightning Gun": [
@@ -3474,7 +3469,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
       "xp": 5,
-      "img_src": "img/cards/02301.jpg"
+      "img_src": require("../img/cards/02301.jpg"),
     }
   ],
   "Dr. William T. Maleson": [
@@ -3498,7 +3493,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02302.jpg"
+      "img_src": require("../img/cards/02302.jpg"),
     }
   ],
   "Deciphered Reality": [
@@ -3518,7 +3513,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "xp": 5,
-      "img_src": "img/cards/02303.jpg"
+      "img_src": require("../img/cards/02303.jpg"),
     }
   ],
   "Chicago Typewriter": [
@@ -3538,7 +3533,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Firearm. Illicit.",
       "type_code": "asset",
       "xp": 4,
-      "img_src": "img/cards/02304.jpg"
+      "img_src": require("../img/cards/02304.jpg"),
     }
   ],
   "The Gold Pocket Watch": [
@@ -3562,7 +3557,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Relic.",
       "type_code": "asset",
       "xp": 4,
-      "img_src": "img/cards/02305.jpg"
+      "img_src": require("../img/cards/02305.jpg"),
     }
   ],
   "Try and Try Again": [
@@ -3581,7 +3576,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/02309.jpg"
+      "img_src": require("../img/cards/02309.jpg"),
     }
   ],
   "The Red-Gloved Man": [
@@ -3605,7 +3600,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Conspirator.",
       "type_code": "asset",
       "xp": 5,
-      "img_src": "img/cards/02310.jpg"
+      "img_src": require("../img/cards/02310.jpg"),
     }
   ],
   "Mystifying Song": [
@@ -3624,7 +3619,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Marie Lambeau deck only.\nFast. Play when the agenda would advance by reaching its doom threshold.\nUntil the end of the phase, the agenda cannot advance by reaching its doom threshold. Remove Mystifying Song from the game.",
       "traits": "Spell. Song.",
       "type_code": "event",
-      "img_src": "img/cards/99002.png"
+      "img_src": require("../img/cards/99002.png"),
     }
   ],
   "Baron Samedi": [
@@ -3645,7 +3640,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Put Baron Samedi into play. He cannot leave play while he has less than 3 doom on him.\n<b>Forced</b> – When any amount of damage is placed on an investigator in Baron Samedi's location: Place 1 additional damage on that investigator.\n[free] Exhaust Baron Samedi: Place 1 doom on Baron Samedi. If he has 3 or more doom on him, discard him.",
       "traits": "Avatar.",
       "type_code": "asset",
-      "img_src": "img/cards/99003.png"
+      "img_src": require("../img/cards/99003.png"),
     }
   ],
   "The Home Front": [
@@ -3664,7 +3659,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Mark Harrigan deck only.\nIf this skill test is successful during an attack, move 1 damage from Mark Harrigan to the attacked enemy.",
       "traits": "Practiced. Expert.",
       "type_code": "skill",
-      "img_src": "img/cards/03007.png"
+      "img_src": require("../img/cards/03007.png"),
     }
   ],
   "Shell Shock": [
@@ -3683,7 +3678,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - For every 2 damage on you, take 1 horror.",
       "traits": "Flaw.",
       "type_code": "treachery",
-      "img_src": "img/cards/03008.png"
+      "img_src": require("../img/cards/03008.png"),
     }
   ],
   "Sophie": [
@@ -3705,7 +3700,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Mark Harrigan deck only.\nSophie cannot leave play.\n[lightning] Take 1 direct damage: You get +2 to your skill value for this skill test.\n<b>Forced</b> - If Mark Harrigan has 5 or more damage on him: Flip Sophie.",
       "traits": "Item. Spirit",
       "type_code": "asset",
-      "img_src": "img/cards/03009.png"
+      "img_src": require("../img/cards/03009.png"),
     }
   ],
   "Analytical Mind": [
@@ -3725,7 +3720,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Minh Thi Phan deck only.\nYou may commit 1 card to each skill test performed by an investigator at another location.\n[reaction] After you commit exactly 1 card to a skill test, exhaust Analytical Mind: Draw 1 card.",
       "traits": "Talent.",
       "type_code": "asset",
-      "img_src": "img/cards/03010.png"
+      "img_src": require("../img/cards/03010.png"),
     }
   ],
   "The King in Yellow": [
@@ -3745,7 +3740,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Put The King in Yellow into play in your threat area. It cannot leave play except through the [reaction] ability below.\nYou cannot commit exactly 1 or 2 cards to a skill test.\n[reaction] After a skill test is successful in which Minh Thi Phan has committed at least 6 matching skill icons for that test: Discard The King in Yellow.",
       "traits": "Tome.",
       "type_code": "asset",
-      "img_src": "img/cards/03011.png"
+      "img_src": require("../img/cards/03011.png"),
     }
   ],
   "The Painted World": [
@@ -3766,7 +3761,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Sefina Rousseau deck only.\nCannot be placed beneath Sefina Rousseau.\nPlay The Painted World as an exact copy of a non-exceptional event that is beneath Sefina Rousseau. Remove The Painted World from the game instead of discarding it.",
       "traits": "Spell.",
       "type_code": "event",
-      "img_src": "img/cards/03012.png"
+      "img_src": require("../img/cards/03012.png"),
     }
   ],
   "Stars of Hyades": [
@@ -3784,7 +3779,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Randomly choose an event beneath Sefina Rousseau and remove it from the game. If you cannot, take 1 damage and 1 horror. If your deck has 5 or more cards in it, shuffle Stars of Hyades back into your deck instead of discarding it.",
       "traits": "Curse.",
       "type_code": "treachery",
-      "img_src": "img/cards/03013.png"
+      "img_src": require("../img/cards/03013.png"),
     }
   ],
   "Spirit-Speaker": [
@@ -3806,7 +3801,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Akachi Onyele deck only.\n[lightning] Exhaust Spirit-Speaker: Choose an asset you control with \"uses (charges).\" Either return that asset to your hand, or move all charges from that asset to your resource pool <b>(as resources)</b> and discard that asset.",
       "traits": "Ritual.",
       "type_code": "asset",
-      "img_src": "img/cards/03014.png"
+      "img_src": require("../img/cards/03014.png"),
     }
   ],
   "Angered Spirits": [
@@ -3824,7 +3819,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Put Angered Spirits into play in your threat area.\n[lightning] Exhaust a <b>Spell</b> asset: Move 1 charge from that asset to Angered Spirits.\n<b>Forced</b> - When the game ends, if Angered Spirits has fewer than 4 charges on it: You suffer 1 physical trauma.",
       "traits": "Task.",
       "type_code": "treachery",
-      "img_src": "img/cards/03015.jpg"
+      "img_src": require("../img/cards/03015.jpg"),
     }
   ],
   "Bury Them Deep": [
@@ -3846,7 +3841,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Task.",
       "type_code": "event",
       "victory": 1,
-      "img_src": "img/cards/03016.jpg"
+      "img_src": require("../img/cards/03016.jpg"),
     }
   ],
   "Improvisation": [
@@ -3865,7 +3860,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Lola Hayes deck only.\nFast. Play only during your turn.\nSwitch your role. Until the end of your turn, reduce the resource cost of the next card you play of your role by 3. Draw 1 card.",
       "traits": "Insight.",
       "type_code": "event",
-      "img_src": "img/cards/03018.png"
+      "img_src": require("../img/cards/03018.png"),
     }
   ],
   "Crisis of Identity": [
@@ -3884,7 +3879,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Discard all cards you control of your current role. Then, discard the top card of your deck. Switch your role to the class of the discarded card (if the discarded card is a weakness, switch your role to neutral).",
       "traits": "Madness.",
       "type_code": "treachery",
-      "img_src": "img/cards/03019.png"
+      "img_src": require("../img/cards/03019.png"),
     }
   ],
   ".32 Colt": [
@@ -3905,7 +3900,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/03020.jpg"
+      "img_src": require("../img/cards/03020.jpg"),
     }
   ],
   "True Grit": [
@@ -3926,7 +3921,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/03021.png"
+      "img_src": require("../img/cards/03021.png"),
     }
   ],
   "\"Let me handle this!\"": [
@@ -3946,7 +3941,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spirit.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03022.png"
+      "img_src": require("../img/cards/03022.png"),
     }
   ],
   "Ever Vigilant": [
@@ -3966,7 +3961,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 1,
-      "img_src": "img/cards/03023.jpg"
+      "img_src": require("../img/cards/03023.jpg"),
     }
   ],
   "Fieldwork": [
@@ -3986,7 +3981,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/03024.jpg"
+      "img_src": require("../img/cards/03024.jpg"),
     }
   ],
   "Archaic Glyphs": [
@@ -4007,7 +4002,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Occult. Tome.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/03025.png"
+      "img_src": require("../img/cards/03025.png"),
     }
   ],
   "No Stone Unturned": [
@@ -4026,7 +4021,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03026.png"
+      "img_src": require("../img/cards/03026.png"),
     }
   ],
   "In the Know": [
@@ -4045,7 +4040,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/03027.png"
+      "img_src": require("../img/cards/03027.png"),
     }
   ],
   "Stealth": [
@@ -4064,7 +4059,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/03028.jpg"
+      "img_src": require("../img/cards/03028.jpg"),
     }
   ],
   "Sleight of Hand": [
@@ -4084,7 +4079,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Trick.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03029.png"
+      "img_src": require("../img/cards/03029.png"),
     }
   ],
   "Daring Maneuver": [
@@ -4104,7 +4099,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Gambit.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03030.png"
+      "img_src": require("../img/cards/03030.png"),
     }
   ],
   "Lockpicks": [
@@ -4124,7 +4119,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tool. Illicit.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/03031.jpg"
+      "img_src": require("../img/cards/03031.jpg"),
     }
   ],
   "Alchemical Transmutation": [
@@ -4144,7 +4139,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/03032.png"
+      "img_src": require("../img/cards/03032.png"),
     }
   ],
   "Uncage the Soul": [
@@ -4164,7 +4159,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spirit.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03033.png"
+      "img_src": require("../img/cards/03033.png"),
     }
   ],
   "Astral Travel": [
@@ -4185,7 +4180,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03034.png"
+      "img_src": require("../img/cards/03034.png"),
     }
   ],
   "Spirit Athame": [
@@ -4205,7 +4200,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Relic. Weapon. Melee.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/03035.jpg"
+      "img_src": require("../img/cards/03035.jpg"),
     }
   ],
   "Lantern": [
@@ -4225,7 +4220,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tool.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/03036.jpg"
+      "img_src": require("../img/cards/03036.jpg"),
     }
   ],
   "Gravedigger's Shovel": [
@@ -4246,7 +4241,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Tool. Weapon. Melee.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/03037.jpg"
+      "img_src": require("../img/cards/03037.jpg"),
     }
   ],
   "Hiding Spot": [
@@ -4266,7 +4261,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic. Trick.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03038.jpg"
+      "img_src": require("../img/cards/03038.jpg"),
     }
   ],
   "Resourceful": [
@@ -4286,7 +4281,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/03039.jpg"
+      "img_src": require("../img/cards/03039.jpg"),
     }
   ],
   "Overzealous": [
@@ -4304,7 +4299,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Draw the top card of the encounter deck. That card gains surge.",
       "traits": "Flaw.",
       "type_code": "treachery",
-      "img_src": "img/cards/03040.jpg"
+      "img_src": require("../img/cards/03040.jpg"),
     }
   ],
   "Drawing the Sign": [
@@ -4321,7 +4316,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Revelation</b> - Put Drawing the Sign into play in your threat area.\nYour maximum hand size is reduced by 5 while checking your hand size during the upkeep phase.\n[action][action]: Discard Drawing the Sign.",
       "traits": "Pact. Madness.",
       "type_code": "treachery",
-      "img_src": "img/cards/03041.jpg"
+      "img_src": require("../img/cards/03041.jpg"),
     }
   ],
   "Bandolier": [
@@ -4343,7 +4338,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02147.jpg"
+      "img_src": require("../img/cards/02147.jpg"),
     }
   ],
   "Stand Together": [
@@ -4363,7 +4358,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spirit.",
       "type_code": "event",
       "xp": 3,
-      "img_src": "img/cards/02148.png"
+      "img_src": require("../img/cards/02148.png"),
     }
   ],
   "Art Student": [
@@ -4386,7 +4381,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Miskatonic.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02149.jpg"
+      "img_src": require("../img/cards/02149.jpg"),
     }
   ],
   "\"I'm outta here!\"": [
@@ -4406,7 +4401,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Trick. Spirit.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02151.png"
+      "img_src": require("../img/cards/02151.png"),
     }
   ],
   "Hypnotic Gaze": [
@@ -4426,7 +4421,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02153.jpg"
+      "img_src": require("../img/cards/02153.jpg"),
     }
   ],
   "Newspaper": [
@@ -4447,7 +4442,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02155.jpg"
+      "img_src": require("../img/cards/02155.jpg"),
     }
   ],
   "Lure": [
@@ -4466,7 +4461,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Trick.",
       "type_code": "event",
       "xp": 1,
-      "img_src": "img/cards/02156.jpg"
+      "img_src": require("../img/cards/02156.jpg"),
     }
   ],
   "Relic Hunter": [
@@ -4486,7 +4481,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/02157.jpg"
+      "img_src": require("../img/cards/02157.jpg"),
     }
   ],
   "Charisma": [
@@ -4506,7 +4501,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/02158.png"
+      "img_src": require("../img/cards/02158.png"),
     }
   ],
   "Emergency Aid": [
@@ -4526,7 +4521,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight. Science.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02105.jpg"
+      "img_src": require("../img/cards/02105.jpg"),
     }
   ],
   "Brother Xavier": [
@@ -4549,7 +4544,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. ",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/02106.jpg"
+      "img_src": require("../img/cards/02106.jpg"),
     }
   ],
   "\"I've got a plan!\"": [
@@ -4570,7 +4565,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight. Tactic.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02107.jpg"
+      "img_src": require("../img/cards/02107.jpg"),
     }
   ],
   "Pathfinder": [
@@ -4590,7 +4585,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/02108.jpg"
+      "img_src": require("../img/cards/02108.jpg"),
     }
   ],
   "Contraband": [
@@ -4611,7 +4606,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Supply. Illicit.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02109.jpg"
+      "img_src": require("../img/cards/02109.jpg"),
     }
   ],
   "Adaptable": [
@@ -4631,7 +4626,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Talent.",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/02110.png"
+      "img_src": require("../img/cards/02110.png"),
     }
   ],
   "Delve Too Deep": [
@@ -4651,7 +4646,7 @@ export const lookup: {[string]: Array<Card>} = {
       "type_code": "event",
       "victory": 1,
       "xp": 0,
-      "img_src": "img/cards/02111.png"
+      "img_src": require("../img/cards/02111.png"),
     }
   ],
   "Song of the Dead": [
@@ -4672,7 +4667,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell. Song.",
       "type_code": "asset",
       "xp": 2,
-      "img_src": "img/cards/02112.jpg"
+      "img_src": require("../img/cards/02112.jpg"),
     }
   ],
   "Oops!": [
@@ -4692,7 +4687,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Fortune.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02113.jpg"
+      "img_src": require("../img/cards/02113.jpg"),
     }
   ],
   "Fire Extinguisher": [
@@ -4715,7 +4710,7 @@ export const lookup: {[string]: Array<Card>} = {
       "Slot": "Hand",
       "type_code": "asset",
       "xp": 1,
-      "img_src": "img/cards/02114.png"
+      "img_src": require("../img/cards/02114.png"),
     }
   ],
   "Flare": [
@@ -4736,7 +4731,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 1,
-      "img_src": "img/cards/02115.png"
+      "img_src": require("../img/cards/02115.png"),
     }
   ],
   "Smoking Pipe": [
@@ -4756,7 +4751,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02116.jpg"
+      "img_src": require("../img/cards/02116.jpg"),
     }
   ],
   "Painkillers": [
@@ -4776,7 +4771,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02117.jpg"
+      "img_src": require("../img/cards/02117.jpg"),
     }
   ],
   "Trench Knife": [
@@ -4797,7 +4792,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Melee.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/03147.jpg"
+      "img_src": require("../img/cards/03147.jpg"),
     }
   ],
   "Ambush": [
@@ -4817,7 +4812,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Tactic.",
       "type_code": "event",
       "xp": 1,
-      "img_src": "img/cards/03148.jpg"
+      "img_src": require("../img/cards/03148.jpg"),
     }
   ],
   "Charles Ross, Esq.": [
@@ -4841,7 +4836,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Patron.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/03149.png"
+      "img_src": require("../img/cards/03149.png"),
     }
   ],
   "Forewarned": [
@@ -4861,7 +4856,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "xp": 1,
-      "img_src": "img/cards/03150.png"
+      "img_src": require("../img/cards/03150.png"),
     }
   ],
   "Dario El-Amin": [
@@ -4885,7 +4880,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Patron.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/03151.png"
+      "img_src": require("../img/cards/03151.png"),
     }
   ],
   "Storm of Spirits": [
@@ -4905,7 +4900,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03153.jpg"
+      "img_src": require("../img/cards/03153.jpg"),
     }
   ],
   "Fight or Flight": [
@@ -4923,7 +4918,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spirit.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03155.jpg"
+      "img_src": require("../img/cards/03155.jpg"),
     }
   ],
   "A Test of Will": [
@@ -4943,7 +4938,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spirit.",
       "type_code": "event",
       "xp": 1,
-      "img_src": "img/cards/03156.png"
+      "img_src": require("../img/cards/03156.png"),
     }
   ],
   "Devil's Luck": [
@@ -4963,7 +4958,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Fortune.",
       "type_code": "event",
       "xp": 1,
-      "img_src": "img/cards/03157.jpg"
+      "img_src": require("../img/cards/03157.jpg"),
     }
   ],
   "Calling in Favors": [
@@ -4984,7 +4979,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Favor.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/03158.jpg"
+      "img_src": require("../img/cards/03158.jpg"),
     }
   ],
   "\"If it bleeds...\"": [
@@ -5004,7 +4999,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast. Play after you defeat a <i>Monster</i> enemy.\nEach investigator at your location heals horror equal to that enemy's horror value.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02225.jpg"
+      "img_src": require("../img/cards/02225.jpg"),
     }
   ],
   "Springfield M1903": [
@@ -5025,7 +5020,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
       "xp": 4,
-      "img_src": "img/cards/02226.jpg"
+      "img_src": require("../img/cards/02226.jpg"),
     }
   ],
   "Inquiring Mind": [
@@ -5044,7 +5039,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/02227.jpg"
+      "img_src": require("../img/cards/02227.jpg"),
     }
   ],
   "Expose Weakness": [
@@ -5064,7 +5059,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Insight.",
       "type_code": "event",
       "xp": 1,
-      "img_src": "img/cards/02228.jpg"
+      "img_src": require("../img/cards/02228.jpg"),
     }
   ],
   "Quick Thinking": [
@@ -5082,7 +5077,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/02229.png"
+      "img_src": require("../img/cards/02229.png"),
     }
   ],
   "Lucky Dice": [
@@ -5104,7 +5099,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Relic.",
       "type_code": "asset",
       "xp": 2,
-      "img_src": "img/cards/02230.jpg"
+      "img_src": require("../img/cards/02230.jpg"),
     }
   ],
   "Alyssa Graham": [
@@ -5128,7 +5123,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Sorcerer.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02232.jpg"
+      "img_src": require("../img/cards/02232.jpg"),
     }
   ],
   "Dark Horse": [
@@ -5147,7 +5142,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Condition.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02234.jpg"
+      "img_src": require("../img/cards/02234.jpg"),
     }
   ],
   "Leadership": [
@@ -5165,7 +5160,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Practiced.",
       "type_code": "skill",
       "xp": 0,
-      "img_src": "img/cards/02260.jpg"
+      "img_src": require("../img/cards/02260.jpg"),
     }
   ],
   "\"I've had worse…\"": [
@@ -5185,7 +5180,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spirit.",
       "type_code": "event",
       "xp": 4,
-      "img_src": "img/cards/02261.jpg"
+      "img_src": require("../img/cards/02261.jpg"),
     }
   ],
   "Joey \"The Rat\" Vigil": [
@@ -5211,7 +5206,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Ally. Criminal.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02265.jpg"
+      "img_src": require("../img/cards/02265.jpg"),
     }
   ],
   "Ace in the Hole": [
@@ -5230,7 +5225,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Trick.",
       "type_code": "event",
       "xp": 3,
-      "img_src": "img/cards/02266.jpg"
+      "img_src": require("../img/cards/02266.jpg"),
     }
   ],
   "Moonlight Ritual": [
@@ -5250,7 +5245,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spell. Insight.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02267.jpg"
+      "img_src": require("../img/cards/02267.jpg"),
     }
   ],
   "Jewel of Aureolus": [
@@ -5272,7 +5267,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Relic.",
       "type_code": "asset",
       "xp": 3,
-      "img_src": "img/cards/02269.jpg"
+      "img_src": require("../img/cards/02269.jpg"),
     }
   ],
   "A Chance Encounter": [
@@ -5292,7 +5287,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Fortune.",
       "type_code": "event",
       "xp": 0,
-      "img_src": "img/cards/02270.jpg"
+      "img_src": require("../img/cards/02270.jpg"),
     }
   ],
   "Stroke of Luck": [
@@ -5311,7 +5306,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Innate. Fortune.",
       "type_code": "skill",
       "xp": 2,
-      "img_src": "img/cards/02271.jpg"
+      "img_src": require("../img/cards/02271.jpg"),
     }
   ],
   "Fine Clothes": [
@@ -5334,7 +5329,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Item. Clothing.",
       "type_code": "asset",
       "xp": 0,
-      "img_src": "img/cards/02272.jpg"
+      "img_src": require("../img/cards/02272.jpg"),
     }
   ],
   "Moment of Respite": [
@@ -5353,7 +5348,7 @@ export const lookup: {[string]: Array<Card>} = {
       "traits": "Spirit.",
       "type_code": "event",
       "xp": 3,
-      "img_src": "img/cards/02273.jpg"
+      "img_src": require("../img/cards/02273.jpg"),
     }
   ]
 };

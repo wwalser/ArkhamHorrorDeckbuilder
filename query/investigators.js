@@ -54,7 +54,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After you defeat an enemy: Discover 1 clue at your location. (Limit once per round.)\n[elder_sign] effect: +1 for each clue on your location.",
       "traits": "Agency. Detective.",
       "type_code": "investigator",
-      "img_src": "img/cards/01001.png"
+      "img_src": require("../img/cards/01001.png"),
     }
   ],
   "Daisy Walker": [
@@ -104,7 +104,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You may take an additional action during your turn, which can only be used on <i>Tome</i> [action] abilities.\n[elder_sign] effect: +0. If you succeed, draw 1 card for each <i>Tome</i> you control.",
       "traits": "Miskatonic.",
       "type_code": "investigator",
-      "img_src": "img/cards/01002.png"
+      "img_src": require("../img/cards/01002.png"),
     }
   ],
   "\"Skids\" O'Toole": [
@@ -154,7 +154,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[free] During your turn, spend 2 resources: You may take an additional action this turn. (Limit once per turn.)\n[elder_sign] effect: +2. If you succeed, gain 2 resources.",
       "traits": "Criminal.",
       "type_code": "investigator",
-      "img_src": "img/cards/01003.png"
+      "img_src": require("../img/cards/01003.png"),
     }
   ],
   "Agnes Baker": [
@@ -204,7 +204,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After 1 or more horror is placed on Agnes Baker: Deal 1 damage to an enemy at your location. (Limit once per phase.)\n[elder_sign] effect: +1 for each horror on Agnes Baker.",
       "traits": "Sorcerer.",
       "type_code": "investigator",
-      "img_src": "img/cards/01004.png"
+      "img_src": require("../img/cards/01004.png"),
     }
   ],
   "Wendy Adams": [
@@ -253,7 +253,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] When you reveal a chaos token, choose and discard 1 card from your hand: Cancel that chaos token and return it to the bag. Reveal a new chaos token. (Limit once per test/ability.)\n[elder_sign] effect: +0. If Wendy's Amulet is in play, you automatically succeed instead.",
       "traits": "Drifter.",
       "type_code": "investigator",
-      "img_src": "img/cards/01005.png"
+      "img_src": require("../img/cards/01005.png"),
     }
   ],
   "Zoey Samaras": [
@@ -302,7 +302,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After you become engaged with an enemy: Gain 1 resource.\n[elder_sign] effect: +1. If this skill test is successful during an attack, that attack deals +1 damage.",
       "traits": "Believer. Hunter.",
       "type_code": "investigator",
-      "img_src": "img/cards/02001.png"
+      "img_src": require("../img/cards/02001.png"),
     }
   ],
   "Rex Murphy": [
@@ -357,7 +357,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After you succeed at a skill test by 2 or more while investigating: Discover 1 clue at your location.\n[elder_sign] effect: +2. You may instead choose to automatically fail this skill test to draw 3 cards.",
       "traits": "Reporter.",
       "type_code": "investigator",
-      "img_src": "img/cards/02002.png"
+      "img_src": require("../img/cards/02002.png"),
     }
   ],
   "Jenny Barnes": [
@@ -406,7 +406,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You collect 1 additional resource during each upkeep phase.\n[elder_sign] effect: +1 for each resource you have.",
       "traits": "Drifter.",
       "type_code": "investigator",
-      "img_src": "img/cards/02003.png"
+      "img_src": require("../img/cards/02003.png"),
     }
   ],
   "Jim Culver": [
@@ -455,7 +455,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Treat the modifier on [skull] tokens you reveal as \"0.\"\nAnytime you reveal a [elder_sign] token, you may choose to instead treat it as a [skull] token.\n[elder_sign] effect: +1.",
       "traits": "Performer.",
       "type_code": "investigator",
-      "img_src": "img/cards/02004.png"
+      "img_src": require("../img/cards/02004.png"),
     }
   ],
   "\"Ashcan\" Pete": [
@@ -504,7 +504,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You begin the game with Duke in play.\n[free] Discard a card from your hand: Ready an asset you control. (Limit once per round.)\n[elder_sign] effect: +2. Ready Duke.",
       "traits": "Drifter.",
       "type_code": "investigator",
-      "img_src": "img/cards/02005.png"
+      "img_src": require("../img/cards/02005.png"),
     }
   ],
   "Marie Lambeau": [
@@ -581,7 +581,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "While you have 1 or more doom among cards you control, you may take an additional action during your turn, which can only be used to play <i>Spell</i> cards or activate <i>Spell</i> [action] abilities.\n[elder_sign] effect: +1. You may add 1 doom to or remove 1 doom from a card you control.",
       "traits": "Performer. Sorcerer.",
       "type_code": "investigator",
-      "img_src": "img/cards/99001.png"
+      "img_src": require("../img/cards/99001.png"),
     }
   ],
   "Mark Harrigan": [
@@ -631,7 +631,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "You begin the game with Sophie <i>(In Loving Memory)</i> in play.\n[reaction] After damage is placed on a card you control: Draw 1 card. (Limit once per phase.)\n[elder_sign] effect: +1 for each damage on Mark Harrigan.",
       "traits": "Veteran",
       "type_code": "investigator",
-      "img_src": "img/cards/03001.png"
+      "img_src": require("../img/cards/03001.png"),
     }
   ],
   "Minh Thi Phan": [
@@ -681,7 +681,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After an investigator at your location commits a card to a skill test: That card gains a [wild] icon until the end of the test. (Limit once for each investigator per round.)\n[elder_sign] effect: +1. You may choose a skill card committed to this skill test to return to its owner's hand after this test ends.",
       "traits": "Assistant.",
       "type_code": "investigator",
-      "img_src": "img/cards/03002.png"
+      "img_src": require("../img/cards/03002.png"),
     }
   ],
   "Sefina Rousseau": [
@@ -730,7 +730,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Forced</b> - When you would draw your opening hand: Draw 13 cards, instead. Choose up to 5 events to place beneath this card and keep 8 cards as your opening hand. Discard the rest. <i>(You cannot mulligan.)</i>\n[action]: Choose an event beneath this card and draw it. Does not provoke attacks of opportunity.\n[elder_sign] effect: +3. You may choose an event beneath this card and draw it.",
       "traits": "Artist.",
       "type_code": "investigator",
-      "img_src": "img/cards/03003.png"
+      "img_src": require("../img/cards/03003.png"),
     }
   ],
   "Akachi Onyele": [
@@ -789,7 +789,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Your assets with \"uses (charges)\" enter play with 1 additional charge on them.\n[elder_sign] effect: +1. Add 1 charge to an asset with \"uses (charges)\" you control.",
       "traits": "Sorcerer.",
       "type_code": "investigator",
-      "img_src": "img/cards/03004.png"
+      "img_src": require("../img/cards/03004.png"),
     }
   ],
   "William Yorick": [
@@ -839,7 +839,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "[reaction] After you defeat an enemy: Play an asset from your discard pile <i>(paying its cost)</i>. (Limit once per round.)\n[elder_sign] effect: +2. If this test is successful, return 1 card from your discard pile to your hand.",
       "traits": "Warden.",
       "type_code": "investigator",
-      "img_src": "img/cards/03005.png"
+      "img_src": require("../img/cards/03005.png"),
     }
   ],
   "Lola Hayes": [
@@ -897,7 +897,7 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "<b>Forced</b> - After you draw your opening hand: Choose a role ([survivor], [guardian], [seeker], [rogue], [mystic], or Neutral).\nYou can only play, commit, or trigger abilities on Neutral cards or cards of your role.\n[lightning]: Switch your role. (Limit once per round.)\n[elder_sign] effect: +2. You may switch roles.",
       "traits": "Performer.",
       "type_code": "investigator",
-      "img_src": "img/cards/03006.png"
+      "img_src": require("../img/cards/03006.png"),
     }
   ]
 };
