@@ -73,7 +73,7 @@ export default class CardItem extends React.PureComponent<Props> {
         ],
         extrapolate:  'clamp',
       }),
-    }]
+    }, {translateX: -35}]
 
     return (<View style={styles.cardItem}>
       {img_src ? <Animated.Image

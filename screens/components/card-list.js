@@ -9,6 +9,7 @@ import {
   Text,
   View,
 } from 'react-native';
+
 import CardItem, {CARD_HEIGHT} from './card-item';
 import {lookup as cards} from '../../query/name';
 
@@ -20,6 +21,7 @@ import type {
 } from '../../store/deck';
 import type {AnimatedEvent} from 'AnimatedEvent';
 import type AnimatedValue from 'AnimatedValue';
+import type {Styles} from 'StyleSheet';
 
 const allCards = Object.keys(cards).reduce(
   (allCards, deckKey) => allCards.concat(cards[deckKey]),
@@ -32,6 +34,7 @@ type Props = {
   addCard: AddCardDispatcher,
   removeCard: RemoveCardDispatcher,
   currentDeck: DeckList,
+  style: $FlowFixMe,
 };
 
 type State = {
@@ -45,7 +48,7 @@ export default class CardList extends Component<Props, State> {
     const {addCard, removeCard, currentDeck} = this.props;
 
     return (
-      <View>
+      <View style={this.props.style}>
         <AnimatableFlatList
           onScroll={Animated.event(
             [{nativeEvent: {contentOffset: {y: this.state.scrollY}}}],

@@ -32,8 +32,12 @@ class DeckBuilderScreen extends Component<{
 }> {
   render() {
     return (
-      <KeyboardAvoidingView>
+      <KeyboardAvoidingView style={{flexDirection: 'row'}}>
+        <View style={{flex: 1}}>
+          <Text>Hello world.</Text>
+        </View>
         <CardList
+          style={styles.cardList}
           addCard={this.props.addCard}
           removeCard={this.props.removeCard}
           currentDeck={this.props.cards}
@@ -42,6 +46,13 @@ class DeckBuilderScreen extends Component<{
     );
   }
 };
+
+const styles = StyleSheet.create({
+  cardList: {
+    width: 250,
+    flexDirection: 'column',
+  }
+});
 
 const select = ({deck}: Store) => {
   return {...deck};
