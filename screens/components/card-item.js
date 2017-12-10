@@ -142,12 +142,14 @@ const styles = StyleSheet.create({
   },
   cardHeaderImage: {
     ...StyleSheet.absoluteFillObject,
-    height: 28,
+    height: 25,
     width: 250,
   },
   cardName: {
-    fontSize: 20,
+    fontSize: 12,
     fontWeight: 'bold',
+    paddingBottom: 5,
+    paddingLeft: 10,
   },
   buttons: {
     position: 'absolute',
