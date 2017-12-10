@@ -3,7 +3,6 @@
 import React from 'react';
 import {
   Button,
-  Text,
   ScrollView,
   Image,
   View,
@@ -11,6 +10,7 @@ import {
   Dimensions,
   Animated,
 } from 'react-native';
+import ArkhamText from '../util-components/arkham-text.js';
 
 import type {Card} from '../../cards';
 import type {AddCardDispatcher, RemoveCardDispatcher} from '../../store/deck';
@@ -30,26 +30,32 @@ const WINDOW_HEIGHT = Dimensions.get('window').height;
 const factions = {
   neutral: {
     cardHeader: require('../../img/card-header-neutral.png'),
+    statGlif: require('../../img/neutral-stat-oval.png'),
   },
   guardian: {
     token: require('../../img/guardian.png'),
     cardHeader: require('../../img/card-header-guardian.png'),
+    statGlif: require('../../img/guardian-stat-oval.png'),
   },
   rogue: {
     token: require('../../img/rogue.png'),
     cardHeader: require('../../img/card-header-rogue.png'),
+    statGlif: require('../../img/rogue-stat-oval.png'),
   },
   mystic: {
     token: require('../../img/mystic.png'),
     cardHeader: require('../../img/card-header-mystic.png'),
+    statGlif: require('../../img/mystic-stat-oval.png'),
   },
   seeker: {
     token: require('../../img/seeker.png'),
     cardHeader: require('../../img/card-header-seeker.png'),
+    statGlif: require('../../img/seeker-stat-oval.png'),
   },
   survivor: {
     token: require('../../img/survivor.png'),
     cardHeader: require('../../img/card-header-survivor.png'),
+    statGlif: require('../../img/survivor-stat-oval.png'),
   },
 };
 
@@ -100,16 +106,13 @@ export default class CardItem extends React.PureComponent<Props> {
       /> : null}
       <View style={styles.cardHeader}>
         <Image style={styles.cardHeaderImage} source={factions[faction_code].cardHeader} />
-        <Text style={styles.cardName}>{is_unique ? '*' : ''}{name}</Text>
+        <ArkhamText style={styles.cardName}>{is_unique ? '*' : ''}{name}</ArkhamText>
       </View>
       <View style={styles.cardDetails}>
-        <View style={styles.faction}>
-          {faction_code !== 'neutral'
-            ? <Image source={factions[faction_code].token} />
-            : null}
-          <Text>{faction_code}</Text>
+        <View style={styles.cardStats}>
+          <Image style={styles.cardStatOval} source={factions[faction_code].statGlif} />
+          <ArkhamText>5</ArkhamText>
         </View>
-        {xp ? <Text style={{paddingLeft: 6}}>XP: {xp}</Text> : null}
       </View>
       <View style={styles.buttons}>
         <Button
@@ -150,6 +153,15 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingBottom: 5,
     paddingLeft: 10,
+  },
+  cardStats: {
+    width: 46,
+    height: 46,
+  },
+  cardStatOval: {
+    height: 46,
+    width: 46,
+    ...StyleSheet.absoluteFillObject,
   },
   buttons: {
     position: 'absolute',
