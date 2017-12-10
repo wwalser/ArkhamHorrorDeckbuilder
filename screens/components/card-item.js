@@ -28,11 +28,29 @@ const VIEWABLE_CARD_DIMENSIONS = {
 const WINDOW_HEIGHT = Dimensions.get('window').height;
 
 const factions = {
-  guardian: require('../../img/guardian.png'),
-  rogue: require('../../img/rogue.png'),
-  mystic: require('../../img/mystic.png'),
-  seeker: require('../../img/seeker.png'),
-  survivor: require('../../img/survivor.png'),
+  neutral: {
+    cardHeader: require('../../img/card-header-neutral.png'),
+  },
+  guardian: {
+    token: require('../../img/guardian.png'),
+    cardHeader: require('../../img/card-header-guardian.png'),
+  },
+  rogue: {
+    token: require('../../img/rogue.png'),
+    cardHeader: require('../../img/card-header-rogue.png'),
+  },
+  mystic: {
+    token: require('../../img/mystic.png'),
+    cardHeader: require('../../img/card-header-mystic.png'),
+  },
+  seeker: {
+    token: require('../../img/seeker.png'),
+    cardHeader: require('../../img/card-header-seeker.png'),
+  },
+  survivor: {
+    token: require('../../img/survivor.png'),
+    cardHeader: require('../../img/card-header-survivor.png'),
+  },
 };
 
 type Props = {
@@ -80,14 +98,14 @@ export default class CardItem extends React.PureComponent<Props> {
         style={[styles.overlayImage, parallaxStyle]}
         source={img_src}
       /> : null}
-      <View style={styles.cardName}>
-        <Text style={{fontSize: 20, fontWeight: 'bold'}}>{is_unique ? '*' : ''}{name}</Text>
-        {subname ? <Text style={{paddingLeft: 3}}>{subname}</Text> : null}
+      <View style={styles.cardHeader}>
+        <Image style={styles.cardHeaderImage} source={factions[faction_code].cardHeader} />
+        <Text style={styles.cardName}>{is_unique ? '*' : ''}{name}</Text>
       </View>
       <View style={styles.cardDetails}>
         <View style={styles.faction}>
           {faction_code !== 'neutral'
-            ? <Image source={factions[faction_code]} />
+            ? <Image source={factions[faction_code].token} />
             : null}
           <Text>{faction_code}</Text>
         </View>
@@ -108,12 +126,8 @@ const styles = StyleSheet.create({
   cardItem: {
     justifyContent: 'space-between',
     height: CARD_HEIGHT,
-    paddingRight: 10,
-    paddingLeft: 10,
-    paddingBottom: 3,
     overflow: 'hidden',
-    borderWidth: 1,
-    borderColor: 'red',
+    borderWidth: 0,
   },
   cardDetails: {
     flexDirection: 'row',
@@ -121,9 +135,19 @@ const styles = StyleSheet.create({
   faction: {
     flexDirection: 'row',
   },
-  cardName: {
+  cardHeader: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    height: 28,
+  },
+  cardHeaderImage: {
+    ...StyleSheet.absoluteFillObject,
+    height: 28,
+    width: 250,
+  },
+  cardName: {
+    fontSize: 20,
+    fontWeight: 'bold',
   },
   buttons: {
     position: 'absolute',
