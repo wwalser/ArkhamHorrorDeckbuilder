@@ -24,7 +24,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Uses (4 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +2 combat for this attack. This attack deals +1 damage. Ignore the retaliate keyword for this attack.",
       "traits": "Item. Weapon. Firearm.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": require("../img/cards/03190.png"),
     },
     {
       "code": "01016",
@@ -60,7 +61,8 @@ export const lookup: {[string]: Array<Card>} = {
       "text": "Fast.\n[reaction] After you evade an enemy, exhaust Pickpocketing: Draw 1 card or gain 1 resource. If you succeeded by 2 or more, do both instead.",
       "traits": "Talent. Illicit.",
       "type_code": "asset",
-      "xp": 2
+      "xp": 2,
+      "img_src": require("../img/cards/03195.png"),
     },
     {
       "code": "01046",
