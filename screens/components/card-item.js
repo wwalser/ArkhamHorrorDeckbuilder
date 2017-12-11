@@ -10,7 +10,8 @@ import {
   Dimensions,
   Animated,
 } from 'react-native';
-import ArkhamText from '../util-components/arkham-text.js';
+import ArkhamText from '../util-components/arkham-text';
+import factions from '../util-components/faction-images';
 
 import type {Card} from '../../cards';
 import type {AddCardDispatcher, RemoveCardDispatcher} from '../../store/deck';
@@ -26,38 +27,6 @@ const VIEWABLE_CARD_DIMENSIONS = {
   BOTTOM: 150,
 }
 const WINDOW_HEIGHT = Dimensions.get('window').height;
-
-const factions = {
-  neutral: {
-    cardHeader: require('../../img/card-header-neutral.png'),
-    statGlif: require('../../img/neutral-stat-oval.png'),
-  },
-  guardian: {
-    token: require('../../img/guardian.png'),
-    cardHeader: require('../../img/card-header-guardian.png'),
-    statGlif: require('../../img/guardian-stat-oval.png'),
-  },
-  rogue: {
-    token: require('../../img/rogue.png'),
-    cardHeader: require('../../img/card-header-rogue.png'),
-    statGlif: require('../../img/rogue-stat-oval.png'),
-  },
-  mystic: {
-    token: require('../../img/mystic.png'),
-    cardHeader: require('../../img/card-header-mystic.png'),
-    statGlif: require('../../img/mystic-stat-oval.png'),
-  },
-  seeker: {
-    token: require('../../img/seeker.png'),
-    cardHeader: require('../../img/card-header-seeker.png'),
-    statGlif: require('../../img/seeker-stat-oval.png'),
-  },
-  survivor: {
-    token: require('../../img/survivor.png'),
-    cardHeader: require('../../img/card-header-survivor.png'),
-    statGlif: require('../../img/survivor-stat-oval.png'),
-  },
-};
 
 type Props = {
   card: Card,
@@ -110,7 +79,7 @@ export default class CardItem extends React.PureComponent<Props> {
       </View>
       <View style={styles.cardDetails}>
         <View style={styles.cardStats}>
-          <Image style={styles.cardStatOval} source={factions[faction_code].statGlif} />
+          <Image style={styles.cardStatOval} source={factions[faction_code].statGlifs[xp]} />
           <ArkhamText>5</ArkhamText>
         </View>
       </View>
