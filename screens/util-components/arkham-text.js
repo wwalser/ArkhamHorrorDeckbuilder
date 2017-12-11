@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 import {
   Text,
   StyleSheet,
@@ -8,7 +8,7 @@ import {
 
 type Props = {
   style?: $FlowFixMe,
-  children: string | Array<string>,
+  children?: React.Node,
 };
 
 const styles = StyleSheet.create({

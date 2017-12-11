@@ -49,7 +49,7 @@ export default class CardItem extends React.PureComponent<Props> {
     //alignItems
     const {
       isInDeck,
-      card: {name, faction_code, is_unique, subname, xp, img_src},
+      card: {cost, name, faction_code, is_unique, subname, xp, img_src},
     } = this.props;
 
     const itemOffset = this.props.index * CARD_HEIGHT;
@@ -76,11 +76,16 @@ export default class CardItem extends React.PureComponent<Props> {
       <View style={styles.cardHeader}>
         <Image style={styles.cardHeaderImage} source={factions[faction_code].cardHeader} />
         <ArkhamText style={styles.cardName}>{is_unique ? '*' : ''}{name}</ArkhamText>
+        <Image
+          style={styles.cardStatOval}
+          source={factions[faction_code].statGlifs[xp || 0]}
+        >
+          <ArkhamText style={styles.cardCost}>{cost}</ArkhamText>
+        </Image>
       </View>
       <View style={styles.cardDetails}>
         <View style={styles.cardStats}>
-          <Image style={styles.cardStatOval} source={factions[faction_code].statGlifs[xp]} />
-          <ArkhamText>5</ArkhamText>
+
         </View>
       </View>
       <View style={styles.buttons}>
@@ -121,7 +126,12 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: 'bold',
     paddingBottom: 5,
-    paddingLeft: 10,
+    paddingLeft: 47,
+  },
+  cardCost: {
+    fontSize: 20,
+    color: 'white',
+    paddingTop: 6,
   },
   cardStats: {
     width: 46,
@@ -130,6 +140,7 @@ const styles = StyleSheet.create({
   cardStatOval: {
     height: 46,
     width: 46,
+    alignItems: 'center',
     ...StyleSheet.absoluteFillObject,
   },
   buttons: {
