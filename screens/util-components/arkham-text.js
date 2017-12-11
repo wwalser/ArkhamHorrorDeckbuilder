@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 
 type Props = {
-  style?: {[string]: *},
+  style?: $FlowFixMe,
   children: string | Array<string>,
 };
 
