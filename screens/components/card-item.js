@@ -28,6 +28,8 @@ const VIEWABLE_CARD_DIMENSIONS = {
 }
 const WINDOW_HEIGHT = Dimensions.get('window').height;
 
+const cardTypeGlif = require('../../img/card-type.png');
+
 type Props = {
   card: Card,
   onAdd: AddCardDispatcher,
@@ -49,8 +51,14 @@ export default class CardItem extends React.PureComponent<Props> {
     //alignItems
     const {
       isInDeck,
-      card: {cost, name, faction_code, is_unique, subname, xp, img_src},
+      card: {cost, name, faction_code, is_unique, subname, xp, type_code, img_src},
     } = this.props;
+    // 'asset': 1,
+    // 'event': 1,
+    // 'skill': 1,
+    // 'treachery': 1,
+    const cardType = ['asset', 'skill', 'event'].indexOf(type_code) === -1
+      ? null : type_code;
 
     const itemOffset = this.props.index * CARD_HEIGHT;
     const parallaxStyle:{[string]: any} = {
@@ -82,6 +90,12 @@ export default class CardItem extends React.PureComponent<Props> {
         >
           <ArkhamText style={styles.cardCost}>{cost}</ArkhamText>
         </Image>
+        {cardType ? (<Image
+            style={styles.cardTypeGlif}
+            source={cardTypeGlif}
+          >
+            <ArkhamText style={styles.cardType}>{cardType}</ArkhamText>
+          </Image>) : null}
       </View>
       <View style={styles.cardDetails}>
         <View style={styles.cardStats}>
@@ -128,6 +142,12 @@ const styles = StyleSheet.create({
     paddingBottom: 5,
     paddingLeft: 47,
   },
+  cardType: {
+    fontSize: 10,
+    fontWeight: 'bold',
+    paddingTop: 4,
+    color: 'black',
+  },
   cardCost: {
     fontSize: 20,
     color: 'white',
@@ -142,6 +162,13 @@ const styles = StyleSheet.create({
     width: 46,
     alignItems: 'center',
     ...StyleSheet.absoluteFillObject,
+  },
+  cardTypeGlif: {
+    position: 'absolute',
+    height: 21,
+    width: 47,
+    top: 42,
+    alignItems: 'center',
   },
   buttons: {
     position: 'absolute',
