@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import ArkhamText from '../util-components/arkham-text';
 import factions from '../util-components/faction-images';
+import DeckBuilderButton from '../util-components/deck-builder-button';
 
 import type {Card} from '../../cards';
 import type {AddCardDispatcher, RemoveCardDispatcher} from '../../store/deck';
@@ -103,10 +104,23 @@ export default class CardItem extends React.PureComponent<Props> {
         </View>
       </View>
       <View style={styles.buttons}>
-        <Button
-          title={isInDeck ? 'Remove' : 'Add'}
+        <DeckBuilderButton
+          disabled={isInDeck}
+          style={styles.deckButton}
+          textStyle={styles.deckButtonText}
+          disabledStyle={styles.deckButtonDisabled}
+          title="+"
           onPress={this.onPress}
           accessibilityLabel='Add card to deck.'
+        />
+        <DeckBuilderButton
+          disabled={!isInDeck}
+          style={styles.deckButton}
+          textStyle={styles.deckButtonText}
+          disabledStyle={styles.deckButtonDisabled}
+          title="-"
+          onPress={this.onPress}
+          accessibilityLabel='Remove card from deck.'
         />
       </View>
     </View>);
@@ -167,13 +181,31 @@ const styles = StyleSheet.create({
     position: 'absolute',
     height: 21,
     width: 47,
-    top: 42,
+    top: 40,
     alignItems: 'center',
   },
   buttons: {
     position: 'absolute',
-    top: 20,
-    right: 25,
+    top: 0,
+    right: 0,
+    height: CARD_HEIGHT,
+    width: 60,
+  },
+  deckButton: {
+    height: 40,
+    width: 60,
+    backgroundColor: 'rgba(255, 255, 255, 0.5)',
+    borderRadius: 6,
+    borderWidth: 2,
+    borderColor: 'rgba(255, 255, 255, 0)',
+  },
+  deckButtonDisabled: {
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+  },
+  deckButtonText: {
+    fontWeight: 'bold',
+    fontSize: 24,
+    color: 'white',
   },
   overlayImage: {
     ...StyleSheet.absoluteFillObject,
