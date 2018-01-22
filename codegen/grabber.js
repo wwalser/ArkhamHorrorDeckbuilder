@@ -85,7 +85,7 @@ function generate(done: (files: FileList) => void = ()=>{}) {
         cardsExist[code] = fileName;
         recurse();
       } else {
-        download(code, (err: ?Error, fileName?: string) => {
+        download(code, (err: ?Error, fileName: string = '') => {
           if (err) {
             console.error(`Error on card: ${code}`, err.message);
             cardsNotFound.push(code);
