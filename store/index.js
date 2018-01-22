@@ -8,5 +8,5 @@ export type Store = {
 };
 
 export default {
-  deck
+  deck,
 };
