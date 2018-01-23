@@ -15,10 +15,10 @@ import {lookup as cards} from '../../query/name';
 
 import type {Card} from '../../cards';
 import type {
-  DeckList,
+  Cards,
   AddCardDispatcher,
   RemoveCardDispatcher,
-} from '../../store/deck';
+} from '../../store/deck-list';
 import type {AnimatedEvent} from 'AnimatedEvent';
 import type AnimatedValue from 'AnimatedValue';
 import type {Styles} from 'StyleSheet';
@@ -33,7 +33,7 @@ const AnimatableFlatList = Animated.createAnimatedComponent(FlatList);
 type Props = {
   addCard: AddCardDispatcher,
   removeCard: RemoveCardDispatcher,
-  currentDeck: DeckList,
+  currentCards: Cards,
   style: $FlowFixMe,
 };
 
@@ -45,7 +45,7 @@ export default class CardList extends Component<Props, State> {
   state: State = { scrollY: new Animated.Value(0) };
 
   render() {
-    const {addCard, removeCard, currentDeck} = this.props;
+    const {addCard, removeCard, currentCards} = this.props;
 
     return (
       <View style={this.props.style}>
@@ -56,7 +56,7 @@ export default class CardList extends Component<Props, State> {
           )}
           data={allCards}
           keyExtractor={card => card.code}
-          extraData={this.props.currentDeck}
+          extraData={currentCards}
           getItemLayout={(data, index) => (
             {length: CARD_HEIGHT, offset: CARD_HEIGHT * index, index}
           )}
@@ -67,7 +67,7 @@ export default class CardList extends Component<Props, State> {
               index={index}
               onAdd={addCard}
               onRemove={removeCard}
-              isInDeck={!!currentDeck[item.code]}
+              isInDeck={currentCards.indexOf(item.code) !== -1}
             />
           )}
         />

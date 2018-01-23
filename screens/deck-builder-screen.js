@@ -1,7 +1,7 @@
 /* @flow */
 
 import CardList from './components/card-list';
-import * as deckDispatchers from '../store/deck';
+import * as deckDispatchers from '../store/deck-list';
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -15,18 +15,18 @@ import {
 import SearchBar from 'react-native-searchbar';
 import {connect} from 'react-redux';
 
-import type {Card} from '../cards';
+import type {CardCode} from '../cards';
 import type {
-  DeckList,
+  Cards,
   AddCardDispatcher,
   RemoveCardDispatcher,
-} from '../store/deck';
+} from '../store/deck-list';
 import type {Store} from '../store/';
 
 class DeckBuilderScreen extends Component<{
-  investigator: Card,
+  investigator: CardCode,
   name: string,
-  cards: DeckList,
+  cards: Cards,
   addCard: AddCardDispatcher,
   removeCard: RemoveCardDispatcher,
 }> {
@@ -40,7 +40,7 @@ class DeckBuilderScreen extends Component<{
           style={styles.cardList}
           addCard={this.props.addCard}
           removeCard={this.props.removeCard}
-          currentDeck={this.props.cards}
+          currentCards={this.props.cards}
         />
       </KeyboardAvoidingView>
     );
@@ -54,8 +54,11 @@ const styles = StyleSheet.create({
   }
 });
 
-const select = ({deck}: Store) => {
-  return {...deck};
+const select = ({deckList}: Store) => {
+  const currentDeck = deckList.list[deckList.currentDeck];
+  return {
+    ...currentDeck,
+  };
 };
 
 export default connect(select, deckDispatchers)(DeckBuilderScreen);

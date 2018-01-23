@@ -25,10 +25,11 @@ export const PLAYER_CARD_TYPES = {
   'skill': 1,
   'treachery': 1,
 };
+export type CardCode = string;
 export type Card = {
   back_text?: string,
   back_flavor?: string,
-  code: string,
+  code: CardCode,
   cost?: ?number,
   deck_limit: number,
   deck_options?: Array<any>,

@@ -15,7 +15,7 @@ import factions from '../util-components/faction-images';
 import DeckBuilderButton from '../util-components/deck-builder-button';
 
 import type {Card} from '../../cards';
-import type {AddCardDispatcher, RemoveCardDispatcher} from '../../store/deck';
+import type {AddCardDispatcher, RemoveCardDispatcher} from '../../store/deck-list';
 import type AnimatedValue from 'AnimatedValue';
 
 export const CARD_HEIGHT = 100;
@@ -43,9 +43,9 @@ type Props = {
 export default class CardItem extends React.PureComponent<Props> {
   onPress = () => {
     if (this.props.isInDeck) {
-      this.props.onRemove(this.props.card);
+      this.props.onRemove(this.props.card.code);
     } else {
-      this.props.onAdd(this.props.card);
+      this.props.onAdd(this.props.card.code);
     }
   };
   render() {

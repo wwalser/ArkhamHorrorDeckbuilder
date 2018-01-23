@@ -1,12 +1,12 @@
 /* @flow */
 
-import deck from './deck';
+import deckList from './deck-list';
 
-import type {Deck} from './deck';
+import type {DeckList} from './deck-list';
 export type Store = {
-  deck: Deck
+  deckList: DeckList
 };
 
 export default {
-  deck,
+  deckList,
 };
